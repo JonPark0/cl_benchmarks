@@ -1,0 +1,1030 @@
+
+============================================================
+Model: gem | Seed: 42 | Time: 7.4s
+Command: C:\Users\yeoch\Documents\vscode\ai_project_2\continual_learning\.venv\Scripts\python.exe C:\Users\yeoch\Documents\vscode\ai_project_2\continual_learning\mammoth\main.py --model gem --dataset seq-mnist --seed 42 --device 0 --n_epochs 1 --base_path C:\Users\yeoch\Documents\vscode\ai_project_2\continual_learning\raw_data/ --results_path split_mnist/gem --enable_other_metrics 1 --non_verbose 1 --lr 0.1 --buffer_size 200 --gamma 0.5
+STDOUT:
+or in model second-stage-starprompt
+[WARNING] 01-Apr-26 03:46:08 - Error in model slca
+[WARNING] 01-Apr-26 03:46:08 - Error in model starprompt
+[WARNING] 01-Apr-26 03:46:08 - Error in model xder-rpc-casper
+[WARNING] 01-Apr-26 03:46:08 - No backbone specified. Using default backbone (set by the dataset).
+[WARNING] 01-Apr-26 03:46:08 - No default configuration found in models/config/gem.yaml.
+[WARNING] 01-Apr-26 03:46:08 - Default configuration file not found for dataset seq-mnist. Using the defaults specified in the dataset class (if available).
+[ERROR] 01-Apr-26 03:46:08 - Could not retrieve git hash.
+[INFO] 01-Apr-26 03:46:08 - 
+╔═══════════════════════ CONFIGURATION ═══════════════════════╗
+║ Basic arguments:
+║   • backbone: mnistmlp
+║   • dataset: seq-mnist
+║   • load_best_args: False
+║   • model: gem
+║
+║ Configuration arguments:
+║   • model_config: default
+║
+║ Model-specific arguments:
+║   • gamma: 0.500000
+║
+║ Backbone arguments:
+║   • mlp_hidden_size: 100
+║
+║ Management arguments:
+║   • base_path: C:\Users\yeoch\Documents\vscode\ai_project_2\continual_learning\raw_data/
+║   • checkpoint_path: ./checkpoints/
+║   • code_optimization: 0
+║   • debug_mode: False
+║   • device: 0
+║   • disable_log: False
+║   • distributed: no
+║   • enable_other_metrics: True
+║   • inference_only: False
+║   • non_verbose: True
+║   • permute_classes: False
+║   • results_path: split_mnist/gem
+║   • save_after_interrupt: True
+║   • save_checkpoint_mode: safe
+║   • seed: 42
+║
+║ Wandb arguments:
+║
+║ Experiment arguments:
+║   • batch_size: 64
+║   • eval_future: False
+║   • joint: 0
+║   • label_perc: 1.000000
+║   • label_perc_by_class: 1.000000
+║   • lr: 0.100000
+║
+║ Validation and fitting arguments:
+║   • early_stopping_epsilon: 0.000001
+║   • early_stopping_freq: 1
+║   • early_stopping_metric: loss
+║   • early_stopping_patience: 5
+║   • fitting_mode: epochs
+║   • n_epochs: 1
+║   • validation_mode: current
+║
+║ Optimizer and learning rate scheduler arguments:
+║   • drop_last: False
+║   • lr_milestones: []
+║   • optim_mom: 0.000000
+║   • optim_nesterov: False
+║   • optim_wd: 0.000000
+║   • optimizer: sgd
+║   • sched_multistep_lr_gamma: 0.100000
+║   • scheduler_mode: epoch
+║
+║ Noise arguments:
+║   • cache_path_noisy_labels: noisy_labels
+║   • disable_noisy_labels_cache: False
+║   • noise_rate: 0.000000
+║   • noise_type: symmetric
+║
+╚════════════════════════════════════════════════════════════╝
+[WARNING] 01-Apr-26 03:46:09 - Could not get memory from pynvml. Maybe try `pip install --force-reinstall gpustat`. module 'torch.cuda' has no attribute 'pynvml'
+[INFO] 01-Apr-26 03:46:09 - Using device cuda:0
+[INFO] 01-Apr-26 03:46:09 - `wandb_entity` and `wandb_project` not set. Disabling wandb.
+[INFO] 01-Apr-26 03:46:09 - Using backbone: mnistmlp
+[INFO] 01-Apr-26 03:46:09 - Using BaseMNISTMLP as backbone
+[INFO] 01-Apr-26 03:46:09 - No transform provided.
+[WARNING] 01-Apr-26 03:46:09 - `quadprog` not found, trying with `qpsolvers`. Note that the code is only tested with `quadprog`.
+
+STDERR:
+ng\mammoth\main.py", line 560, in main
+    model, dataset, args = initialize(args)
+                           ^^^^^^^^^^^^^^^^
+  File "C:\Users\yeoch\Documents\vscode\ai_project_2\continual_learning\mammoth\main.py", line 528, in initialize
+    model = get_model(args, backbone, loss, dataset.get_transform(), dataset=dataset)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\yeoch\Documents\vscode\ai_project_2\continual_learning\mammoth\models\__init__.py", line 68, in get_model
+    return get_model_class(args)(backbone, loss, args, transform, dataset)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\yeoch\Documents\vscode\ai_project_2\continual_learning\mammoth\models\gem.py", line 109, in __init__
+    raise Exception('GEM requires quadprog (linux only, python <= 3.10) or qpsolvers (cross-platform)')
+Exception: GEM requires quadprog (linux only, python <= 3.10) or qpsolvers (cross-platform)
+
+============================================================
+Model: gem | Seed: 123 | Time: 7.3s
+Command: C:\Users\yeoch\Documents\vscode\ai_project_2\continual_learning\.venv\Scripts\python.exe C:\Users\yeoch\Documents\vscode\ai_project_2\continual_learning\mammoth\main.py --model gem --dataset seq-mnist --seed 123 --device 0 --n_epochs 1 --base_path C:\Users\yeoch\Documents\vscode\ai_project_2\continual_learning\raw_data/ --results_path split_mnist/gem --enable_other_metrics 1 --non_verbose 1 --lr 0.1 --buffer_size 200 --gamma 0.5
+STDOUT:
+r in model second-stage-starprompt
+[WARNING] 01-Apr-26 03:46:15 - Error in model slca
+[WARNING] 01-Apr-26 03:46:15 - Error in model starprompt
+[WARNING] 01-Apr-26 03:46:15 - Error in model xder-rpc-casper
+[WARNING] 01-Apr-26 03:46:16 - No backbone specified. Using default backbone (set by the dataset).
+[WARNING] 01-Apr-26 03:46:16 - No default configuration found in models/config/gem.yaml.
+[WARNING] 01-Apr-26 03:46:16 - Default configuration file not found for dataset seq-mnist. Using the defaults specified in the dataset class (if available).
+[ERROR] 01-Apr-26 03:46:16 - Could not retrieve git hash.
+[INFO] 01-Apr-26 03:46:16 - 
+╔═══════════════════════ CONFIGURATION ═══════════════════════╗
+║ Basic arguments:
+║   • backbone: mnistmlp
+║   • dataset: seq-mnist
+║   • load_best_args: False
+║   • model: gem
+║
+║ Configuration arguments:
+║   • model_config: default
+║
+║ Model-specific arguments:
+║   • gamma: 0.500000
+║
+║ Backbone arguments:
+║   • mlp_hidden_size: 100
+║
+║ Management arguments:
+║   • base_path: C:\Users\yeoch\Documents\vscode\ai_project_2\continual_learning\raw_data/
+║   • checkpoint_path: ./checkpoints/
+║   • code_optimization: 0
+║   • debug_mode: False
+║   • device: 0
+║   • disable_log: False
+║   • distributed: no
+║   • enable_other_metrics: True
+║   • inference_only: False
+║   • non_verbose: True
+║   • permute_classes: False
+║   • results_path: split_mnist/gem
+║   • save_after_interrupt: True
+║   • save_checkpoint_mode: safe
+║   • seed: 123
+║
+║ Wandb arguments:
+║
+║ Experiment arguments:
+║   • batch_size: 64
+║   • eval_future: False
+║   • joint: 0
+║   • label_perc: 1.000000
+║   • label_perc_by_class: 1.000000
+║   • lr: 0.100000
+║
+║ Validation and fitting arguments:
+║   • early_stopping_epsilon: 0.000001
+║   • early_stopping_freq: 1
+║   • early_stopping_metric: loss
+║   • early_stopping_patience: 5
+║   • fitting_mode: epochs
+║   • n_epochs: 1
+║   • validation_mode: current
+║
+║ Optimizer and learning rate scheduler arguments:
+║   • drop_last: False
+║   • lr_milestones: []
+║   • optim_mom: 0.000000
+║   • optim_nesterov: False
+║   • optim_wd: 0.000000
+║   • optimizer: sgd
+║   • sched_multistep_lr_gamma: 0.100000
+║   • scheduler_mode: epoch
+║
+║ Noise arguments:
+║   • cache_path_noisy_labels: noisy_labels
+║   • disable_noisy_labels_cache: False
+║   • noise_rate: 0.000000
+║   • noise_type: symmetric
+║
+╚════════════════════════════════════════════════════════════╝
+[WARNING] 01-Apr-26 03:46:16 - Could not get memory from pynvml. Maybe try `pip install --force-reinstall gpustat`. module 'torch.cuda' has no attribute 'pynvml'
+[INFO] 01-Apr-26 03:46:16 - Using device cuda:0
+[INFO] 01-Apr-26 03:46:16 - `wandb_entity` and `wandb_project` not set. Disabling wandb.
+[INFO] 01-Apr-26 03:46:16 - Using backbone: mnistmlp
+[INFO] 01-Apr-26 03:46:17 - Using BaseMNISTMLP as backbone
+[INFO] 01-Apr-26 03:46:17 - No transform provided.
+[WARNING] 01-Apr-26 03:46:17 - `quadprog` not found, trying with `qpsolvers`. Note that the code is only tested with `quadprog`.
+
+STDERR:
+ng\mammoth\main.py", line 560, in main
+    model, dataset, args = initialize(args)
+                           ^^^^^^^^^^^^^^^^
+  File "C:\Users\yeoch\Documents\vscode\ai_project_2\continual_learning\mammoth\main.py", line 528, in initialize
+    model = get_model(args, backbone, loss, dataset.get_transform(), dataset=dataset)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\yeoch\Documents\vscode\ai_project_2\continual_learning\mammoth\models\__init__.py", line 68, in get_model
+    return get_model_class(args)(backbone, loss, args, transform, dataset)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\yeoch\Documents\vscode\ai_project_2\continual_learning\mammoth\models\gem.py", line 109, in __init__
+    raise Exception('GEM requires quadprog (linux only, python <= 3.10) or qpsolvers (cross-platform)')
+Exception: GEM requires quadprog (linux only, python <= 3.10) or qpsolvers (cross-platform)
+
+============================================================
+Model: gem | Seed: 456 | Time: 7.3s
+Command: C:\Users\yeoch\Documents\vscode\ai_project_2\continual_learning\.venv\Scripts\python.exe C:\Users\yeoch\Documents\vscode\ai_project_2\continual_learning\mammoth\main.py --model gem --dataset seq-mnist --seed 456 --device 0 --n_epochs 1 --base_path C:\Users\yeoch\Documents\vscode\ai_project_2\continual_learning\raw_data/ --results_path split_mnist/gem --enable_other_metrics 1 --non_verbose 1 --lr 0.1 --buffer_size 200 --gamma 0.5
+STDOUT:
+r in model second-stage-starprompt
+[WARNING] 01-Apr-26 03:46:23 - Error in model slca
+[WARNING] 01-Apr-26 03:46:23 - Error in model starprompt
+[WARNING] 01-Apr-26 03:46:23 - Error in model xder-rpc-casper
+[WARNING] 01-Apr-26 03:46:23 - No backbone specified. Using default backbone (set by the dataset).
+[WARNING] 01-Apr-26 03:46:23 - No default configuration found in models/config/gem.yaml.
+[WARNING] 01-Apr-26 03:46:23 - Default configuration file not found for dataset seq-mnist. Using the defaults specified in the dataset class (if available).
+[ERROR] 01-Apr-26 03:46:23 - Could not retrieve git hash.
+[INFO] 01-Apr-26 03:46:23 - 
+╔═══════════════════════ CONFIGURATION ═══════════════════════╗
+║ Basic arguments:
+║   • backbone: mnistmlp
+║   • dataset: seq-mnist
+║   • load_best_args: False
+║   • model: gem
+║
+║ Configuration arguments:
+║   • model_config: default
+║
+║ Model-specific arguments:
+║   • gamma: 0.500000
+║
+║ Backbone arguments:
+║   • mlp_hidden_size: 100
+║
+║ Management arguments:
+║   • base_path: C:\Users\yeoch\Documents\vscode\ai_project_2\continual_learning\raw_data/
+║   • checkpoint_path: ./checkpoints/
+║   • code_optimization: 0
+║   • debug_mode: False
+║   • device: 0
+║   • disable_log: False
+║   • distributed: no
+║   • enable_other_metrics: True
+║   • inference_only: False
+║   • non_verbose: True
+║   • permute_classes: False
+║   • results_path: split_mnist/gem
+║   • save_after_interrupt: True
+║   • save_checkpoint_mode: safe
+║   • seed: 456
+║
+║ Wandb arguments:
+║
+║ Experiment arguments:
+║   • batch_size: 64
+║   • eval_future: False
+║   • joint: 0
+║   • label_perc: 1.000000
+║   • label_perc_by_class: 1.000000
+║   • lr: 0.100000
+║
+║ Validation and fitting arguments:
+║   • early_stopping_epsilon: 0.000001
+║   • early_stopping_freq: 1
+║   • early_stopping_metric: loss
+║   • early_stopping_patience: 5
+║   • fitting_mode: epochs
+║   • n_epochs: 1
+║   • validation_mode: current
+║
+║ Optimizer and learning rate scheduler arguments:
+║   • drop_last: False
+║   • lr_milestones: []
+║   • optim_mom: 0.000000
+║   • optim_nesterov: False
+║   • optim_wd: 0.000000
+║   • optimizer: sgd
+║   • sched_multistep_lr_gamma: 0.100000
+║   • scheduler_mode: epoch
+║
+║ Noise arguments:
+║   • cache_path_noisy_labels: noisy_labels
+║   • disable_noisy_labels_cache: False
+║   • noise_rate: 0.000000
+║   • noise_type: symmetric
+║
+╚════════════════════════════════════════════════════════════╝
+[WARNING] 01-Apr-26 03:46:24 - Could not get memory from pynvml. Maybe try `pip install --force-reinstall gpustat`. module 'torch.cuda' has no attribute 'pynvml'
+[INFO] 01-Apr-26 03:46:24 - Using device cuda:0
+[INFO] 01-Apr-26 03:46:24 - `wandb_entity` and `wandb_project` not set. Disabling wandb.
+[INFO] 01-Apr-26 03:46:24 - Using backbone: mnistmlp
+[INFO] 01-Apr-26 03:46:24 - Using BaseMNISTMLP as backbone
+[INFO] 01-Apr-26 03:46:24 - No transform provided.
+[WARNING] 01-Apr-26 03:46:24 - `quadprog` not found, trying with `qpsolvers`. Note that the code is only tested with `quadprog`.
+
+STDERR:
+ng\mammoth\main.py", line 560, in main
+    model, dataset, args = initialize(args)
+                           ^^^^^^^^^^^^^^^^
+  File "C:\Users\yeoch\Documents\vscode\ai_project_2\continual_learning\mammoth\main.py", line 528, in initialize
+    model = get_model(args, backbone, loss, dataset.get_transform(), dataset=dataset)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\yeoch\Documents\vscode\ai_project_2\continual_learning\mammoth\models\__init__.py", line 68, in get_model
+    return get_model_class(args)(backbone, loss, args, transform, dataset)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\yeoch\Documents\vscode\ai_project_2\continual_learning\mammoth\models\gem.py", line 109, in __init__
+    raise Exception('GEM requires quadprog (linux only, python <= 3.10) or qpsolvers (cross-platform)')
+Exception: GEM requires quadprog (linux only, python <= 3.10) or qpsolvers (cross-platform)
+
+============================================================
+Model: gem | Seed: 789 | Time: 7.4s
+Command: C:\Users\yeoch\Documents\vscode\ai_project_2\continual_learning\.venv\Scripts\python.exe C:\Users\yeoch\Documents\vscode\ai_project_2\continual_learning\mammoth\main.py --model gem --dataset seq-mnist --seed 789 --device 0 --n_epochs 1 --base_path C:\Users\yeoch\Documents\vscode\ai_project_2\continual_learning\raw_data/ --results_path split_mnist/gem --enable_other_metrics 1 --non_verbose 1 --lr 0.1 --buffer_size 200 --gamma 0.5
+STDOUT:
+r in model second-stage-starprompt
+[WARNING] 01-Apr-26 03:46:30 - Error in model slca
+[WARNING] 01-Apr-26 03:46:30 - Error in model starprompt
+[WARNING] 01-Apr-26 03:46:30 - Error in model xder-rpc-casper
+[WARNING] 01-Apr-26 03:46:30 - No backbone specified. Using default backbone (set by the dataset).
+[WARNING] 01-Apr-26 03:46:30 - No default configuration found in models/config/gem.yaml.
+[WARNING] 01-Apr-26 03:46:30 - Default configuration file not found for dataset seq-mnist. Using the defaults specified in the dataset class (if available).
+[ERROR] 01-Apr-26 03:46:30 - Could not retrieve git hash.
+[INFO] 01-Apr-26 03:46:30 - 
+╔═══════════════════════ CONFIGURATION ═══════════════════════╗
+║ Basic arguments:
+║   • backbone: mnistmlp
+║   • dataset: seq-mnist
+║   • load_best_args: False
+║   • model: gem
+║
+║ Configuration arguments:
+║   • model_config: default
+║
+║ Model-specific arguments:
+║   • gamma: 0.500000
+║
+║ Backbone arguments:
+║   • mlp_hidden_size: 100
+║
+║ Management arguments:
+║   • base_path: C:\Users\yeoch\Documents\vscode\ai_project_2\continual_learning\raw_data/
+║   • checkpoint_path: ./checkpoints/
+║   • code_optimization: 0
+║   • debug_mode: False
+║   • device: 0
+║   • disable_log: False
+║   • distributed: no
+║   • enable_other_metrics: True
+║   • inference_only: False
+║   • non_verbose: True
+║   • permute_classes: False
+║   • results_path: split_mnist/gem
+║   • save_after_interrupt: True
+║   • save_checkpoint_mode: safe
+║   • seed: 789
+║
+║ Wandb arguments:
+║
+║ Experiment arguments:
+║   • batch_size: 64
+║   • eval_future: False
+║   • joint: 0
+║   • label_perc: 1.000000
+║   • label_perc_by_class: 1.000000
+║   • lr: 0.100000
+║
+║ Validation and fitting arguments:
+║   • early_stopping_epsilon: 0.000001
+║   • early_stopping_freq: 1
+║   • early_stopping_metric: loss
+║   • early_stopping_patience: 5
+║   • fitting_mode: epochs
+║   • n_epochs: 1
+║   • validation_mode: current
+║
+║ Optimizer and learning rate scheduler arguments:
+║   • drop_last: False
+║   • lr_milestones: []
+║   • optim_mom: 0.000000
+║   • optim_nesterov: False
+║   • optim_wd: 0.000000
+║   • optimizer: sgd
+║   • sched_multistep_lr_gamma: 0.100000
+║   • scheduler_mode: epoch
+║
+║ Noise arguments:
+║   • cache_path_noisy_labels: noisy_labels
+║   • disable_noisy_labels_cache: False
+║   • noise_rate: 0.000000
+║   • noise_type: symmetric
+║
+╚════════════════════════════════════════════════════════════╝
+[WARNING] 01-Apr-26 03:46:31 - Could not get memory from pynvml. Maybe try `pip install --force-reinstall gpustat`. module 'torch.cuda' has no attribute 'pynvml'
+[INFO] 01-Apr-26 03:46:31 - Using device cuda:0
+[INFO] 01-Apr-26 03:46:31 - `wandb_entity` and `wandb_project` not set. Disabling wandb.
+[INFO] 01-Apr-26 03:46:31 - Using backbone: mnistmlp
+[INFO] 01-Apr-26 03:46:31 - Using BaseMNISTMLP as backbone
+[INFO] 01-Apr-26 03:46:31 - No transform provided.
+[WARNING] 01-Apr-26 03:46:31 - `quadprog` not found, trying with `qpsolvers`. Note that the code is only tested with `quadprog`.
+
+STDERR:
+ng\mammoth\main.py", line 560, in main
+    model, dataset, args = initialize(args)
+                           ^^^^^^^^^^^^^^^^
+  File "C:\Users\yeoch\Documents\vscode\ai_project_2\continual_learning\mammoth\main.py", line 528, in initialize
+    model = get_model(args, backbone, loss, dataset.get_transform(), dataset=dataset)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\yeoch\Documents\vscode\ai_project_2\continual_learning\mammoth\models\__init__.py", line 68, in get_model
+    return get_model_class(args)(backbone, loss, args, transform, dataset)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\yeoch\Documents\vscode\ai_project_2\continual_learning\mammoth\models\gem.py", line 109, in __init__
+    raise Exception('GEM requires quadprog (linux only, python <= 3.10) or qpsolvers (cross-platform)')
+Exception: GEM requires quadprog (linux only, python <= 3.10) or qpsolvers (cross-platform)
+
+============================================================
+Model: gem | Seed: 1024 | Time: 7.0s
+Command: C:\Users\yeoch\Documents\vscode\ai_project_2\continual_learning\.venv\Scripts\python.exe C:\Users\yeoch\Documents\vscode\ai_project_2\continual_learning\mammoth\main.py --model gem --dataset seq-mnist --seed 1024 --device 0 --n_epochs 1 --base_path C:\Users\yeoch\Documents\vscode\ai_project_2\continual_learning\raw_data/ --results_path split_mnist/gem --enable_other_metrics 1 --non_verbose 1 --lr 0.1 --buffer_size 200 --gamma 0.5
+STDOUT:
+ in model second-stage-starprompt
+[WARNING] 01-Apr-26 03:46:37 - Error in model slca
+[WARNING] 01-Apr-26 03:46:37 - Error in model starprompt
+[WARNING] 01-Apr-26 03:46:37 - Error in model xder-rpc-casper
+[WARNING] 01-Apr-26 03:46:38 - No backbone specified. Using default backbone (set by the dataset).
+[WARNING] 01-Apr-26 03:46:38 - No default configuration found in models/config/gem.yaml.
+[WARNING] 01-Apr-26 03:46:38 - Default configuration file not found for dataset seq-mnist. Using the defaults specified in the dataset class (if available).
+[ERROR] 01-Apr-26 03:46:38 - Could not retrieve git hash.
+[INFO] 01-Apr-26 03:46:38 - 
+╔═══════════════════════ CONFIGURATION ═══════════════════════╗
+║ Basic arguments:
+║   • backbone: mnistmlp
+║   • dataset: seq-mnist
+║   • load_best_args: False
+║   • model: gem
+║
+║ Configuration arguments:
+║   • model_config: default
+║
+║ Model-specific arguments:
+║   • gamma: 0.500000
+║
+║ Backbone arguments:
+║   • mlp_hidden_size: 100
+║
+║ Management arguments:
+║   • base_path: C:\Users\yeoch\Documents\vscode\ai_project_2\continual_learning\raw_data/
+║   • checkpoint_path: ./checkpoints/
+║   • code_optimization: 0
+║   • debug_mode: False
+║   • device: 0
+║   • disable_log: False
+║   • distributed: no
+║   • enable_other_metrics: True
+║   • inference_only: False
+║   • non_verbose: True
+║   • permute_classes: False
+║   • results_path: split_mnist/gem
+║   • save_after_interrupt: True
+║   • save_checkpoint_mode: safe
+║   • seed: 1024
+║
+║ Wandb arguments:
+║
+║ Experiment arguments:
+║   • batch_size: 64
+║   • eval_future: False
+║   • joint: 0
+║   • label_perc: 1.000000
+║   • label_perc_by_class: 1.000000
+║   • lr: 0.100000
+║
+║ Validation and fitting arguments:
+║   • early_stopping_epsilon: 0.000001
+║   • early_stopping_freq: 1
+║   • early_stopping_metric: loss
+║   • early_stopping_patience: 5
+║   • fitting_mode: epochs
+║   • n_epochs: 1
+║   • validation_mode: current
+║
+║ Optimizer and learning rate scheduler arguments:
+║   • drop_last: False
+║   • lr_milestones: []
+║   • optim_mom: 0.000000
+║   • optim_nesterov: False
+║   • optim_wd: 0.000000
+║   • optimizer: sgd
+║   • sched_multistep_lr_gamma: 0.100000
+║   • scheduler_mode: epoch
+║
+║ Noise arguments:
+║   • cache_path_noisy_labels: noisy_labels
+║   • disable_noisy_labels_cache: False
+║   • noise_rate: 0.000000
+║   • noise_type: symmetric
+║
+╚════════════════════════════════════════════════════════════╝
+[WARNING] 01-Apr-26 03:46:38 - Could not get memory from pynvml. Maybe try `pip install --force-reinstall gpustat`. module 'torch.cuda' has no attribute 'pynvml'
+[INFO] 01-Apr-26 03:46:38 - Using device cuda:0
+[INFO] 01-Apr-26 03:46:38 - `wandb_entity` and `wandb_project` not set. Disabling wandb.
+[INFO] 01-Apr-26 03:46:38 - Using backbone: mnistmlp
+[INFO] 01-Apr-26 03:46:38 - Using BaseMNISTMLP as backbone
+[INFO] 01-Apr-26 03:46:38 - No transform provided.
+[WARNING] 01-Apr-26 03:46:38 - `quadprog` not found, trying with `qpsolvers`. Note that the code is only tested with `quadprog`.
+
+STDERR:
+ng\mammoth\main.py", line 560, in main
+    model, dataset, args = initialize(args)
+                           ^^^^^^^^^^^^^^^^
+  File "C:\Users\yeoch\Documents\vscode\ai_project_2\continual_learning\mammoth\main.py", line 528, in initialize
+    model = get_model(args, backbone, loss, dataset.get_transform(), dataset=dataset)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\yeoch\Documents\vscode\ai_project_2\continual_learning\mammoth\models\__init__.py", line 68, in get_model
+    return get_model_class(args)(backbone, loss, args, transform, dataset)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\yeoch\Documents\vscode\ai_project_2\continual_learning\mammoth\models\gem.py", line 109, in __init__
+    raise Exception('GEM requires quadprog (linux only, python <= 3.10) or qpsolvers (cross-platform)')
+Exception: GEM requires quadprog (linux only, python <= 3.10) or qpsolvers (cross-platform)
+
+============================================================
+Model: gem | Seed: 42 | Time: 16.8s
+Command: C:\Users\yeoch\Documents\vscode\ai_project_2\continual_learning\.venv\Scripts\python.exe C:\Users\yeoch\Documents\vscode\ai_project_2\continual_learning\mammoth\main.py --model gem --dataset seq-mnist --seed 42 --device 0 --n_epochs 1 --base_path C:\Users\yeoch\Documents\vscode\ai_project_2\continual_learning\raw_data/ --results_path split_mnist/gem --enable_other_metrics 1 --non_verbose 1 --lr 0.1 --buffer_size 200 --gamma 0.5
+STDOUT:
+ model puridiver
+[WARNING] 01-Apr-26 10:36:32 - Error in model second-stage-starprompt
+[WARNING] 01-Apr-26 10:36:36 - Error in model starprompt
+[WARNING] 01-Apr-26 10:36:36 - Error in model xder-rpc-casper
+[WARNING] 01-Apr-26 10:36:36 - No backbone specified. Using default backbone (set by the dataset).
+[WARNING] 01-Apr-26 10:36:36 - No default configuration found in models/config/gem.yaml.
+[WARNING] 01-Apr-26 10:36:36 - Default configuration file not found for dataset seq-mnist. Using the defaults specified in the dataset class (if available).
+[ERROR] 01-Apr-26 10:36:36 - Could not retrieve git hash.
+[INFO] 01-Apr-26 10:36:36 - 
+╔═══════════════════════ CONFIGURATION ═══════════════════════╗
+║ Basic arguments:
+║   • backbone: mnistmlp
+║   • dataset: seq-mnist
+║   • load_best_args: False
+║   • model: gem
+║
+║ Configuration arguments:
+║   • model_config: default
+║
+║ Model-specific arguments:
+║   • gamma: 0.500000
+║
+║ Backbone arguments:
+║   • mlp_hidden_size: 100
+║
+║ Management arguments:
+║   • base_path: C:\Users\yeoch\Documents\vscode\ai_project_2\continual_learning\raw_data/
+║   • checkpoint_path: ./checkpoints/
+║   • code_optimization: 0
+║   • debug_mode: False
+║   • device: 0
+║   • disable_log: False
+║   • distributed: no
+║   • enable_other_metrics: True
+║   • inference_only: False
+║   • non_verbose: True
+║   • permute_classes: False
+║   • results_path: split_mnist/gem
+║   • save_after_interrupt: True
+║   • save_checkpoint_mode: safe
+║   • seed: 42
+║
+║ Wandb arguments:
+║
+║ Experiment arguments:
+║   • batch_size: 64
+║   • eval_future: False
+║   • joint: 0
+║   • label_perc: 1.000000
+║   • label_perc_by_class: 1.000000
+║   • lr: 0.100000
+║
+║ Validation and fitting arguments:
+║   • early_stopping_epsilon: 0.000001
+║   • early_stopping_freq: 1
+║   • early_stopping_metric: loss
+║   • early_stopping_patience: 5
+║   • fitting_mode: epochs
+║   • n_epochs: 1
+║   • validation_mode: current
+║
+║ Optimizer and learning rate scheduler arguments:
+║   • drop_last: False
+║   • lr_milestones: []
+║   • optim_mom: 0.000000
+║   • optim_nesterov: False
+║   • optim_wd: 0.000000
+║   • optimizer: sgd
+║   • sched_multistep_lr_gamma: 0.100000
+║   • scheduler_mode: epoch
+║
+║ Noise arguments:
+║   • cache_path_noisy_labels: noisy_labels
+║   • disable_noisy_labels_cache: False
+║   • noise_rate: 0.000000
+║   • noise_type: symmetric
+║
+╚════════════════════════════════════════════════════════════╝
+[WARNING] 01-Apr-26 10:36:37 - Could not get memory from pynvml. Maybe try `pip install --force-reinstall gpustat`. module 'torch.cuda' has no attribute 'pynvml'
+[INFO] 01-Apr-26 10:36:37 - Using device cuda:0
+[INFO] 01-Apr-26 10:36:37 - `wandb_entity` and `wandb_project` not set. Disabling wandb.
+[INFO] 01-Apr-26 10:36:37 - Using backbone: mnistmlp
+[INFO] 01-Apr-26 10:36:37 - Using BaseMNISTMLP as backbone
+[INFO] 01-Apr-26 10:36:37 - No transform provided.
+[WARNING] 01-Apr-26 10:36:37 - `quadprog` not found, trying with `qpsolvers`. Note that the code is only tested with `quadprog`.
+
+STDERR:
+^^^^^^
+  File "C:\Users\yeoch\Documents\vscode\ai_project_2\continual_learning\mammoth\main.py", line 528, in initialize
+    model = get_model(args, backbone, loss, dataset.get_transform(), dataset=dataset)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\yeoch\Documents\vscode\ai_project_2\continual_learning\mammoth\models\__init__.py", line 68, in get_model
+    return get_model_class(args)(backbone, loss, args, transform, dataset)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\yeoch\Documents\vscode\ai_project_2\continual_learning\mammoth\models\gem.py", line 107, in __init__
+    raise Exception('QPSolvers is just a suggestion but does not work at the moment. To make it work, you need to set it up properly (and remove this exception).')
+Exception: QPSolvers is just a suggestion but does not work at the moment. To make it work, you need to set it up properly (and remove this exception).
+
+============================================================
+Model: gem | Seed: 123 | Time: 8.5s
+Command: C:\Users\yeoch\Documents\vscode\ai_project_2\continual_learning\.venv\Scripts\python.exe C:\Users\yeoch\Documents\vscode\ai_project_2\continual_learning\mammoth\main.py --model gem --dataset seq-mnist --seed 123 --device 0 --n_epochs 1 --base_path C:\Users\yeoch\Documents\vscode\ai_project_2\continual_learning\raw_data/ --results_path split_mnist/gem --enable_other_metrics 1 --non_verbose 1 --lr 0.1 --buffer_size 200 --gamma 0.5
+STDOUT:
+model puridiver
+[WARNING] 01-Apr-26 10:36:45 - Error in model second-stage-starprompt
+[WARNING] 01-Apr-26 10:36:45 - Error in model starprompt
+[WARNING] 01-Apr-26 10:36:45 - Error in model xder-rpc-casper
+[WARNING] 01-Apr-26 10:36:45 - No backbone specified. Using default backbone (set by the dataset).
+[WARNING] 01-Apr-26 10:36:45 - No default configuration found in models/config/gem.yaml.
+[WARNING] 01-Apr-26 10:36:45 - Default configuration file not found for dataset seq-mnist. Using the defaults specified in the dataset class (if available).
+[ERROR] 01-Apr-26 10:36:45 - Could not retrieve git hash.
+[INFO] 01-Apr-26 10:36:45 - 
+╔═══════════════════════ CONFIGURATION ═══════════════════════╗
+║ Basic arguments:
+║   • backbone: mnistmlp
+║   • dataset: seq-mnist
+║   • load_best_args: False
+║   • model: gem
+║
+║ Configuration arguments:
+║   • model_config: default
+║
+║ Model-specific arguments:
+║   • gamma: 0.500000
+║
+║ Backbone arguments:
+║   • mlp_hidden_size: 100
+║
+║ Management arguments:
+║   • base_path: C:\Users\yeoch\Documents\vscode\ai_project_2\continual_learning\raw_data/
+║   • checkpoint_path: ./checkpoints/
+║   • code_optimization: 0
+║   • debug_mode: False
+║   • device: 0
+║   • disable_log: False
+║   • distributed: no
+║   • enable_other_metrics: True
+║   • inference_only: False
+║   • non_verbose: True
+║   • permute_classes: False
+║   • results_path: split_mnist/gem
+║   • save_after_interrupt: True
+║   • save_checkpoint_mode: safe
+║   • seed: 123
+║
+║ Wandb arguments:
+║
+║ Experiment arguments:
+║   • batch_size: 64
+║   • eval_future: False
+║   • joint: 0
+║   • label_perc: 1.000000
+║   • label_perc_by_class: 1.000000
+║   • lr: 0.100000
+║
+║ Validation and fitting arguments:
+║   • early_stopping_epsilon: 0.000001
+║   • early_stopping_freq: 1
+║   • early_stopping_metric: loss
+║   • early_stopping_patience: 5
+║   • fitting_mode: epochs
+║   • n_epochs: 1
+║   • validation_mode: current
+║
+║ Optimizer and learning rate scheduler arguments:
+║   • drop_last: False
+║   • lr_milestones: []
+║   • optim_mom: 0.000000
+║   • optim_nesterov: False
+║   • optim_wd: 0.000000
+║   • optimizer: sgd
+║   • sched_multistep_lr_gamma: 0.100000
+║   • scheduler_mode: epoch
+║
+║ Noise arguments:
+║   • cache_path_noisy_labels: noisy_labels
+║   • disable_noisy_labels_cache: False
+║   • noise_rate: 0.000000
+║   • noise_type: symmetric
+║
+╚════════════════════════════════════════════════════════════╝
+[WARNING] 01-Apr-26 10:36:46 - Could not get memory from pynvml. Maybe try `pip install --force-reinstall gpustat`. module 'torch.cuda' has no attribute 'pynvml'
+[INFO] 01-Apr-26 10:36:46 - Using device cuda:0
+[INFO] 01-Apr-26 10:36:46 - `wandb_entity` and `wandb_project` not set. Disabling wandb.
+[INFO] 01-Apr-26 10:36:46 - Using backbone: mnistmlp
+[INFO] 01-Apr-26 10:36:46 - Using BaseMNISTMLP as backbone
+[INFO] 01-Apr-26 10:36:46 - No transform provided.
+[WARNING] 01-Apr-26 10:36:46 - `quadprog` not found, trying with `qpsolvers`. Note that the code is only tested with `quadprog`.
+
+STDERR:
+^^^^^^
+  File "C:\Users\yeoch\Documents\vscode\ai_project_2\continual_learning\mammoth\main.py", line 528, in initialize
+    model = get_model(args, backbone, loss, dataset.get_transform(), dataset=dataset)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\yeoch\Documents\vscode\ai_project_2\continual_learning\mammoth\models\__init__.py", line 68, in get_model
+    return get_model_class(args)(backbone, loss, args, transform, dataset)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\yeoch\Documents\vscode\ai_project_2\continual_learning\mammoth\models\gem.py", line 107, in __init__
+    raise Exception('QPSolvers is just a suggestion but does not work at the moment. To make it work, you need to set it up properly (and remove this exception).')
+Exception: QPSolvers is just a suggestion but does not work at the moment. To make it work, you need to set it up properly (and remove this exception).
+
+============================================================
+Model: gem | Seed: 456 | Time: 8.2s
+Command: C:\Users\yeoch\Documents\vscode\ai_project_2\continual_learning\.venv\Scripts\python.exe C:\Users\yeoch\Documents\vscode\ai_project_2\continual_learning\mammoth\main.py --model gem --dataset seq-mnist --seed 456 --device 0 --n_epochs 1 --base_path C:\Users\yeoch\Documents\vscode\ai_project_2\continual_learning\raw_data/ --results_path split_mnist/gem --enable_other_metrics 1 --non_verbose 1 --lr 0.1 --buffer_size 200 --gamma 0.5
+STDOUT:
+model puridiver
+[WARNING] 01-Apr-26 10:36:53 - Error in model second-stage-starprompt
+[WARNING] 01-Apr-26 10:36:53 - Error in model starprompt
+[WARNING] 01-Apr-26 10:36:53 - Error in model xder-rpc-casper
+[WARNING] 01-Apr-26 10:36:53 - No backbone specified. Using default backbone (set by the dataset).
+[WARNING] 01-Apr-26 10:36:53 - No default configuration found in models/config/gem.yaml.
+[WARNING] 01-Apr-26 10:36:53 - Default configuration file not found for dataset seq-mnist. Using the defaults specified in the dataset class (if available).
+[ERROR] 01-Apr-26 10:36:53 - Could not retrieve git hash.
+[INFO] 01-Apr-26 10:36:53 - 
+╔═══════════════════════ CONFIGURATION ═══════════════════════╗
+║ Basic arguments:
+║   • backbone: mnistmlp
+║   • dataset: seq-mnist
+║   • load_best_args: False
+║   • model: gem
+║
+║ Configuration arguments:
+║   • model_config: default
+║
+║ Model-specific arguments:
+║   • gamma: 0.500000
+║
+║ Backbone arguments:
+║   • mlp_hidden_size: 100
+║
+║ Management arguments:
+║   • base_path: C:\Users\yeoch\Documents\vscode\ai_project_2\continual_learning\raw_data/
+║   • checkpoint_path: ./checkpoints/
+║   • code_optimization: 0
+║   • debug_mode: False
+║   • device: 0
+║   • disable_log: False
+║   • distributed: no
+║   • enable_other_metrics: True
+║   • inference_only: False
+║   • non_verbose: True
+║   • permute_classes: False
+║   • results_path: split_mnist/gem
+║   • save_after_interrupt: True
+║   • save_checkpoint_mode: safe
+║   • seed: 456
+║
+║ Wandb arguments:
+║
+║ Experiment arguments:
+║   • batch_size: 64
+║   • eval_future: False
+║   • joint: 0
+║   • label_perc: 1.000000
+║   • label_perc_by_class: 1.000000
+║   • lr: 0.100000
+║
+║ Validation and fitting arguments:
+║   • early_stopping_epsilon: 0.000001
+║   • early_stopping_freq: 1
+║   • early_stopping_metric: loss
+║   • early_stopping_patience: 5
+║   • fitting_mode: epochs
+║   • n_epochs: 1
+║   • validation_mode: current
+║
+║ Optimizer and learning rate scheduler arguments:
+║   • drop_last: False
+║   • lr_milestones: []
+║   • optim_mom: 0.000000
+║   • optim_nesterov: False
+║   • optim_wd: 0.000000
+║   • optimizer: sgd
+║   • sched_multistep_lr_gamma: 0.100000
+║   • scheduler_mode: epoch
+║
+║ Noise arguments:
+║   • cache_path_noisy_labels: noisy_labels
+║   • disable_noisy_labels_cache: False
+║   • noise_rate: 0.000000
+║   • noise_type: symmetric
+║
+╚════════════════════════════════════════════════════════════╝
+[WARNING] 01-Apr-26 10:36:54 - Could not get memory from pynvml. Maybe try `pip install --force-reinstall gpustat`. module 'torch.cuda' has no attribute 'pynvml'
+[INFO] 01-Apr-26 10:36:54 - Using device cuda:0
+[INFO] 01-Apr-26 10:36:54 - `wandb_entity` and `wandb_project` not set. Disabling wandb.
+[INFO] 01-Apr-26 10:36:54 - Using backbone: mnistmlp
+[INFO] 01-Apr-26 10:36:54 - Using BaseMNISTMLP as backbone
+[INFO] 01-Apr-26 10:36:54 - No transform provided.
+[WARNING] 01-Apr-26 10:36:54 - `quadprog` not found, trying with `qpsolvers`. Note that the code is only tested with `quadprog`.
+
+STDERR:
+^^^^^^
+  File "C:\Users\yeoch\Documents\vscode\ai_project_2\continual_learning\mammoth\main.py", line 528, in initialize
+    model = get_model(args, backbone, loss, dataset.get_transform(), dataset=dataset)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\yeoch\Documents\vscode\ai_project_2\continual_learning\mammoth\models\__init__.py", line 68, in get_model
+    return get_model_class(args)(backbone, loss, args, transform, dataset)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\yeoch\Documents\vscode\ai_project_2\continual_learning\mammoth\models\gem.py", line 107, in __init__
+    raise Exception('QPSolvers is just a suggestion but does not work at the moment. To make it work, you need to set it up properly (and remove this exception).')
+Exception: QPSolvers is just a suggestion but does not work at the moment. To make it work, you need to set it up properly (and remove this exception).
+
+============================================================
+Model: gem | Seed: 789 | Time: 8.4s
+Command: C:\Users\yeoch\Documents\vscode\ai_project_2\continual_learning\.venv\Scripts\python.exe C:\Users\yeoch\Documents\vscode\ai_project_2\continual_learning\mammoth\main.py --model gem --dataset seq-mnist --seed 789 --device 0 --n_epochs 1 --base_path C:\Users\yeoch\Documents\vscode\ai_project_2\continual_learning\raw_data/ --results_path split_mnist/gem --enable_other_metrics 1 --non_verbose 1 --lr 0.1 --buffer_size 200 --gamma 0.5
+STDOUT:
+model puridiver
+[WARNING] 01-Apr-26 10:37:01 - Error in model second-stage-starprompt
+[WARNING] 01-Apr-26 10:37:02 - Error in model starprompt
+[WARNING] 01-Apr-26 10:37:02 - Error in model xder-rpc-casper
+[WARNING] 01-Apr-26 10:37:02 - No backbone specified. Using default backbone (set by the dataset).
+[WARNING] 01-Apr-26 10:37:02 - No default configuration found in models/config/gem.yaml.
+[WARNING] 01-Apr-26 10:37:02 - Default configuration file not found for dataset seq-mnist. Using the defaults specified in the dataset class (if available).
+[ERROR] 01-Apr-26 10:37:02 - Could not retrieve git hash.
+[INFO] 01-Apr-26 10:37:02 - 
+╔═══════════════════════ CONFIGURATION ═══════════════════════╗
+║ Basic arguments:
+║   • backbone: mnistmlp
+║   • dataset: seq-mnist
+║   • load_best_args: False
+║   • model: gem
+║
+║ Configuration arguments:
+║   • model_config: default
+║
+║ Model-specific arguments:
+║   • gamma: 0.500000
+║
+║ Backbone arguments:
+║   • mlp_hidden_size: 100
+║
+║ Management arguments:
+║   • base_path: C:\Users\yeoch\Documents\vscode\ai_project_2\continual_learning\raw_data/
+║   • checkpoint_path: ./checkpoints/
+║   • code_optimization: 0
+║   • debug_mode: False
+║   • device: 0
+║   • disable_log: False
+║   • distributed: no
+║   • enable_other_metrics: True
+║   • inference_only: False
+║   • non_verbose: True
+║   • permute_classes: False
+║   • results_path: split_mnist/gem
+║   • save_after_interrupt: True
+║   • save_checkpoint_mode: safe
+║   • seed: 789
+║
+║ Wandb arguments:
+║
+║ Experiment arguments:
+║   • batch_size: 64
+║   • eval_future: False
+║   • joint: 0
+║   • label_perc: 1.000000
+║   • label_perc_by_class: 1.000000
+║   • lr: 0.100000
+║
+║ Validation and fitting arguments:
+║   • early_stopping_epsilon: 0.000001
+║   • early_stopping_freq: 1
+║   • early_stopping_metric: loss
+║   • early_stopping_patience: 5
+║   • fitting_mode: epochs
+║   • n_epochs: 1
+║   • validation_mode: current
+║
+║ Optimizer and learning rate scheduler arguments:
+║   • drop_last: False
+║   • lr_milestones: []
+║   • optim_mom: 0.000000
+║   • optim_nesterov: False
+║   • optim_wd: 0.000000
+║   • optimizer: sgd
+║   • sched_multistep_lr_gamma: 0.100000
+║   • scheduler_mode: epoch
+║
+║ Noise arguments:
+║   • cache_path_noisy_labels: noisy_labels
+║   • disable_noisy_labels_cache: False
+║   • noise_rate: 0.000000
+║   • noise_type: symmetric
+║
+╚════════════════════════════════════════════════════════════╝
+[WARNING] 01-Apr-26 10:37:03 - Could not get memory from pynvml. Maybe try `pip install --force-reinstall gpustat`. module 'torch.cuda' has no attribute 'pynvml'
+[INFO] 01-Apr-26 10:37:03 - Using device cuda:0
+[INFO] 01-Apr-26 10:37:03 - `wandb_entity` and `wandb_project` not set. Disabling wandb.
+[INFO] 01-Apr-26 10:37:03 - Using backbone: mnistmlp
+[INFO] 01-Apr-26 10:37:03 - Using BaseMNISTMLP as backbone
+[INFO] 01-Apr-26 10:37:03 - No transform provided.
+[WARNING] 01-Apr-26 10:37:03 - `quadprog` not found, trying with `qpsolvers`. Note that the code is only tested with `quadprog`.
+
+STDERR:
+^^^^^^
+  File "C:\Users\yeoch\Documents\vscode\ai_project_2\continual_learning\mammoth\main.py", line 528, in initialize
+    model = get_model(args, backbone, loss, dataset.get_transform(), dataset=dataset)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\yeoch\Documents\vscode\ai_project_2\continual_learning\mammoth\models\__init__.py", line 68, in get_model
+    return get_model_class(args)(backbone, loss, args, transform, dataset)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\yeoch\Documents\vscode\ai_project_2\continual_learning\mammoth\models\gem.py", line 107, in __init__
+    raise Exception('QPSolvers is just a suggestion but does not work at the moment. To make it work, you need to set it up properly (and remove this exception).')
+Exception: QPSolvers is just a suggestion but does not work at the moment. To make it work, you need to set it up properly (and remove this exception).
+
+============================================================
+Model: gem | Seed: 1024 | Time: 8.4s
+Command: C:\Users\yeoch\Documents\vscode\ai_project_2\continual_learning\.venv\Scripts\python.exe C:\Users\yeoch\Documents\vscode\ai_project_2\continual_learning\mammoth\main.py --model gem --dataset seq-mnist --seed 1024 --device 0 --n_epochs 1 --base_path C:\Users\yeoch\Documents\vscode\ai_project_2\continual_learning\raw_data/ --results_path split_mnist/gem --enable_other_metrics 1 --non_verbose 1 --lr 0.1 --buffer_size 200 --gamma 0.5
+STDOUT:
+odel puridiver
+[WARNING] 01-Apr-26 10:37:10 - Error in model second-stage-starprompt
+[WARNING] 01-Apr-26 10:37:10 - Error in model starprompt
+[WARNING] 01-Apr-26 10:37:10 - Error in model xder-rpc-casper
+[WARNING] 01-Apr-26 10:37:10 - No backbone specified. Using default backbone (set by the dataset).
+[WARNING] 01-Apr-26 10:37:10 - No default configuration found in models/config/gem.yaml.
+[WARNING] 01-Apr-26 10:37:10 - Default configuration file not found for dataset seq-mnist. Using the defaults specified in the dataset class (if available).
+[ERROR] 01-Apr-26 10:37:10 - Could not retrieve git hash.
+[INFO] 01-Apr-26 10:37:10 - 
+╔═══════════════════════ CONFIGURATION ═══════════════════════╗
+║ Basic arguments:
+║   • backbone: mnistmlp
+║   • dataset: seq-mnist
+║   • load_best_args: False
+║   • model: gem
+║
+║ Configuration arguments:
+║   • model_config: default
+║
+║ Model-specific arguments:
+║   • gamma: 0.500000
+║
+║ Backbone arguments:
+║   • mlp_hidden_size: 100
+║
+║ Management arguments:
+║   • base_path: C:\Users\yeoch\Documents\vscode\ai_project_2\continual_learning\raw_data/
+║   • checkpoint_path: ./checkpoints/
+║   • code_optimization: 0
+║   • debug_mode: False
+║   • device: 0
+║   • disable_log: False
+║   • distributed: no
+║   • enable_other_metrics: True
+║   • inference_only: False
+║   • non_verbose: True
+║   • permute_classes: False
+║   • results_path: split_mnist/gem
+║   • save_after_interrupt: True
+║   • save_checkpoint_mode: safe
+║   • seed: 1024
+║
+║ Wandb arguments:
+║
+║ Experiment arguments:
+║   • batch_size: 64
+║   • eval_future: False
+║   • joint: 0
+║   • label_perc: 1.000000
+║   • label_perc_by_class: 1.000000
+║   • lr: 0.100000
+║
+║ Validation and fitting arguments:
+║   • early_stopping_epsilon: 0.000001
+║   • early_stopping_freq: 1
+║   • early_stopping_metric: loss
+║   • early_stopping_patience: 5
+║   • fitting_mode: epochs
+║   • n_epochs: 1
+║   • validation_mode: current
+║
+║ Optimizer and learning rate scheduler arguments:
+║   • drop_last: False
+║   • lr_milestones: []
+║   • optim_mom: 0.000000
+║   • optim_nesterov: False
+║   • optim_wd: 0.000000
+║   • optimizer: sgd
+║   • sched_multistep_lr_gamma: 0.100000
+║   • scheduler_mode: epoch
+║
+║ Noise arguments:
+║   • cache_path_noisy_labels: noisy_labels
+║   • disable_noisy_labels_cache: False
+║   • noise_rate: 0.000000
+║   • noise_type: symmetric
+║
+╚════════════════════════════════════════════════════════════╝
+[WARNING] 01-Apr-26 10:37:11 - Could not get memory from pynvml. Maybe try `pip install --force-reinstall gpustat`. module 'torch.cuda' has no attribute 'pynvml'
+[INFO] 01-Apr-26 10:37:11 - Using device cuda:0
+[INFO] 01-Apr-26 10:37:11 - `wandb_entity` and `wandb_project` not set. Disabling wandb.
+[INFO] 01-Apr-26 10:37:11 - Using backbone: mnistmlp
+[INFO] 01-Apr-26 10:37:11 - Using BaseMNISTMLP as backbone
+[INFO] 01-Apr-26 10:37:11 - No transform provided.
+[WARNING] 01-Apr-26 10:37:11 - `quadprog` not found, trying with `qpsolvers`. Note that the code is only tested with `quadprog`.
+
+STDERR:
+^^^^^^
+  File "C:\Users\yeoch\Documents\vscode\ai_project_2\continual_learning\mammoth\main.py", line 528, in initialize
+    model = get_model(args, backbone, loss, dataset.get_transform(), dataset=dataset)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\yeoch\Documents\vscode\ai_project_2\continual_learning\mammoth\models\__init__.py", line 68, in get_model
+    return get_model_class(args)(backbone, loss, args, transform, dataset)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\yeoch\Documents\vscode\ai_project_2\continual_learning\mammoth\models\gem.py", line 107, in __init__
+    raise Exception('QPSolvers is just a suggestion but does not work at the moment. To make it work, you need to set it up properly (and remove this exception).')
+Exception: QPSolvers is just a suggestion but does not work at the moment. To make it work, you need to set it up properly (and remove this exception).

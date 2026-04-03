@@ -1,0 +1,53 @@
+{
+  "timestamp": "20260401_103622",
+  "models": [
+    "gem"
+  ],
+  "seeds": [
+    42,
+    123,
+    456,
+    789,
+    1024
+  ],
+  "total": 5,
+  "completed": 0,
+  "failed": 5,
+  "results": [
+    {
+      "model": "gem",
+      "seed": 42,
+      "status": "failed",
+      "elapsed_sec": 16.8,
+      "returncode": 1
+    },
+    {
+      "model": "gem",
+      "seed": 123,
+      "status": "failed",
+      "elapsed_sec": 8.5,
+      "returncode": 1
+    },
+    {
+      "model": "gem",
+      "seed": 456,
+      "status": "failed",
+      "elapsed_sec": 8.2,
+      "returncode": 1
+    },
+    {
+      "model": "gem",
+      "seed": 789,
+      "status": "failed",
+      "elapsed_sec": 8.4,
+      "returncode": 1
+    },
+    {
+      "model": "gem",
+      "seed": 1024,
+      "status": "failed",
+      "elapsed_sec": 8.4,
+      "returncode": 1
+    }
+  ]
+}

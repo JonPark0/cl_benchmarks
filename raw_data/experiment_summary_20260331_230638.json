@@ -1,0 +1,305 @@
+{
+  "timestamp": "20260331_230638",
+  "models": [
+    "sgd",
+    "joint",
+    "ewc-on",
+    "si",
+    "er",
+    "derpp",
+    "lwf",
+    "gem"
+  ],
+  "seeds": [
+    42,
+    123,
+    456,
+    789,
+    1024
+  ],
+  "total": 40,
+  "completed": 35,
+  "failed": 5,
+  "results": [
+    {
+      "model": "sgd",
+      "seed": 42,
+      "status": "success",
+      "elapsed_sec": 439.2,
+      "returncode": 0
+    },
+    {
+      "model": "sgd",
+      "seed": 123,
+      "status": "success",
+      "elapsed_sec": 430.7,
+      "returncode": 0
+    },
+    {
+      "model": "sgd",
+      "seed": 456,
+      "status": "success",
+      "elapsed_sec": 451.8,
+      "returncode": 0
+    },
+    {
+      "model": "sgd",
+      "seed": 789,
+      "status": "success",
+      "elapsed_sec": 436.9,
+      "returncode": 0
+    },
+    {
+      "model": "sgd",
+      "seed": 1024,
+      "status": "success",
+      "elapsed_sec": 443.1,
+      "returncode": 0
+    },
+    {
+      "model": "joint",
+      "seed": 42,
+      "status": "success",
+      "elapsed_sec": 526.0,
+      "returncode": 0
+    },
+    {
+      "model": "joint",
+      "seed": 123,
+      "status": "success",
+      "elapsed_sec": 522.8,
+      "returncode": 0
+    },
+    {
+      "model": "joint",
+      "seed": 456,
+      "status": "success",
+      "elapsed_sec": 536.9,
+      "returncode": 0
+    },
+    {
+      "model": "joint",
+      "seed": 789,
+      "status": "success",
+      "elapsed_sec": 520.2,
+      "returncode": 0
+    },
+    {
+      "model": "joint",
+      "seed": 1024,
+      "status": "success",
+      "elapsed_sec": 514.4,
+      "returncode": 0
+    },
+    {
+      "model": "ewc-on",
+      "seed": 42,
+      "status": "success",
+      "elapsed_sec": 611.0,
+      "returncode": 0
+    },
+    {
+      "model": "ewc-on",
+      "seed": 123,
+      "status": "success",
+      "elapsed_sec": 605.4,
+      "returncode": 0
+    },
+    {
+      "model": "ewc-on",
+      "seed": 456,
+      "status": "success",
+      "elapsed_sec": 606.9,
+      "returncode": 0
+    },
+    {
+      "model": "ewc-on",
+      "seed": 789,
+      "status": "success",
+      "elapsed_sec": 606.2,
+      "returncode": 0
+    },
+    {
+      "model": "ewc-on",
+      "seed": 1024,
+      "status": "success",
+      "elapsed_sec": 608.0,
+      "returncode": 0
+    },
+    {
+      "model": "si",
+      "seed": 42,
+      "status": "success",
+      "elapsed_sec": 424.8,
+      "returncode": 0
+    },
+    {
+      "model": "si",
+      "seed": 123,
+      "status": "success",
+      "elapsed_sec": 424.3,
+      "returncode": 0
+    },
+    {
+      "model": "si",
+      "seed": 456,
+      "status": "success",
+      "elapsed_sec": 424.9,
+      "returncode": 0
+    },
+    {
+      "model": "si",
+      "seed": 789,
+      "status": "success",
+      "elapsed_sec": 425.2,
+      "returncode": 0
+    },
+    {
+      "model": "si",
+      "seed": 1024,
+      "status": "success",
+      "elapsed_sec": 425.6,
+      "returncode": 0
+    },
+    {
+      "model": "er",
+      "seed": 42,
+      "status": "success",
+      "elapsed_sec": 425.7,
+      "returncode": 0
+    },
+    {
+      "model": "er",
+      "seed": 123,
+      "status": "success",
+      "elapsed_sec": 424.9,
+      "returncode": 0
+    },
+    {
+      "model": "er",
+      "seed": 456,
+      "status": "success",
+      "elapsed_sec": 427.9,
+      "returncode": 0
+    },
+    {
+      "model": "er",
+      "seed": 789,
+      "status": "success",
+      "elapsed_sec": 425.6,
+      "returncode": 0
+    },
+    {
+      "model": "er",
+      "seed": 1024,
+      "status": "success",
+      "elapsed_sec": 425.0,
+      "returncode": 0
+    },
+    {
+      "model": "derpp",
+      "seed": 42,
+      "status": "success",
+      "elapsed_sec": 428.6,
+      "returncode": 0
+    },
+    {
+      "model": "derpp",
+      "seed": 123,
+      "status": "success",
+      "elapsed_sec": 427.6,
+      "returncode": 0
+    },
+    {
+      "model": "derpp",
+      "seed": 456,
+      "status": "success",
+      "elapsed_sec": 426.5,
+      "returncode": 0
+    },
+    {
+      "model": "derpp",
+      "seed": 789,
+      "status": "success",
+      "elapsed_sec": 426.6,
+      "returncode": 0
+    },
+    {
+      "model": "derpp",
+      "seed": 1024,
+      "status": "success",
+      "elapsed_sec": 427.0,
+      "returncode": 0
+    },
+    {
+      "model": "lwf",
+      "seed": 42,
+      "status": "success",
+      "elapsed_sec": 505.2,
+      "returncode": 0
+    },
+    {
+      "model": "lwf",
+      "seed": 123,
+      "status": "success",
+      "elapsed_sec": 503.1,
+      "returncode": 0
+    },
+    {
+      "model": "lwf",
+      "seed": 456,
+      "status": "success",
+      "elapsed_sec": 502.2,
+      "returncode": 0
+    },
+    {
+      "model": "lwf",
+      "seed": 789,
+      "status": "success",
+      "elapsed_sec": 501.2,
+      "returncode": 0
+    },
+    {
+      "model": "lwf",
+      "seed": 1024,
+      "status": "success",
+      "elapsed_sec": 503.6,
+      "returncode": 0
+    },
+    {
+      "model": "gem",
+      "seed": 42,
+      "status": "failed",
+      "elapsed_sec": 7.4,
+      "returncode": 1
+    },
+    {
+      "model": "gem",
+      "seed": 123,
+      "status": "failed",
+      "elapsed_sec": 7.3,
+      "returncode": 1
+    },
+    {
+      "model": "gem",
+      "seed": 456,
+      "status": "failed",
+      "elapsed_sec": 7.3,
+      "returncode": 1
+    },
+    {
+      "model": "gem",
+      "seed": 789,
+      "status": "failed",
+      "elapsed_sec": 7.4,
+      "returncode": 1
+    },
+    {
+      "model": "gem",
+      "seed": 1024,
+      "status": "failed",
+      "elapsed_sec": 7.0,
+      "returncode": 1
+    }
+  ]
+}

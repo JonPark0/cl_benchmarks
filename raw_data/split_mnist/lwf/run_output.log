@@ -1,0 +1,225 @@
+
+============================================================
+Model: lwf | Seed: 42 | Time: 505.2s
+Command: C:\Users\yeoch\Documents\vscode\ai_project_2\continual_learning\.venv\Scripts\python.exe C:\Users\yeoch\Documents\vscode\ai_project_2\continual_learning\mammoth\main.py --model lwf --dataset seq-mnist --seed 42 --device 0 --n_epochs 1 --base_path C:\Users\yeoch\Documents\vscode\ai_project_2\continual_learning\raw_data/ --results_path split_mnist/lwf --enable_other_metrics 1 --non_verbose 1 --lr 0.1 --alpha 1.0 --softmax_temp 2.0
+STDOUT:
+s for the dataloader.
+[INFO] 01-Apr-26 03:04:14 - Evaluating model before task (for Forward Transfer metric)...
+[INFO] 01-Apr-26 03:04:40 - Task 1
+STOP ITERATION
+[INFO] 01-Apr-26 03:05:09 - Accuracy for 1 task(s): 	 [Class-IL]: 99.95 % 	 [Task-IL]: 99.95 %
+[INFO] 01-Apr-26 03:05:09 - 	Raw accuracy values: Class-IL [99.95271867612293] | Task-IL [99.95271867612293]
+[INFO] 01-Apr-26 03:05:09 - Using 4 workers for the dataloader.
+[INFO] 01-Apr-26 03:05:09 - Using 4 workers for the dataloader.
+[INFO] 01-Apr-26 03:05:09 - Evaluating model before task (for Forward Transfer metric)...
+[INFO] 01-Apr-26 03:06:05 - Task 2
+STOP ITERATION
+[INFO] 01-Apr-26 03:06:44 - Accuracy for 2 task(s): 	 [Class-IL]: 48.97 % 	 [Task-IL]: 98.95 %
+[INFO] 01-Apr-26 03:06:44 - 	Raw accuracy values: Class-IL [0.0, 97.94319294809011] | Task-IL [99.95271867612293, 97.94319294809011]
+[INFO] 01-Apr-26 03:06:44 - Using 4 workers for the dataloader.
+[INFO] 01-Apr-26 03:06:44 - Using 4 workers for the dataloader.
+[INFO] 01-Apr-26 03:06:44 - Evaluating model before task (for Forward Transfer metric)...
+[INFO] 01-Apr-26 03:07:40 - Task 3
+STOP ITERATION
+[INFO] 01-Apr-26 03:08:29 - Accuracy for 3 task(s): 	 [Class-IL]: 33.14 % 	 [Task-IL]: 99.3 %
+[INFO] 01-Apr-26 03:08:29 - 	Raw accuracy values: Class-IL [0.0, 0.0, 99.41302027748132] | Task-IL [99.95271867612293, 98.53085210577865, 99.41302027748132]
+[INFO] 01-Apr-26 03:08:29 - Using 4 workers for the dataloader.
+[INFO] 01-Apr-26 03:08:29 - Using 4 workers for the dataloader.
+[INFO] 01-Apr-26 03:08:29 - Evaluating model before task (for Forward Transfer metric)...
+[INFO] 01-Apr-26 03:09:26 - Task 4
+STOP ITERATION
+[INFO] 01-Apr-26 03:10:25 - Accuracy for 4 task(s): 	 [Class-IL]: 24.89 % 	 [Task-IL]: 98.93 %
+[INFO] 01-Apr-26 03:10:25 - 	Raw accuracy values: Class-IL [0.0, 0.0, 0.16008537886872998, 99.39577039274926] | Task-IL [99.8581560283688, 97.20861900097944, 99.2529348986126, 99.39577039274926]
+[INFO] 01-Apr-26 03:10:25 - Using 4 workers for the dataloader.
+[INFO] 01-Apr-26 03:10:25 - Using 4 workers for the dataloader.
+[INFO] 01-Apr-26 03:10:25 - Evaluating model before task (for Forward Transfer metric)...
+[INFO] 01-Apr-26 03:11:22 - Task 5
+STOP ITERATION
+[INFO] 01-Apr-26 03:12:31 - Accuracy for 5 task(s): 	 [Class-IL]: 19.75 % 	 [Task-IL]: 98.25 %
+[INFO] 01-Apr-26 03:12:31 - 	Raw accuracy values: Class-IL [0.0, 0.0, 0.0, 0.8056394763343404, 97.93242561775088] | Task-IL [99.8581560283688, 95.0048971596474, 99.1462113127001, 99.29506545820746, 97.93242561775088]
+[INFO] 01-Apr-26 03:12:31 - System stats:
+[INFO] 01-Apr-26 03:12:31 - 	Initial GPU 0 memory usage: 0.34 MB
+[INFO] 01-Apr-26 03:12:31 - 	Average GPU 0 memory usage: 18.18 MB
+[INFO] 01-Apr-26 03:12:31 - 	Final GPU 0 memory usage: 18.18 MB
+[INFO] 01-Apr-26 03:12:31 - 	Max GPU 0 memory usage: 18.18 MB
+[INFO] 01-Apr-26 03:12:31 - Logging results and arguments in C:/Users/yeoch/Documents/vscode/ai_project_2/continual_learning/raw_data/split_mnist/lwf/class-il/seq-mnist/lwf/logs.pyd
+
+============================================================
+Model: lwf | Seed: 123 | Time: 503.1s
+Command: C:\Users\yeoch\Documents\vscode\ai_project_2\continual_learning\.venv\Scripts\python.exe C:\Users\yeoch\Documents\vscode\ai_project_2\continual_learning\mammoth\main.py --model lwf --dataset seq-mnist --seed 123 --device 0 --n_epochs 1 --base_path C:\Users\yeoch\Documents\vscode\ai_project_2\continual_learning\raw_data/ --results_path split_mnist/lwf --enable_other_metrics 1 --non_verbose 1 --lr 0.1 --alpha 1.0 --softmax_temp 2.0
+STDOUT:
+ing 4 workers for the dataloader.
+[INFO] 01-Apr-26 03:12:39 - Evaluating model before task (for Forward Transfer metric)...
+[INFO] 01-Apr-26 03:13:05 - Task 1
+STOP ITERATION
+[INFO] 01-Apr-26 03:13:33 - Accuracy for 1 task(s): 	 [Class-IL]: 99.95 % 	 [Task-IL]: 99.95 %
+[INFO] 01-Apr-26 03:13:33 - 	Raw accuracy values: Class-IL [99.95271867612293] | Task-IL [99.95271867612293]
+[INFO] 01-Apr-26 03:13:33 - Using 4 workers for the dataloader.
+[INFO] 01-Apr-26 03:13:33 - Using 4 workers for the dataloader.
+[INFO] 01-Apr-26 03:13:33 - Evaluating model before task (for Forward Transfer metric)...
+[INFO] 01-Apr-26 03:14:30 - Task 2
+STOP ITERATION
+[INFO] 01-Apr-26 03:15:08 - Accuracy for 2 task(s): 	 [Class-IL]: 48.92 % 	 [Task-IL]: 98.9 %
+[INFO] 01-Apr-26 03:15:08 - 	Raw accuracy values: Class-IL [0.0, 97.84524975514202] | Task-IL [99.95271867612293, 97.84524975514202]
+[INFO] 01-Apr-26 03:15:09 - Using 4 workers for the dataloader.
+[INFO] 01-Apr-26 03:15:09 - Using 4 workers for the dataloader.
+[INFO] 01-Apr-26 03:15:09 - Evaluating model before task (for Forward Transfer metric)...
+[INFO] 01-Apr-26 03:16:04 - Task 3
+STOP ITERATION
+[INFO] 01-Apr-26 03:16:53 - Accuracy for 3 task(s): 	 [Class-IL]: 33.26 % 	 [Task-IL]: 99.15 %
+[INFO] 01-Apr-26 03:16:53 - 	Raw accuracy values: Class-IL [0.0, 0.0, 99.78655282817502] | Task-IL [99.90543735224587, 97.74730656219393, 99.78655282817502]
+[INFO] 01-Apr-26 03:16:53 - Using 4 workers for the dataloader.
+[INFO] 01-Apr-26 03:16:53 - Using 4 workers for the dataloader.
+[INFO] 01-Apr-26 03:16:53 - Evaluating model before task (for Forward Transfer metric)...
+[INFO] 01-Apr-26 03:17:50 - Task 4
+STOP ITERATION
+[INFO] 01-Apr-26 03:18:49 - Accuracy for 4 task(s): 	 [Class-IL]: 26.47 % 	 [Task-IL]: 98.89 %
+[INFO] 01-Apr-26 03:18:49 - 	Raw accuracy values: Class-IL [0.0, 0.0, 6.350053361792956, 99.54682779456193] | Task-IL [99.90543735224587, 96.76787463271303, 99.35965848452508, 99.54682779456193]
+[INFO] 01-Apr-26 03:18:49 - Using 4 workers for the dataloader.
+[INFO] 01-Apr-26 03:18:49 - Using 4 workers for the dataloader.
+[INFO] 01-Apr-26 03:18:49 - Evaluating model before task (for Forward Transfer metric)...
+[INFO] 01-Apr-26 03:19:45 - Task 5
+STOP ITERATION
+[INFO] 01-Apr-26 03:20:54 - Accuracy for 5 task(s): 	 [Class-IL]: 19.67 % 	 [Task-IL]: 98.69 %
+[INFO] 01-Apr-26 03:20:54 - 	Raw accuracy values: Class-IL [0.0, 0.0, 0.0, 0.0, 98.33585476550681] | Task-IL [99.81087470449172, 96.22918707149853, 99.57310565635005, 99.49647532729104, 98.33585476550681]
+[INFO] 01-Apr-26 03:20:54 - System stats:
+[INFO] 01-Apr-26 03:20:54 - 	Initial GPU 0 memory usage: 0.34 MB
+[INFO] 01-Apr-26 03:20:54 - 	Average GPU 0 memory usage: 18.18 MB
+[INFO] 01-Apr-26 03:20:54 - 	Final GPU 0 memory usage: 18.18 MB
+[INFO] 01-Apr-26 03:20:54 - 	Max GPU 0 memory usage: 18.18 MB
+[INFO] 01-Apr-26 03:20:54 - Logging results and arguments in C:/Users/yeoch/Documents/vscode/ai_project_2/continual_learning/raw_data/split_mnist/lwf/class-il/seq-mnist/lwf/logs.pyd
+
+============================================================
+Model: lwf | Seed: 456 | Time: 502.2s
+Command: C:\Users\yeoch\Documents\vscode\ai_project_2\continual_learning\.venv\Scripts\python.exe C:\Users\yeoch\Documents\vscode\ai_project_2\continual_learning\mammoth\main.py --model lwf --dataset seq-mnist --seed 456 --device 0 --n_epochs 1 --base_path C:\Users\yeoch\Documents\vscode\ai_project_2\continual_learning\raw_data/ --results_path split_mnist/lwf --enable_other_metrics 1 --non_verbose 1 --lr 0.1 --alpha 1.0 --softmax_temp 2.0
+STDOUT:
+pr-26 03:21:02 - Using 4 workers for the dataloader.
+[INFO] 01-Apr-26 03:21:02 - Evaluating model before task (for Forward Transfer metric)...
+[INFO] 01-Apr-26 03:21:28 - Task 1
+STOP ITERATION
+[INFO] 01-Apr-26 03:21:56 - Accuracy for 1 task(s): 	 [Class-IL]: 99.86 % 	 [Task-IL]: 99.86 %
+[INFO] 01-Apr-26 03:21:56 - 	Raw accuracy values: Class-IL [99.8581560283688] | Task-IL [99.8581560283688]
+[INFO] 01-Apr-26 03:21:56 - Using 4 workers for the dataloader.
+[INFO] 01-Apr-26 03:21:56 - Using 4 workers for the dataloader.
+[INFO] 01-Apr-26 03:21:56 - Evaluating model before task (for Forward Transfer metric)...
+[INFO] 01-Apr-26 03:22:53 - Task 2
+STOP ITERATION
+[INFO] 01-Apr-26 03:23:32 - Accuracy for 2 task(s): 	 [Class-IL]: 49.17 % 	 [Task-IL]: 99.12 %
+[INFO] 01-Apr-26 03:23:32 - 	Raw accuracy values: Class-IL [0.0, 98.33496571988248] | Task-IL [99.90543735224587, 98.33496571988248]
+[INFO] 01-Apr-26 03:23:32 - Using 4 workers for the dataloader.
+[INFO] 01-Apr-26 03:23:32 - Using 4 workers for the dataloader.
+[INFO] 01-Apr-26 03:23:32 - Evaluating model before task (for Forward Transfer metric)...
+[INFO] 01-Apr-26 03:24:28 - Task 3
+STOP ITERATION
+[INFO] 01-Apr-26 03:25:17 - Accuracy for 3 task(s): 	 [Class-IL]: 33.21 % 	 [Task-IL]: 99.29 %
+[INFO] 01-Apr-26 03:25:17 - 	Raw accuracy values: Class-IL [0.0, 0.0, 99.6264674493063] | Task-IL [99.90543735224587, 98.33496571988248, 99.6264674493063]
+[INFO] 01-Apr-26 03:25:17 - Using 4 workers for the dataloader.
+[INFO] 01-Apr-26 03:25:17 - Using 4 workers for the dataloader.
+[INFO] 01-Apr-26 03:25:17 - Evaluating model before task (for Forward Transfer metric)...
+[INFO] 01-Apr-26 03:26:12 - Task 4
+STOP ITERATION
+[INFO] 01-Apr-26 03:27:11 - Accuracy for 4 task(s): 	 [Class-IL]: 24.86 % 	 [Task-IL]: 98.93 %
+[INFO] 01-Apr-26 03:27:11 - 	Raw accuracy values: Class-IL [0.0, 0.0, 0.0, 99.44612286002014] | Task-IL [99.81087470449172, 97.25759059745349, 99.19957310565634, 99.44612286002014]
+[INFO] 01-Apr-26 03:27:11 - Using 4 workers for the dataloader.
+[INFO] 01-Apr-26 03:27:11 - Using 4 workers for the dataloader.
+[INFO] 01-Apr-26 03:27:11 - Evaluating model before task (for Forward Transfer metric)...
+[INFO] 01-Apr-26 03:28:07 - Task 5
+STOP ITERATION
+[INFO] 01-Apr-26 03:29:16 - Accuracy for 5 task(s): 	 [Class-IL]: 19.6 % 	 [Task-IL]: 96.93 %
+[INFO] 01-Apr-26 03:29:16 - 	Raw accuracy values: Class-IL [0.0, 0.0, 0.0, 0.0, 97.98285426122038] | Task-IL [95.36643026004728, 95.34769833496573, 97.2785485592316, 98.69083585095669, 97.98285426122038]
+[INFO] 01-Apr-26 03:29:16 - System stats:
+[INFO] 01-Apr-26 03:29:16 - 	Initial GPU 0 memory usage: 0.34 MB
+[INFO] 01-Apr-26 03:29:16 - 	Average GPU 0 memory usage: 18.18 MB
+[INFO] 01-Apr-26 03:29:16 - 	Final GPU 0 memory usage: 18.18 MB
+[INFO] 01-Apr-26 03:29:16 - 	Max GPU 0 memory usage: 18.18 MB
+[INFO] 01-Apr-26 03:29:16 - Logging results and arguments in C:/Users/yeoch/Documents/vscode/ai_project_2/continual_learning/raw_data/split_mnist/lwf/class-il/seq-mnist/lwf/logs.pyd
+
+============================================================
+Model: lwf | Seed: 789 | Time: 501.2s
+Command: C:\Users\yeoch\Documents\vscode\ai_project_2\continual_learning\.venv\Scripts\python.exe C:\Users\yeoch\Documents\vscode\ai_project_2\continual_learning\mammoth\main.py --model lwf --dataset seq-mnist --seed 789 --device 0 --n_epochs 1 --base_path C:\Users\yeoch\Documents\vscode\ai_project_2\continual_learning\raw_data/ --results_path split_mnist/lwf --enable_other_metrics 1 --non_verbose 1 --lr 0.1 --alpha 1.0 --softmax_temp 2.0
+STDOUT:
+- Using 4 workers for the dataloader.
+[INFO] 01-Apr-26 03:29:24 - Evaluating model before task (for Forward Transfer metric)...
+[INFO] 01-Apr-26 03:29:50 - Task 1
+STOP ITERATION
+[INFO] 01-Apr-26 03:30:18 - Accuracy for 1 task(s): 	 [Class-IL]: 99.91 % 	 [Task-IL]: 99.91 %
+[INFO] 01-Apr-26 03:30:18 - 	Raw accuracy values: Class-IL [99.90543735224587] | Task-IL [99.90543735224587]
+[INFO] 01-Apr-26 03:30:19 - Using 4 workers for the dataloader.
+[INFO] 01-Apr-26 03:30:19 - Using 4 workers for the dataloader.
+[INFO] 01-Apr-26 03:30:19 - Evaluating model before task (for Forward Transfer metric)...
+[INFO] 01-Apr-26 03:31:15 - Task 2
+STOP ITERATION
+[INFO] 01-Apr-26 03:31:54 - Accuracy for 2 task(s): 	 [Class-IL]: 49.02 % 	 [Task-IL]: 98.97 %
+[INFO] 01-Apr-26 03:31:54 - 	Raw accuracy values: Class-IL [0.0, 98.0411361410382] | Task-IL [99.90543735224587, 98.0411361410382]
+[INFO] 01-Apr-26 03:31:54 - Using 4 workers for the dataloader.
+[INFO] 01-Apr-26 03:31:54 - Using 4 workers for the dataloader.
+[INFO] 01-Apr-26 03:31:54 - Evaluating model before task (for Forward Transfer metric)...
+[INFO] 01-Apr-26 03:32:50 - Task 3
+STOP ITERATION
+[INFO] 01-Apr-26 03:33:36 - Accuracy for 3 task(s): 	 [Class-IL]: 33.17 % 	 [Task-IL]: 99.16 %
+[INFO] 01-Apr-26 03:33:36 - 	Raw accuracy values: Class-IL [0.0, 0.0, 99.5197438633938] | Task-IL [99.90543735224587, 98.0411361410382, 99.5197438633938]
+[INFO] 01-Apr-26 03:33:36 - Using 4 workers for the dataloader.
+[INFO] 01-Apr-26 03:33:36 - Using 4 workers for the dataloader.
+[INFO] 01-Apr-26 03:33:36 - Evaluating model before task (for Forward Transfer metric)...
+[INFO] 01-Apr-26 03:34:33 - Task 4
+STOP ITERATION
+[INFO] 01-Apr-26 03:35:32 - Accuracy for 4 task(s): 	 [Class-IL]: 24.93 % 	 [Task-IL]: 98.86 %
+[INFO] 01-Apr-26 03:35:32 - 	Raw accuracy values: Class-IL [0.0, 0.0, 0.10672358591248667, 99.59718026183283] | Task-IL [99.90543735224587, 97.01273261508325, 98.93276414087512, 99.59718026183283]
+[INFO] 01-Apr-26 03:35:32 - Using 4 workers for the dataloader.
+[INFO] 01-Apr-26 03:35:32 - Using 4 workers for the dataloader.
+[INFO] 01-Apr-26 03:35:32 - Evaluating model before task (for Forward Transfer metric)...
+[INFO] 01-Apr-26 03:36:29 - Task 5
+STOP ITERATION
+[INFO] 01-Apr-26 03:37:38 - Accuracy for 5 task(s): 	 [Class-IL]: 18.67 % 	 [Task-IL]: 95.72 %
+[INFO] 01-Apr-26 03:37:38 - 	Raw accuracy values: Class-IL [0.0, 0.0, 0.0, 0.0, 93.34341906202724] | Task-IL [99.00709219858156, 93.97649363369246, 93.7033084311633, 98.5901309164149, 93.34341906202724]
+[INFO] 01-Apr-26 03:37:38 - System stats:
+[INFO] 01-Apr-26 03:37:38 - 	Initial GPU 0 memory usage: 0.34 MB
+[INFO] 01-Apr-26 03:37:38 - 	Average GPU 0 memory usage: 18.18 MB
+[INFO] 01-Apr-26 03:37:38 - 	Final GPU 0 memory usage: 18.18 MB
+[INFO] 01-Apr-26 03:37:38 - 	Max GPU 0 memory usage: 18.18 MB
+[INFO] 01-Apr-26 03:37:38 - Logging results and arguments in C:/Users/yeoch/Documents/vscode/ai_project_2/continual_learning/raw_data/split_mnist/lwf/class-il/seq-mnist/lwf/logs.pyd
+
+============================================================
+Model: lwf | Seed: 1024 | Time: 503.6s
+Command: C:\Users\yeoch\Documents\vscode\ai_project_2\continual_learning\.venv\Scripts\python.exe C:\Users\yeoch\Documents\vscode\ai_project_2\continual_learning\mammoth\main.py --model lwf --dataset seq-mnist --seed 1024 --device 0 --n_epochs 1 --base_path C:\Users\yeoch\Documents\vscode\ai_project_2\continual_learning\raw_data/ --results_path split_mnist/lwf --enable_other_metrics 1 --non_verbose 1 --lr 0.1 --alpha 1.0 --softmax_temp 2.0
+STDOUT:
+sing 4 workers for the dataloader.
+[INFO] 01-Apr-26 03:37:46 - Evaluating model before task (for Forward Transfer metric)...
+[INFO] 01-Apr-26 03:38:11 - Task 1
+STOP ITERATION
+[INFO] 01-Apr-26 03:38:40 - Accuracy for 1 task(s): 	 [Class-IL]: 99.91 % 	 [Task-IL]: 99.91 %
+[INFO] 01-Apr-26 03:38:40 - 	Raw accuracy values: Class-IL [99.90543735224587] | Task-IL [99.90543735224587]
+[INFO] 01-Apr-26 03:38:40 - Using 4 workers for the dataloader.
+[INFO] 01-Apr-26 03:38:40 - Using 4 workers for the dataloader.
+[INFO] 01-Apr-26 03:38:40 - Evaluating model before task (for Forward Transfer metric)...
+[INFO] 01-Apr-26 03:39:37 - Task 2
+STOP ITERATION
+[INFO] 01-Apr-26 03:40:15 - Accuracy for 2 task(s): 	 [Class-IL]: 49.0 % 	 [Task-IL]: 98.95 %
+[INFO] 01-Apr-26 03:40:15 - 	Raw accuracy values: Class-IL [0.0, 97.99216454456415] | Task-IL [99.90543735224587, 97.99216454456415]
+[INFO] 01-Apr-26 03:40:15 - Using 4 workers for the dataloader.
+[INFO] 01-Apr-26 03:40:15 - Using 4 workers for the dataloader.
+[INFO] 01-Apr-26 03:40:15 - Evaluating model before task (for Forward Transfer metric)...
+[INFO] 01-Apr-26 03:41:12 - Task 3
+STOP ITERATION
+[INFO] 01-Apr-26 03:42:01 - Accuracy for 3 task(s): 	 [Class-IL]: 33.24 % 	 [Task-IL]: 99.16 %
+[INFO] 01-Apr-26 03:42:01 - 	Raw accuracy values: Class-IL [0.0, 0.0, 99.73319103521878] | Task-IL [99.90543735224587, 97.84524975514202, 99.73319103521878]
+[INFO] 01-Apr-26 03:42:01 - Using 4 workers for the dataloader.
+[INFO] 01-Apr-26 03:42:01 - Using 4 workers for the dataloader.
+[INFO] 01-Apr-26 03:42:01 - Evaluating model before task (for Forward Transfer metric)...
+[INFO] 01-Apr-26 03:42:57 - Task 4
+STOP ITERATION
+[INFO] 01-Apr-26 03:43:56 - Accuracy for 4 task(s): 	 [Class-IL]: 27.23 % 	 [Task-IL]: 99.25 %
+[INFO] 01-Apr-26 03:43:56 - 	Raw accuracy values: Class-IL [0.0, 0.0, 9.28495197438634, 99.64753272910373] | Task-IL [99.81087470449172, 97.84524975514202, 99.67982924226254, 99.64753272910373]
+[INFO] 01-Apr-26 03:43:56 - Using 4 workers for the dataloader.
+[INFO] 01-Apr-26 03:43:56 - Using 4 workers for the dataloader.
+[INFO] 01-Apr-26 03:43:56 - Evaluating model before task (for Forward Transfer metric)...
+[INFO] 01-Apr-26 03:44:52 - Task 5
+STOP ITERATION
+[INFO] 01-Apr-26 03:46:01 - Accuracy for 5 task(s): 	 [Class-IL]: 19.04 % 	 [Task-IL]: 97.16 %
+[INFO] 01-Apr-26 03:46:01 - 	Raw accuracy values: Class-IL [0.0, 0.0, 0.0, 0.0, 95.20927887039838] | Task-IL [97.96690307328605, 95.39666993143977, 97.97225186766275, 99.24471299093656, 95.20927887039838]
+[INFO] 01-Apr-26 03:46:01 - System stats:
+[INFO] 01-Apr-26 03:46:01 - 	Initial GPU 0 memory usage: 0.34 MB
+[INFO] 01-Apr-26 03:46:01 - 	Average GPU 0 memory usage: 18.18 MB
+[INFO] 01-Apr-26 03:46:01 - 	Final GPU 0 memory usage: 18.18 MB
+[INFO] 01-Apr-26 03:46:01 - 	Max GPU 0 memory usage: 18.18 MB
+[INFO] 01-Apr-26 03:46:01 - Logging results and arguments in C:/Users/yeoch/Documents/vscode/ai_project_2/continual_learning/raw_data/split_mnist/lwf/class-il/seq-mnist/lwf/logs.pyd

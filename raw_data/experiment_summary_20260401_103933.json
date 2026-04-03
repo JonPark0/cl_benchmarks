@@ -1,0 +1,53 @@
+{
+  "timestamp": "20260401_103933",
+  "models": [
+    "agem"
+  ],
+  "seeds": [
+    42,
+    123,
+    456,
+    789,
+    1024
+  ],
+  "total": 5,
+  "completed": 5,
+  "failed": 0,
+  "results": [
+    {
+      "model": "agem",
+      "seed": 42,
+      "status": "success",
+      "elapsed_sec": 567.8,
+      "returncode": 0
+    },
+    {
+      "model": "agem",
+      "seed": 123,
+      "status": "success",
+      "elapsed_sec": 523.5,
+      "returncode": 0
+    },
+    {
+      "model": "agem",
+      "seed": 456,
+      "status": "success",
+      "elapsed_sec": 515.6,
+      "returncode": 0
+    },
+    {
+      "model": "agem",
+      "seed": 789,
+      "status": "success",
+      "elapsed_sec": 513.7,
+      "returncode": 0
+    },
+    {
+      "model": "agem",
+      "seed": 1024,
+      "status": "success",
+      "elapsed_sec": 513.7,
+      "returncode": 0
+    }
+  ]
+}
