@@ -1,0 +1,430 @@
+{
+  "type": "epoch_sweep",
+  "timestamp": "20260405_074044",
+  "epoch_values": [
+    10
+  ],
+  "models": [
+    "sgd",
+    "joint",
+    "ewc-on",
+    "si",
+    "er",
+    "derpp",
+    "lwf",
+    "agem"
+  ],
+  "seeds": [
+    42,
+    123,
+    456,
+    789,
+    1024
+  ],
+  "buffer_size": 200,
+  "total": 40,
+  "success": 40,
+  "failed": 0,
+  "results": [
+    {
+      "model": "sgd",
+      "seed": 42,
+      "status": "success",
+      "elapsed_sec": 1280.8,
+      "returncode": 0,
+      "sweep_type": "epoch",
+      "sweep_value": 10,
+      "gpu_mem_mb": 0
+    },
+    {
+      "model": "sgd",
+      "seed": 123,
+      "status": "success",
+      "elapsed_sec": 1481.3,
+      "returncode": 0,
+      "sweep_type": "epoch",
+      "sweep_value": 10,
+      "gpu_mem_mb": 0
+    },
+    {
+      "model": "sgd",
+      "seed": 456,
+      "status": "success",
+      "elapsed_sec": 1392.9,
+      "returncode": 0,
+      "sweep_type": "epoch",
+      "sweep_value": 10,
+      "gpu_mem_mb": 0
+    },
+    {
+      "model": "sgd",
+      "seed": 789,
+      "status": "success",
+      "elapsed_sec": 1275.5,
+      "returncode": 0,
+      "sweep_type": "epoch",
+      "sweep_value": 10,
+      "gpu_mem_mb": 0
+    },
+    {
+      "model": "sgd",
+      "seed": 1024,
+      "status": "success",
+      "elapsed_sec": 1274.7,
+      "returncode": 0,
+      "sweep_type": "epoch",
+      "sweep_value": 10,
+      "gpu_mem_mb": 0
+    },
+    {
+      "model": "joint",
+      "seed": 42,
+      "status": "success",
+      "elapsed_sec": 1396.7,
+      "returncode": 0,
+      "sweep_type": "epoch",
+      "sweep_value": 10,
+      "gpu_mem_mb": 0
+    },
+    {
+      "model": "joint",
+      "seed": 123,
+      "status": "success",
+      "elapsed_sec": 1397.7,
+      "returncode": 0,
+      "sweep_type": "epoch",
+      "sweep_value": 10,
+      "gpu_mem_mb": 0
+    },
+    {
+      "model": "joint",
+      "seed": 456,
+      "status": "success",
+      "elapsed_sec": 1419.0,
+      "returncode": 0,
+      "sweep_type": "epoch",
+      "sweep_value": 10,
+      "gpu_mem_mb": 0
+    },
+    {
+      "model": "joint",
+      "seed": 789,
+      "status": "success",
+      "elapsed_sec": 1403.9,
+      "returncode": 0,
+      "sweep_type": "epoch",
+      "sweep_value": 10,
+      "gpu_mem_mb": 0
+    },
+    {
+      "model": "joint",
+      "seed": 1024,
+      "status": "success",
+      "elapsed_sec": 1400.1,
+      "returncode": 0,
+      "sweep_type": "epoch",
+      "sweep_value": 10,
+      "gpu_mem_mb": 0
+    },
+    {
+      "model": "ewc-on",
+      "seed": 42,
+      "status": "success",
+      "elapsed_sec": 1467.7,
+      "returncode": 0,
+      "sweep_type": "epoch",
+      "sweep_value": 10,
+      "gpu_mem_mb": 0
+    },
+    {
+      "model": "ewc-on",
+      "seed": 123,
+      "status": "success",
+      "elapsed_sec": 1464.3,
+      "returncode": 0,
+      "sweep_type": "epoch",
+      "sweep_value": 10,
+      "gpu_mem_mb": 0
+    },
+    {
+      "model": "ewc-on",
+      "seed": 456,
+      "status": "success",
+      "elapsed_sec": 1467.5,
+      "returncode": 0,
+      "sweep_type": "epoch",
+      "sweep_value": 10,
+      "gpu_mem_mb": 0
+    },
+    {
+      "model": "ewc-on",
+      "seed": 789,
+      "status": "success",
+      "elapsed_sec": 1467.3,
+      "returncode": 0,
+      "sweep_type": "epoch",
+      "sweep_value": 10,
+      "gpu_mem_mb": 0
+    },
+    {
+      "model": "ewc-on",
+      "seed": 1024,
+      "status": "success",
+      "elapsed_sec": 1468.2,
+      "returncode": 0,
+      "sweep_type": "epoch",
+      "sweep_value": 10,
+      "gpu_mem_mb": 0
+    },
+    {
+      "model": "si",
+      "seed": 42,
+      "status": "success",
+      "elapsed_sec": 1284.8,
+      "returncode": 0,
+      "sweep_type": "epoch",
+      "sweep_value": 10,
+      "gpu_mem_mb": 0
+    },
+    {
+      "model": "si",
+      "seed": 123,
+      "status": "success",
+      "elapsed_sec": 1289.4,
+      "returncode": 0,
+      "sweep_type": "epoch",
+      "sweep_value": 10,
+      "gpu_mem_mb": 0
+    },
+    {
+      "model": "si",
+      "seed": 456,
+      "status": "success",
+      "elapsed_sec": 1289.3,
+      "returncode": 0,
+      "sweep_type": "epoch",
+      "sweep_value": 10,
+      "gpu_mem_mb": 0
+    },
+    {
+      "model": "si",
+      "seed": 789,
+      "status": "success",
+      "elapsed_sec": 1285.2,
+      "returncode": 0,
+      "sweep_type": "epoch",
+      "sweep_value": 10,
+      "gpu_mem_mb": 0
+    },
+    {
+      "model": "si",
+      "seed": 1024,
+      "status": "success",
+      "elapsed_sec": 1286.3,
+      "returncode": 0,
+      "sweep_type": "epoch",
+      "sweep_value": 10,
+      "gpu_mem_mb": 0
+    },
+    {
+      "model": "er",
+      "seed": 42,
+      "status": "success",
+      "elapsed_sec": 1282.4,
+      "returncode": 0,
+      "sweep_type": "epoch",
+      "sweep_value": 10,
+      "gpu_mem_mb": 0
+    },
+    {
+      "model": "er",
+      "seed": 123,
+      "status": "success",
+      "elapsed_sec": 1281.1,
+      "returncode": 0,
+      "sweep_type": "epoch",
+      "sweep_value": 10,
+      "gpu_mem_mb": 0
+    },
+    {
+      "model": "er",
+      "seed": 456,
+      "status": "success",
+      "elapsed_sec": 1284.7,
+      "returncode": 0,
+      "sweep_type": "epoch",
+      "sweep_value": 10,
+      "gpu_mem_mb": 0
+    },
+    {
+      "model": "er",
+      "seed": 789,
+      "status": "success",
+      "elapsed_sec": 1283.8,
+      "returncode": 0,
+      "sweep_type": "epoch",
+      "sweep_value": 10,
+      "gpu_mem_mb": 0
+    },
+    {
+      "model": "er",
+      "seed": 1024,
+      "status": "success",
+      "elapsed_sec": 1292.6,
+      "returncode": 0,
+      "sweep_type": "epoch",
+      "sweep_value": 10,
+      "gpu_mem_mb": 0
+    },
+    {
+      "model": "derpp",
+      "seed": 42,
+      "status": "success",
+      "elapsed_sec": 1314.8,
+      "returncode": 0,
+      "sweep_type": "epoch",
+      "sweep_value": 10,
+      "gpu_mem_mb": 0
+    },
+    {
+      "model": "derpp",
+      "seed": 123,
+      "status": "success",
+      "elapsed_sec": 1312.3,
+      "returncode": 0,
+      "sweep_type": "epoch",
+      "sweep_value": 10,
+      "gpu_mem_mb": 0
+    },
+    {
+      "model": "derpp",
+      "seed": 456,
+      "status": "success",
+      "elapsed_sec": 1308.6,
+      "returncode": 0,
+      "sweep_type": "epoch",
+      "sweep_value": 10,
+      "gpu_mem_mb": 0
+    },
+    {
+      "model": "derpp",
+      "seed": 789,
+      "status": "success",
+      "elapsed_sec": 1321.9,
+      "returncode": 0,
+      "sweep_type": "epoch",
+      "sweep_value": 10,
+      "gpu_mem_mb": 0
+    },
+    {
+      "model": "derpp",
+      "seed": 1024,
+      "status": "success",
+      "elapsed_sec": 1596.4,
+      "returncode": 0,
+      "sweep_type": "epoch",
+      "sweep_value": 10,
+      "gpu_mem_mb": 0
+    },
+    {
+      "model": "lwf",
+      "seed": 42,
+      "status": "success",
+      "elapsed_sec": 2420.9,
+      "returncode": 0,
+      "sweep_type": "epoch",
+      "sweep_value": 10,
+      "gpu_mem_mb": 0
+    },
+    {
+      "model": "lwf",
+      "seed": 123,
+      "status": "success",
+      "elapsed_sec": 2113.5,
+      "returncode": 0,
+      "sweep_type": "epoch",
+      "sweep_value": 10,
+      "gpu_mem_mb": 0
+    },
+    {
+      "model": "lwf",
+      "seed": 456,
+      "status": "success",
+      "elapsed_sec": 2351.8,
+      "returncode": 0,
+      "sweep_type": "epoch",
+      "sweep_value": 10,
+      "gpu_mem_mb": 0
+    },
+    {
+      "model": "lwf",
+      "seed": 789,
+      "status": "success",
+      "elapsed_sec": 2153.8,
+      "returncode": 0,
+      "sweep_type": "epoch",
+      "sweep_value": 10,
+      "gpu_mem_mb": 1851
+    },
+    {
+      "model": "lwf",
+      "seed": 1024,
+      "status": "success",
+      "elapsed_sec": 2090.9,
+      "returncode": 0,
+      "sweep_type": "epoch",
+      "sweep_value": 10,
+      "gpu_mem_mb": 1851
+    },
+    {
+      "model": "agem",
+      "seed": 42,
+      "status": "success",
+      "elapsed_sec": 1403.9,
+      "returncode": 0,
+      "sweep_type": "epoch",
+      "sweep_value": 10,
+      "gpu_mem_mb": 1851
+    },
+    {
+      "model": "agem",
+      "seed": 123,
+      "status": "success",
+      "elapsed_sec": 1414.1,
+      "returncode": 0,
+      "sweep_type": "epoch",
+      "sweep_value": 10,
+      "gpu_mem_mb": 0
+    },
+    {
+      "model": "agem",
+      "seed": 456,
+      "status": "success",
+      "elapsed_sec": 1407.1,
+      "returncode": 0,
+      "sweep_type": "epoch",
+      "sweep_value": 10,
+      "gpu_mem_mb": 0
+    },
+    {
+      "model": "agem",
+      "seed": 789,
+      "status": "success",
+      "elapsed_sec": 1400.0,
+      "returncode": 0,
+      "sweep_type": "epoch",
+      "sweep_value": 10,
+      "gpu_mem_mb": 0
+    },
+    {
+      "model": "agem",
+      "seed": 1024,
+      "status": "success",
+      "elapsed_sec": 1402.4,
+      "returncode": 0,
+      "sweep_type": "epoch",
+      "sweep_value": 10,
+      "gpu_mem_mb": 0
+    }
+  ]
+}

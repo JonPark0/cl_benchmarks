@@ -1,0 +1,64 @@
+
+============================================================
+[buffer=500] er seed=42 | success | 433.7s | GPU: 0MB
+CMD: C:\Users\yeoch\Documents\vscode\ai_project_2\continual_learning\.venv\Scripts\python.exe C:\Users\yeoch\Documents\vscode\ai_project_2\continual_learning\mammoth\main.py --model er --dataset seq-mnist --seed 42 --device 0 --n_epochs 1 --base_path C:\Users\yeoch\Documents\vscode\ai_project_2\continual_learning\raw_data/ --results_path sweep_buffer/buffer_500/er --enable_other_metrics 1 --non_verbose 1 --lr 0.1 --minibatch_size 64 --buffer_size 500
+
+============================================================
+[buffer=500] er seed=42 | success | 459.9s | GPU: 0MB
+CMD: C:\Users\yeoch\Documents\vscode\ai_project_2\continual_learning\.venv\Scripts\python.exe C:\Users\yeoch\Documents\vscode\ai_project_2\continual_learning\mammoth\main.py --model er --dataset seq-mnist --seed 42 --device 0 --n_epochs 1 --base_path C:\Users\yeoch\Documents\vscode\ai_project_2\continual_learning\raw_data/ --results_path sweep_buffer/buffer_500/er --enable_other_metrics 1 --non_verbose 1 --lr 0.1 --minibatch_size 64 --buffer_size 500
+
+============================================================
+[buffer=500] er seed=123 | success | 450.3s | GPU: 0MB
+CMD: C:\Users\yeoch\Documents\vscode\ai_project_2\continual_learning\.venv\Scripts\python.exe C:\Users\yeoch\Documents\vscode\ai_project_2\continual_learning\mammoth\main.py --model er --dataset seq-mnist --seed 123 --device 0 --n_epochs 1 --base_path C:\Users\yeoch\Documents\vscode\ai_project_2\continual_learning\raw_data/ --results_path sweep_buffer/buffer_500/er --enable_other_metrics 1 --non_verbose 1 --lr 0.1 --minibatch_size 64 --buffer_size 500
+
+============================================================
+[buffer=500] er seed=456 | success | 447.1s | GPU: 0MB
+CMD: C:\Users\yeoch\Documents\vscode\ai_project_2\continual_learning\.venv\Scripts\python.exe C:\Users\yeoch\Documents\vscode\ai_project_2\continual_learning\mammoth\main.py --model er --dataset seq-mnist --seed 456 --device 0 --n_epochs 1 --base_path C:\Users\yeoch\Documents\vscode\ai_project_2\continual_learning\raw_data/ --results_path sweep_buffer/buffer_500/er --enable_other_metrics 1 --non_verbose 1 --lr 0.1 --minibatch_size 64 --buffer_size 500
+
+============================================================
+[buffer=500] er seed=789 | success | 491.7s | GPU: 0MB
+CMD: C:\Users\yeoch\Documents\vscode\ai_project_2\continual_learning\.venv\Scripts\python.exe C:\Users\yeoch\Documents\vscode\ai_project_2\continual_learning\mammoth\main.py --model er --dataset seq-mnist --seed 789 --device 0 --n_epochs 1 --base_path C:\Users\yeoch\Documents\vscode\ai_project_2\continual_learning\raw_data/ --results_path sweep_buffer/buffer_500/er --enable_other_metrics 1 --non_verbose 1 --lr 0.1 --minibatch_size 64 --buffer_size 500
+
+============================================================
+[buffer=500] er seed=1024 | success | 479.6s | GPU: 0MB
+CMD: C:\Users\yeoch\Documents\vscode\ai_project_2\continual_learning\.venv\Scripts\python.exe C:\Users\yeoch\Documents\vscode\ai_project_2\continual_learning\mammoth\main.py --model er --dataset seq-mnist --seed 1024 --device 0 --n_epochs 1 --base_path C:\Users\yeoch\Documents\vscode\ai_project_2\continual_learning\raw_data/ --results_path sweep_buffer/buffer_500/er --enable_other_metrics 1 --non_verbose 1 --lr 0.1 --minibatch_size 64 --buffer_size 500
+
+============================================================
+[buffer=500] derpp seed=42 | success | 461.1s | GPU: 0MB
+CMD: C:\Users\yeoch\Documents\vscode\ai_project_2\continual_learning\.venv\Scripts\python.exe C:\Users\yeoch\Documents\vscode\ai_project_2\continual_learning\mammoth\main.py --model derpp --dataset seq-mnist --seed 42 --device 0 --n_epochs 1 --base_path C:\Users\yeoch\Documents\vscode\ai_project_2\continual_learning\raw_data/ --results_path sweep_buffer/buffer_500/derpp --enable_other_metrics 1 --non_verbose 1 --lr 0.1 --alpha 0.1 --beta 0.5 --buffer_size 500
+
+============================================================
+[buffer=500] derpp seed=123 | success | 442.5s | GPU: 0MB
+CMD: C:\Users\yeoch\Documents\vscode\ai_project_2\continual_learning\.venv\Scripts\python.exe C:\Users\yeoch\Documents\vscode\ai_project_2\continual_learning\mammoth\main.py --model derpp --dataset seq-mnist --seed 123 --device 0 --n_epochs 1 --base_path C:\Users\yeoch\Documents\vscode\ai_project_2\continual_learning\raw_data/ --results_path sweep_buffer/buffer_500/derpp --enable_other_metrics 1 --non_verbose 1 --lr 0.1 --alpha 0.1 --beta 0.5 --buffer_size 500
+
+============================================================
+[buffer=500] derpp seed=456 | success | 437.2s | GPU: 0MB
+CMD: C:\Users\yeoch\Documents\vscode\ai_project_2\continual_learning\.venv\Scripts\python.exe C:\Users\yeoch\Documents\vscode\ai_project_2\continual_learning\mammoth\main.py --model derpp --dataset seq-mnist --seed 456 --device 0 --n_epochs 1 --base_path C:\Users\yeoch\Documents\vscode\ai_project_2\continual_learning\raw_data/ --results_path sweep_buffer/buffer_500/derpp --enable_other_metrics 1 --non_verbose 1 --lr 0.1 --alpha 0.1 --beta 0.5 --buffer_size 500
+
+============================================================
+[buffer=500] derpp seed=789 | success | 442.3s | GPU: 0MB
+CMD: C:\Users\yeoch\Documents\vscode\ai_project_2\continual_learning\.venv\Scripts\python.exe C:\Users\yeoch\Documents\vscode\ai_project_2\continual_learning\mammoth\main.py --model derpp --dataset seq-mnist --seed 789 --device 0 --n_epochs 1 --base_path C:\Users\yeoch\Documents\vscode\ai_project_2\continual_learning\raw_data/ --results_path sweep_buffer/buffer_500/derpp --enable_other_metrics 1 --non_verbose 1 --lr 0.1 --alpha 0.1 --beta 0.5 --buffer_size 500
+
+============================================================
+[buffer=500] derpp seed=1024 | success | 443.2s | GPU: 0MB
+CMD: C:\Users\yeoch\Documents\vscode\ai_project_2\continual_learning\.venv\Scripts\python.exe C:\Users\yeoch\Documents\vscode\ai_project_2\continual_learning\mammoth\main.py --model derpp --dataset seq-mnist --seed 1024 --device 0 --n_epochs 1 --base_path C:\Users\yeoch\Documents\vscode\ai_project_2\continual_learning\raw_data/ --results_path sweep_buffer/buffer_500/derpp --enable_other_metrics 1 --non_verbose 1 --lr 0.1 --alpha 0.1 --beta 0.5 --buffer_size 500
+
+============================================================
+[buffer=500] agem seed=42 | success | 573.7s | GPU: 0MB
+CMD: C:\Users\yeoch\Documents\vscode\ai_project_2\continual_learning\.venv\Scripts\python.exe C:\Users\yeoch\Documents\vscode\ai_project_2\continual_learning\mammoth\main.py --model agem --dataset seq-mnist --seed 42 --device 0 --n_epochs 1 --base_path C:\Users\yeoch\Documents\vscode\ai_project_2\continual_learning\raw_data/ --results_path sweep_buffer/buffer_500/agem --enable_other_metrics 1 --non_verbose 1 --lr 0.1 --minibatch_size 64 --buffer_size 500
+
+============================================================
+[buffer=500] agem seed=123 | success | 599.3s | GPU: 0MB
+CMD: C:\Users\yeoch\Documents\vscode\ai_project_2\continual_learning\.venv\Scripts\python.exe C:\Users\yeoch\Documents\vscode\ai_project_2\continual_learning\mammoth\main.py --model agem --dataset seq-mnist --seed 123 --device 0 --n_epochs 1 --base_path C:\Users\yeoch\Documents\vscode\ai_project_2\continual_learning\raw_data/ --results_path sweep_buffer/buffer_500/agem --enable_other_metrics 1 --non_verbose 1 --lr 0.1 --minibatch_size 64 --buffer_size 500
+
+============================================================
+[buffer=500] agem seed=456 | success | 574.6s | GPU: 0MB
+CMD: C:\Users\yeoch\Documents\vscode\ai_project_2\continual_learning\.venv\Scripts\python.exe C:\Users\yeoch\Documents\vscode\ai_project_2\continual_learning\mammoth\main.py --model agem --dataset seq-mnist --seed 456 --device 0 --n_epochs 1 --base_path C:\Users\yeoch\Documents\vscode\ai_project_2\continual_learning\raw_data/ --results_path sweep_buffer/buffer_500/agem --enable_other_metrics 1 --non_verbose 1 --lr 0.1 --minibatch_size 64 --buffer_size 500
+
+============================================================
+[buffer=500] agem seed=789 | success | 565.4s | GPU: 0MB
+CMD: C:\Users\yeoch\Documents\vscode\ai_project_2\continual_learning\.venv\Scripts\python.exe C:\Users\yeoch\Documents\vscode\ai_project_2\continual_learning\mammoth\main.py --model agem --dataset seq-mnist --seed 789 --device 0 --n_epochs 1 --base_path C:\Users\yeoch\Documents\vscode\ai_project_2\continual_learning\raw_data/ --results_path sweep_buffer/buffer_500/agem --enable_other_metrics 1 --non_verbose 1 --lr 0.1 --minibatch_size 64 --buffer_size 500
+
+============================================================
+[buffer=500] agem seed=1024 | success | 557.9s | GPU: 0MB
+CMD: C:\Users\yeoch\Documents\vscode\ai_project_2\continual_learning\.venv\Scripts\python.exe C:\Users\yeoch\Documents\vscode\ai_project_2\continual_learning\mammoth\main.py --model agem --dataset seq-mnist --seed 1024 --device 0 --n_epochs 1 --base_path C:\Users\yeoch\Documents\vscode\ai_project_2\continual_learning\raw_data/ --results_path sweep_buffer/buffer_500/agem --enable_other_metrics 1 --non_verbose 1 --lr 0.1 --minibatch_size 64 --buffer_size 500

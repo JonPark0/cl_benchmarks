@@ -1,0 +1,73 @@
+{
+  "type": "epoch_sweep",
+  "timestamp": "20260404_165958",
+  "epoch_values": [
+    5
+  ],
+  "models": [
+    "ewc-on"
+  ],
+  "seeds": [
+    42,
+    123,
+    456,
+    789,
+    1024
+  ],
+  "buffer_size": 200,
+  "total": 5,
+  "success": 5,
+  "failed": 0,
+  "results": [
+    {
+      "model": "ewc-on",
+      "seed": 42,
+      "status": "success",
+      "elapsed_sec": 1023.5,
+      "returncode": 0,
+      "sweep_type": "epoch",
+      "sweep_value": 5,
+      "gpu_mem_mb": 0
+    },
+    {
+      "model": "ewc-on",
+      "seed": 123,
+      "status": "success",
+      "elapsed_sec": 980.2,
+      "returncode": 0,
+      "sweep_type": "epoch",
+      "sweep_value": 5,
+      "gpu_mem_mb": 0
+    },
+    {
+      "model": "ewc-on",
+      "seed": 456,
+      "status": "success",
+      "elapsed_sec": 985.0,
+      "returncode": 0,
+      "sweep_type": "epoch",
+      "sweep_value": 5,
+      "gpu_mem_mb": 0
+    },
+    {
+      "model": "ewc-on",
+      "seed": 789,
+      "status": "success",
+      "elapsed_sec": 1008.1,
+      "returncode": 0,
+      "sweep_type": "epoch",
+      "sweep_value": 5,
+      "gpu_mem_mb": 0
+    },
+    {
+      "model": "ewc-on",
+      "seed": 1024,
+      "status": "success",
+      "elapsed_sec": 991.9,
+      "returncode": 0,
+      "sweep_type": "epoch",
+      "sweep_value": 5,
+      "gpu_mem_mb": 0
+    }
+  ]
+}
