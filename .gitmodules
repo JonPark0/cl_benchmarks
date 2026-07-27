@@ -1,0 +1,3 @@
+[submodule "mammoth"]
+	path = mammoth
+	url = https://github.com/aimagelab/mammoth.git
