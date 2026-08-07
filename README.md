@@ -31,6 +31,17 @@ python main.py --config config.yaml
 
 Make sure to adjust the `config.yaml` file to set your parameters and choose the algorithms you want to benchmark.
 
+## Submodule 패치
+
+`mammoth`는 `aimagelab/mammoth`를 가리키는 git submodule이라 여기에 직접 커밋할 수
+없다. `models_patch/agem_fixed.py`는 `models/agem.py`의 `end_task` 버퍼 크기 미반영
+결함(`docs/r1_r2_r3_findings.md` 참조)을 수정한 모델로, 실행 전 아래처럼 서브모듈
+안으로 복사해야 `--model agem_fixed`로 인식된다.
+
+```bash
+cp models_patch/agem_fixed.py mammoth/models/agem_fixed.py
+```
+
 ## Contribution
 
 Contributions are welcome! Please submit a pull request or open an issue for suggestions or improvements.
