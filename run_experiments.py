@@ -22,7 +22,8 @@ from datetime import datetime
 # ─── 경로 설정 ────────────────────────────────────────────────────────────────
 BASE_DIR = Path(__file__).parent.resolve()
 MAMMOTH_DIR = BASE_DIR / "mammoth"
-VENV_PYTHON = BASE_DIR / ".venv" / "Scripts" / "python.exe"
+import sys as _sys
+VENV_PYTHON = BASE_DIR / ".venv" / ("Scripts" if _sys.platform == "win32" else "bin") / ("python.exe" if _sys.platform == "win32" else "python")
 RAW_DATA_DIR = BASE_DIR / "raw_data"
 DOCS_DIR = BASE_DIR / "docs"
 
@@ -102,6 +103,24 @@ MODELS = {
             "--minibatch_size": "64",
         },
         "description": "A-GEM (Chaudhry et al., ICLR 2019) - GEM의 평균화 버전, Windows 호환"
+    },
+    "agem_fixed": {
+        "category": "Optimization",
+        "args": {
+            "--lr": "0.1",
+            "--buffer_size": str(BUFFER_SIZE),
+            "--minibatch_size": "64",
+        },
+        "description": "A-GEM, end_task 패치판 (samples_per_task 반영, buffer_size 실제 사용)"
+    },
+    "gem": {
+        "category": "Optimization",
+        "args": {
+            "--lr": "0.1",
+            "--buffer_size": str(BUFFER_SIZE),
+            "--gamma": "0.5",
+        },
+        "description": "GEM (Lopez-Paz & Ranzato, NeurIPS 2017) - quadprog 기반 원본, WSL2 Linux 환경에서 실행"
     },
 }
 

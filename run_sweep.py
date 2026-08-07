@@ -46,7 +46,8 @@ def query_gpu_memory() -> int | None:
 # ─── 경로 설정 ────────────────────────────────────────────────────────────────
 BASE_DIR = Path(__file__).parent.resolve()
 MAMMOTH_DIR = BASE_DIR / "mammoth"
-VENV_PYTHON = BASE_DIR / ".venv" / "Scripts" / "python.exe"
+import sys as _sys
+VENV_PYTHON = BASE_DIR / ".venv" / ("Scripts" if _sys.platform == "win32" else "bin") / ("python.exe" if _sys.platform == "win32" else "python")
 RAW_DATA_DIR = BASE_DIR / "raw_data"
 
 # ─── 기본 설정 ────────────────────────────────────────────────────────────────
@@ -95,6 +96,16 @@ MODELS = {
         "category": "Optimization",
         "uses_buffer": True,
         "args": {"--lr": "0.1", "--minibatch_size": "64"},
+    },
+    "agem_fixed": {
+        "category": "Optimization",
+        "uses_buffer": True,
+        "args": {"--lr": "0.1", "--minibatch_size": "64"},
+    },
+    "gem": {
+        "category": "Optimization",
+        "uses_buffer": True,
+        "args": {"--lr": "0.1", "--gamma": "0.5"},
     },
 }
 
