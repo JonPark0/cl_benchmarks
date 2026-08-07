@@ -1,0 +1,9 @@
+buffer_size,model,category,n_runs,aa_mean,aa_std,bwt_mean,bwt_std
+100,agem_fixed,Optimization,5,26.2435,1.4783,-90.7367,1.9778
+200,agem_fixed,Optimization,5,24.8142,2.0709,-92.5367,2.6399
+500,agem_fixed,Optimization,5,24.4208,1.0831,-93.0403,1.4159
+1000,agem_fixed,Optimization,5,25.6034,1.0278,-91.5775,1.3679
+100,gem,Optimization,5,76.0431,1.4171,-27.9475,1.5854
+200,gem,Optimization,5,83.7237,0.8341,-18.1317,1.0075
+500,gem,Optimization,5,89.4319,0.9156,-10.5148,1.3641
+1000,gem,Optimization,5,92.0404,0.5943,-6.8225,0.8863
