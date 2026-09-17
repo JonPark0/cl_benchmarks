@@ -1,0 +1,186 @@
+{
+  "type": "reg_sweep_ewc",
+  "timestamp": "20260917_184500",
+  "sweep_arg": "--e_lambda",
+  "values": [
+    0.07,
+    7.0,
+    70.0,
+    700.0
+  ],
+  "baseline_value": 0.7,
+  "model": "ewc-on",
+  "seeds": [
+    42,
+    123,
+    456,
+    789,
+    1024
+  ],
+  "n_epochs": 1,
+  "total": 20,
+  "success": 15,
+  "failed": 5,
+  "results": [
+    {
+      "model": "ewc-on",
+      "seed": 42,
+      "value": 0.07,
+      "status": "success",
+      "elapsed_sec": 104.7,
+      "returncode": 0
+    },
+    {
+      "model": "ewc-on",
+      "seed": 123,
+      "value": 0.07,
+      "status": "success",
+      "elapsed_sec": 109.5,
+      "returncode": 0
+    },
+    {
+      "model": "ewc-on",
+      "seed": 456,
+      "value": 0.07,
+      "status": "success",
+      "elapsed_sec": 104.1,
+      "returncode": 0
+    },
+    {
+      "model": "ewc-on",
+      "seed": 789,
+      "value": 0.07,
+      "status": "success",
+      "elapsed_sec": 103.7,
+      "returncode": 0
+    },
+    {
+      "model": "ewc-on",
+      "seed": 1024,
+      "value": 0.07,
+      "status": "success",
+      "elapsed_sec": 108.9,
+      "returncode": 0
+    },
+    {
+      "model": "ewc-on",
+      "seed": 42,
+      "value": 7.0,
+      "status": "success",
+      "elapsed_sec": 99.4,
+      "returncode": 0
+    },
+    {
+      "model": "ewc-on",
+      "seed": 123,
+      "value": 7.0,
+      "status": "success",
+      "elapsed_sec": 113.6,
+      "returncode": 0
+    },
+    {
+      "model": "ewc-on",
+      "seed": 456,
+      "value": 7.0,
+      "status": "success",
+      "elapsed_sec": 99.6,
+      "returncode": 0
+    },
+    {
+      "model": "ewc-on",
+      "seed": 789,
+      "value": 7.0,
+      "status": "success",
+      "elapsed_sec": 111.9,
+      "returncode": 0
+    },
+    {
+      "model": "ewc-on",
+      "seed": 1024,
+      "value": 7.0,
+      "status": "success",
+      "elapsed_sec": 102.9,
+      "returncode": 0
+    },
+    {
+      "model": "ewc-on",
+      "seed": 42,
+      "value": 70.0,
+      "status": "success",
+      "elapsed_sec": 107.6,
+      "returncode": 0
+    },
+    {
+      "model": "ewc-on",
+      "seed": 123,
+      "value": 70.0,
+      "status": "success",
+      "elapsed_sec": 104.9,
+      "returncode": 0
+    },
+    {
+      "model": "ewc-on",
+      "seed": 456,
+      "value": 70.0,
+      "status": "success",
+      "elapsed_sec": 102.4,
+      "returncode": 0
+    },
+    {
+      "model": "ewc-on",
+      "seed": 789,
+      "value": 70.0,
+      "status": "success",
+      "elapsed_sec": 109.0,
+      "returncode": 0
+    },
+    {
+      "model": "ewc-on",
+      "seed": 1024,
+      "value": 70.0,
+      "status": "success",
+      "elapsed_sec": 99.6,
+      "returncode": 0
+    },
+    {
+      "model": "ewc-on",
+      "seed": 42,
+      "value": 700.0,
+      "status": "failed",
+      "elapsed_sec": 51.3,
+      "returncode": 1
+    },
+    {
+      "model": "ewc-on",
+      "seed": 123,
+      "value": 700.0,
+      "status": "failed",
+      "elapsed_sec": 49.8,
+      "returncode": 1
+    },
+    {
+      "model": "ewc-on",
+      "seed": 456,
+      "value": 700.0,
+      "status": "failed",
+      "elapsed_sec": 50.0,
+      "returncode": 1
+    },
+    {
+      "model": "ewc-on",
+      "seed": 789,
+      "value": 700.0,
+      "status": "failed",
+      "elapsed_sec": 48.9,
+      "returncode": 1
+    },
+    {
+      "model": "ewc-on",
+      "seed": 1024,
+      "value": 700.0,
+      "status": "failed",
+      "elapsed_sec": 48.0,
+      "returncode": 1
+    }
+  ]
+}

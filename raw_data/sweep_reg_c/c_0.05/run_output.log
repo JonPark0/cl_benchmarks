@@ -1,0 +1,20 @@
+
+============================================================
+[--c=0.05] si seed=42 | success | 22.3s
+CMD: /home/yeochoon/Documents/grad_thesis/cl_benchmarks/.venv/bin/python /home/yeochoon/Documents/grad_thesis/cl_benchmarks/mammoth/main.py --model si --dataset seq-mnist --seed 42 --device 0 --n_epochs 1 --base_path /home/yeochoon/Documents/grad_thesis/cl_benchmarks/raw_data/ --results_path sweep_reg_c/c_0.05/si --enable_other_metrics 1 --non_verbose 1 --lr 0.1 --xi 0.001 --c 0.05
+
+============================================================
+[--c=0.05] si seed=123 | success | 21.9s
+CMD: /home/yeochoon/Documents/grad_thesis/cl_benchmarks/.venv/bin/python /home/yeochoon/Documents/grad_thesis/cl_benchmarks/mammoth/main.py --model si --dataset seq-mnist --seed 123 --device 0 --n_epochs 1 --base_path /home/yeochoon/Documents/grad_thesis/cl_benchmarks/raw_data/ --results_path sweep_reg_c/c_0.05/si --enable_other_metrics 1 --non_verbose 1 --lr 0.1 --xi 0.001 --c 0.05
+
+============================================================
+[--c=0.05] si seed=456 | success | 22.3s
+CMD: /home/yeochoon/Documents/grad_thesis/cl_benchmarks/.venv/bin/python /home/yeochoon/Documents/grad_thesis/cl_benchmarks/mammoth/main.py --model si --dataset seq-mnist --seed 456 --device 0 --n_epochs 1 --base_path /home/yeochoon/Documents/grad_thesis/cl_benchmarks/raw_data/ --results_path sweep_reg_c/c_0.05/si --enable_other_metrics 1 --non_verbose 1 --lr 0.1 --xi 0.001 --c 0.05
+
+============================================================
+[--c=0.05] si seed=789 | success | 22.5s
+CMD: /home/yeochoon/Documents/grad_thesis/cl_benchmarks/.venv/bin/python /home/yeochoon/Documents/grad_thesis/cl_benchmarks/mammoth/main.py --model si --dataset seq-mnist --seed 789 --device 0 --n_epochs 1 --base_path /home/yeochoon/Documents/grad_thesis/cl_benchmarks/raw_data/ --results_path sweep_reg_c/c_0.05/si --enable_other_metrics 1 --non_verbose 1 --lr 0.1 --xi 0.001 --c 0.05
+
+============================================================
+[--c=0.05] si seed=1024 | success | 23.4s
+CMD: /home/yeochoon/Documents/grad_thesis/cl_benchmarks/.venv/bin/python /home/yeochoon/Documents/grad_thesis/cl_benchmarks/mammoth/main.py --model si --dataset seq-mnist --seed 1024 --device 0 --n_epochs 1 --base_path /home/yeochoon/Documents/grad_thesis/cl_benchmarks/raw_data/ --results_path sweep_reg_c/c_0.05/si --enable_other_metrics 1 --non_verbose 1 --lr 0.1 --xi 0.001 --c 0.05

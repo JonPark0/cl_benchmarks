@@ -1,0 +1,165 @@
+
+============================================================
+[--e_lambda=700] ewc-on seed=42 | failed | 51.3s
+CMD: /home/yeochoon/Documents/grad_thesis/cl_benchmarks/.venv/bin/python /home/yeochoon/Documents/grad_thesis/cl_benchmarks/mammoth/main.py --model ewc-on --dataset seq-mnist --seed 42 --device 0 --n_epochs 1 --base_path /home/yeochoon/Documents/grad_thesis/cl_benchmarks/raw_data/ --results_path sweep_reg_lambda/lambda_700/ewc-on --enable_other_metrics 1 --non_verbose 1 --lr 0.1 --gamma 1.0 --e_lambda 700.0
+STDERR:
+Accuracy for 1 task(s): 	 [Class-IL]: 99.91 % 	 [Task-IL]: 99.91 %
+	Raw accuracy values: Class-IL [99.90543735224587] | Task-IL [99.90543735224587]
+
+
+Accuracy for 2 task(s): 	 [Class-IL]: 49.07 % 	 [Task-IL]: 99.0 %
+	Raw accuracy values: Class-IL [0.04728132387706856, 98.09010773751224] | Task-IL [99.90543735224587, 98.09010773751224]
+
+
+Traceback (most recent call last):
+  File "/home/yeochoon/Documents/grad_thesis/cl_benchmarks/mammoth/main.py", line 566, in <module>
+    main()
+  File "/home/yeochoon/Documents/grad_thesis/cl_benchmarks/mammoth/main.py", line 562, in main
+    train(model, dataset, args)
+  File "/home/yeochoon/Documents/grad_thesis/cl_benchmarks/mammoth/utils/checkpoints.py", line 323, in wrapped_fn
+    return fn(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^
+  File "/home/yeochoon/Documents/grad_thesis/cl_benchmarks/mammoth/utils/training.py", line 262, in train
+    train_single_epoch(model, train_loader, args, pbar=train_pbar, epoch=epoch,
+  File "/home/yeochoon/Documents/grad_thesis/cl_benchmarks/mammoth/utils/training.py", line 108, in train_single_epoch
+    loss = model.meta_observe(inputs, labels, not_aug_inputs, epoch=epoch, **extra_fields)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/yeochoon/Documents/grad_thesis/cl_benchmarks/mammoth/models/utils/continual_model.py", line 435, in meta_observe
+    ret = self.observe(*args, **kwargs)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/yeochoon/Documents/grad_thesis/cl_benchmarks/mammoth/models/ewc_on.py", line 77, in observe
+    assert not torch.isnan(loss)
+           ^^^^^^^^^^^^^^^^^^^^^
+AssertionError
+
+============================================================
+[--e_lambda=700] ewc-on seed=123 | failed | 49.8s
+CMD: /home/yeochoon/Documents/grad_thesis/cl_benchmarks/.venv/bin/python /home/yeochoon/Documents/grad_thesis/cl_benchmarks/mammoth/main.py --model ewc-on --dataset seq-mnist --seed 123 --device 0 --n_epochs 1 --base_path /home/yeochoon/Documents/grad_thesis/cl_benchmarks/raw_data/ --results_path sweep_reg_lambda/lambda_700/ewc-on --enable_other_metrics 1 --non_verbose 1 --lr 0.1 --gamma 1.0 --e_lambda 700.0
+STDERR:
+Accuracy for 1 task(s): 	 [Class-IL]: 99.95 % 	 [Task-IL]: 99.95 %
+	Raw accuracy values: Class-IL [99.95271867612293] | Task-IL [99.95271867612293]
+
+
+Accuracy for 2 task(s): 	 [Class-IL]: 48.04 % 	 [Task-IL]: 97.94 %
+	Raw accuracy values: Class-IL [0.09456264775413711, 95.98432908912831] | Task-IL [99.90543735224587, 95.98432908912831]
+
+
+Traceback (most recent call last):
+  File "/home/yeochoon/Documents/grad_thesis/cl_benchmarks/mammoth/main.py", line 566, in <module>
+    main()
+  File "/home/yeochoon/Documents/grad_thesis/cl_benchmarks/mammoth/main.py", line 562, in main
+    train(model, dataset, args)
+  File "/home/yeochoon/Documents/grad_thesis/cl_benchmarks/mammoth/utils/checkpoints.py", line 323, in wrapped_fn
+    return fn(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^
+  File "/home/yeochoon/Documents/grad_thesis/cl_benchmarks/mammoth/utils/training.py", line 262, in train
+    train_single_epoch(model, train_loader, args, pbar=train_pbar, epoch=epoch,
+  File "/home/yeochoon/Documents/grad_thesis/cl_benchmarks/mammoth/utils/training.py", line 108, in train_single_epoch
+    loss = model.meta_observe(inputs, labels, not_aug_inputs, epoch=epoch, **extra_fields)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/yeochoon/Documents/grad_thesis/cl_benchmarks/mammoth/models/utils/continual_model.py", line 435, in meta_observe
+    ret = self.observe(*args, **kwargs)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/yeochoon/Documents/grad_thesis/cl_benchmarks/mammoth/models/ewc_on.py", line 77, in observe
+    assert not torch.isnan(loss)
+           ^^^^^^^^^^^^^^^^^^^^^
+AssertionError
+
+============================================================
+[--e_lambda=700] ewc-on seed=456 | failed | 50.0s
+CMD: /home/yeochoon/Documents/grad_thesis/cl_benchmarks/.venv/bin/python /home/yeochoon/Documents/grad_thesis/cl_benchmarks/mammoth/main.py --model ewc-on --dataset seq-mnist --seed 456 --device 0 --n_epochs 1 --base_path /home/yeochoon/Documents/grad_thesis/cl_benchmarks/raw_data/ --results_path sweep_reg_lambda/lambda_700/ewc-on --enable_other_metrics 1 --non_verbose 1 --lr 0.1 --gamma 1.0 --e_lambda 700.0
+STDERR:
+Accuracy for 1 task(s): 	 [Class-IL]: 99.86 % 	 [Task-IL]: 99.86 %
+	Raw accuracy values: Class-IL [99.8581560283688] | Task-IL [99.8581560283688]
+
+
+Accuracy for 2 task(s): 	 [Class-IL]: 48.9 % 	 [Task-IL]: 98.78 %
+	Raw accuracy values: Class-IL [0.0, 97.79627815866797] | Task-IL [99.76359338061465, 97.79627815866797]
+
+
+Traceback (most recent call last):
+  File "/home/yeochoon/Documents/grad_thesis/cl_benchmarks/mammoth/main.py", line 566, in <module>
+    main()
+  File "/home/yeochoon/Documents/grad_thesis/cl_benchmarks/mammoth/main.py", line 562, in main
+    train(model, dataset, args)
+  File "/home/yeochoon/Documents/grad_thesis/cl_benchmarks/mammoth/utils/checkpoints.py", line 323, in wrapped_fn
+    return fn(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^
+  File "/home/yeochoon/Documents/grad_thesis/cl_benchmarks/mammoth/utils/training.py", line 262, in train
+    train_single_epoch(model, train_loader, args, pbar=train_pbar, epoch=epoch,
+  File "/home/yeochoon/Documents/grad_thesis/cl_benchmarks/mammoth/utils/training.py", line 108, in train_single_epoch
+    loss = model.meta_observe(inputs, labels, not_aug_inputs, epoch=epoch, **extra_fields)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/yeochoon/Documents/grad_thesis/cl_benchmarks/mammoth/models/utils/continual_model.py", line 435, in meta_observe
+    ret = self.observe(*args, **kwargs)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/yeochoon/Documents/grad_thesis/cl_benchmarks/mammoth/models/ewc_on.py", line 77, in observe
+    assert not torch.isnan(loss)
+           ^^^^^^^^^^^^^^^^^^^^^
+AssertionError
+
+============================================================
+[--e_lambda=700] ewc-on seed=789 | failed | 48.9s
+CMD: /home/yeochoon/Documents/grad_thesis/cl_benchmarks/.venv/bin/python /home/yeochoon/Documents/grad_thesis/cl_benchmarks/mammoth/main.py --model ewc-on --dataset seq-mnist --seed 789 --device 0 --n_epochs 1 --base_path /home/yeochoon/Documents/grad_thesis/cl_benchmarks/raw_data/ --results_path sweep_reg_lambda/lambda_700/ewc-on --enable_other_metrics 1 --non_verbose 1 --lr 0.1 --gamma 1.0 --e_lambda 700.0
+STDERR:
+Accuracy for 1 task(s): 	 [Class-IL]: 99.91 % 	 [Task-IL]: 99.91 %
+	Raw accuracy values: Class-IL [99.90543735224587] | Task-IL [99.90543735224587]
+
+
+Accuracy for 2 task(s): 	 [Class-IL]: 48.82 % 	 [Task-IL]: 98.75 %
+	Raw accuracy values: Class-IL [0.0, 97.64936336924583] | Task-IL [99.8581560283688, 97.64936336924583]
+
+
+Traceback (most recent call last):
+  File "/home/yeochoon/Documents/grad_thesis/cl_benchmarks/mammoth/main.py", line 566, in <module>
+    main()
+  File "/home/yeochoon/Documents/grad_thesis/cl_benchmarks/mammoth/main.py", line 562, in main
+    train(model, dataset, args)
+  File "/home/yeochoon/Documents/grad_thesis/cl_benchmarks/mammoth/utils/checkpoints.py", line 323, in wrapped_fn
+    return fn(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^
+  File "/home/yeochoon/Documents/grad_thesis/cl_benchmarks/mammoth/utils/training.py", line 262, in train
+    train_single_epoch(model, train_loader, args, pbar=train_pbar, epoch=epoch,
+  File "/home/yeochoon/Documents/grad_thesis/cl_benchmarks/mammoth/utils/training.py", line 108, in train_single_epoch
+    loss = model.meta_observe(inputs, labels, not_aug_inputs, epoch=epoch, **extra_fields)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/yeochoon/Documents/grad_thesis/cl_benchmarks/mammoth/models/utils/continual_model.py", line 435, in meta_observe
+    ret = self.observe(*args, **kwargs)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/yeochoon/Documents/grad_thesis/cl_benchmarks/mammoth/models/ewc_on.py", line 77, in observe
+    assert not torch.isnan(loss)
+           ^^^^^^^^^^^^^^^^^^^^^
+AssertionError
+
+============================================================
+[--e_lambda=700] ewc-on seed=1024 | failed | 48.0s
+CMD: /home/yeochoon/Documents/grad_thesis/cl_benchmarks/.venv/bin/python /home/yeochoon/Documents/grad_thesis/cl_benchmarks/mammoth/main.py --model ewc-on --dataset seq-mnist --seed 1024 --device 0 --n_epochs 1 --base_path /home/yeochoon/Documents/grad_thesis/cl_benchmarks/raw_data/ --results_path sweep_reg_lambda/lambda_700/ewc-on --enable_other_metrics 1 --non_verbose 1 --lr 0.1 --gamma 1.0 --e_lambda 700.0
+STDERR:
+Accuracy for 1 task(s): 	 [Class-IL]: 99.91 % 	 [Task-IL]: 99.91 %
+	Raw accuracy values: Class-IL [99.90543735224587] | Task-IL [99.90543735224587]
+
+
+Accuracy for 2 task(s): 	 [Class-IL]: 49.0 % 	 [Task-IL]: 98.85 %
+	Raw accuracy values: Class-IL [0.0, 97.99216454456415] | Task-IL [99.71631205673759, 97.99216454456415]
+
+
+Traceback (most recent call last):
+  File "/home/yeochoon/Documents/grad_thesis/cl_benchmarks/mammoth/main.py", line 566, in <module>
+    main()
+  File "/home/yeochoon/Documents/grad_thesis/cl_benchmarks/mammoth/main.py", line 562, in main
+    train(model, dataset, args)
+  File "/home/yeochoon/Documents/grad_thesis/cl_benchmarks/mammoth/utils/checkpoints.py", line 323, in wrapped_fn
+    return fn(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^
+  File "/home/yeochoon/Documents/grad_thesis/cl_benchmarks/mammoth/utils/training.py", line 262, in train
+    train_single_epoch(model, train_loader, args, pbar=train_pbar, epoch=epoch,
+  File "/home/yeochoon/Documents/grad_thesis/cl_benchmarks/mammoth/utils/training.py", line 108, in train_single_epoch
+    loss = model.meta_observe(inputs, labels, not_aug_inputs, epoch=epoch, **extra_fields)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/yeochoon/Documents/grad_thesis/cl_benchmarks/mammoth/models/utils/continual_model.py", line 435, in meta_observe
+    ret = self.observe(*args, **kwargs)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/yeochoon/Documents/grad_thesis/cl_benchmarks/mammoth/models/ewc_on.py", line 77, in observe
+    assert not torch.isnan(loss)
+           ^^^^^^^^^^^^^^^^^^^^^
+AssertionError

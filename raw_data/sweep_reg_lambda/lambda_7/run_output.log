@@ -1,0 +1,20 @@
+
+============================================================
+[--e_lambda=7] ewc-on seed=42 | success | 99.4s
+CMD: /home/yeochoon/Documents/grad_thesis/cl_benchmarks/.venv/bin/python /home/yeochoon/Documents/grad_thesis/cl_benchmarks/mammoth/main.py --model ewc-on --dataset seq-mnist --seed 42 --device 0 --n_epochs 1 --base_path /home/yeochoon/Documents/grad_thesis/cl_benchmarks/raw_data/ --results_path sweep_reg_lambda/lambda_7/ewc-on --enable_other_metrics 1 --non_verbose 1 --lr 0.1 --gamma 1.0 --e_lambda 7.0
+
+============================================================
+[--e_lambda=7] ewc-on seed=123 | success | 113.6s
+CMD: /home/yeochoon/Documents/grad_thesis/cl_benchmarks/.venv/bin/python /home/yeochoon/Documents/grad_thesis/cl_benchmarks/mammoth/main.py --model ewc-on --dataset seq-mnist --seed 123 --device 0 --n_epochs 1 --base_path /home/yeochoon/Documents/grad_thesis/cl_benchmarks/raw_data/ --results_path sweep_reg_lambda/lambda_7/ewc-on --enable_other_metrics 1 --non_verbose 1 --lr 0.1 --gamma 1.0 --e_lambda 7.0
+
+============================================================
+[--e_lambda=7] ewc-on seed=456 | success | 99.6s
+CMD: /home/yeochoon/Documents/grad_thesis/cl_benchmarks/.venv/bin/python /home/yeochoon/Documents/grad_thesis/cl_benchmarks/mammoth/main.py --model ewc-on --dataset seq-mnist --seed 456 --device 0 --n_epochs 1 --base_path /home/yeochoon/Documents/grad_thesis/cl_benchmarks/raw_data/ --results_path sweep_reg_lambda/lambda_7/ewc-on --enable_other_metrics 1 --non_verbose 1 --lr 0.1 --gamma 1.0 --e_lambda 7.0
+
+============================================================
+[--e_lambda=7] ewc-on seed=789 | success | 111.9s
+CMD: /home/yeochoon/Documents/grad_thesis/cl_benchmarks/.venv/bin/python /home/yeochoon/Documents/grad_thesis/cl_benchmarks/mammoth/main.py --model ewc-on --dataset seq-mnist --seed 789 --device 0 --n_epochs 1 --base_path /home/yeochoon/Documents/grad_thesis/cl_benchmarks/raw_data/ --results_path sweep_reg_lambda/lambda_7/ewc-on --enable_other_metrics 1 --non_verbose 1 --lr 0.1 --gamma 1.0 --e_lambda 7.0
+
+============================================================
+[--e_lambda=7] ewc-on seed=1024 | success | 102.9s
+CMD: /home/yeochoon/Documents/grad_thesis/cl_benchmarks/.venv/bin/python /home/yeochoon/Documents/grad_thesis/cl_benchmarks/mammoth/main.py --model ewc-on --dataset seq-mnist --seed 1024 --device 0 --n_epochs 1 --base_path /home/yeochoon/Documents/grad_thesis/cl_benchmarks/raw_data/ --results_path sweep_reg_lambda/lambda_7/ewc-on --enable_other_metrics 1 --non_verbose 1 --lr 0.1 --gamma 1.0 --e_lambda 7.0
