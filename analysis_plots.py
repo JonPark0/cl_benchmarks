@@ -39,7 +39,7 @@ plt.rcParams.update({
 MODEL_STYLE = {
     "joint":  {"color": "#2ca02c", "marker": "s", "label": "Joint (Upper)"},
     "sgd":    {"color": "#7f7f7f", "marker": "x", "label": "SGD (Lower)"},
-    "ewc-on": {"color": "#1f77b4", "marker": "o", "label": "EWC Online"},
+    "ewc-on": {"color": "#1f77b4", "marker": "o", "label": "Online EWC"},
     "si":     {"color": "#17becf", "marker": "o", "label": "SI"},
     "er":     {"color": "#d62728", "marker": "^", "label": "ER"},
     "derpp":  {"color": "#ff7f0e", "marker": "^", "label": "DER++"},
@@ -422,6 +422,65 @@ def plot_bwt_aa_scatter() -> None:
     print(f"  saved: {out}")
 
 
+# ----- 6. s.e.m./std 상호 환산 비교 (std 척도 / s.e.m. 척도, 두 그래프로 분리) -----
+def plot_sem_std_compare() -> None:
+    # van de Ven et al. (2022)의 s.e.m.(n=20)과 본 연구의 std(n=5) -
+    # plot_paper_comparison()의 paper_data/our_data와 동일한 표준오차/표준편차 값
+    paper_sem = {
+        "SGD": 0.02, "Joint": 0.04, "Online EWC": 0.52, "SI": 0.57,
+        "LwF": 0.32, "A-GEM": 3.64, "ER": 0.20,
+    }
+    our_std = {
+        "SGD": 0.07, "Joint": 0.14, "Online EWC": 0.06, "SI": 4.19,
+        "LwF": 0.47, "A-GEM": 1.17, "ER": 0.70,
+    }
+    models = list(paper_sem.keys())
+    paper_to_std = {m: paper_sem[m] * np.sqrt(20) for m in models}
+    our_to_sem = {m: our_std[m] / np.sqrt(5) for m in models}
+
+    def grouped_bar(vals_a, vals_b, label_a, label_b, ylabel, title, out_name):
+        x = np.arange(len(models))
+        width = 0.36
+        fig, ax = plt.subplots(figsize=(8.5, 5))
+        b1 = ax.bar(x - width / 2, vals_a, width, label=label_a,
+                     color="#4c72b0", edgecolor="black", linewidth=0.5)
+        b2 = ax.bar(x + width / 2, vals_b, width, label=label_b,
+                     color="#dd8452", edgecolor="black", linewidth=0.5)
+        # 값 범위가 넓어(0.02~16.28) 로그 스케일 사용 - 막대 위 레이블은 곱셈 오프셋으로 배치
+        ax.set_yscale("log")
+        for bars in (b1, b2):
+            for bar in bars:
+                h = bar.get_height()
+                ax.text(bar.get_x() + bar.get_width() / 2, h * 1.15,
+                        f"{h:.2f}", ha="center", fontsize=8)
+        ax.set_xticks(x)
+        ax.set_xticklabels(models, rotation=20, ha="right")
+        ax.set_ylabel(ylabel + " (log scale)")
+        ax.set_ylim(0.01, 40)
+        ax.set_title(title)
+        ax.legend(fontsize=9)
+        ax.grid(True, which="both", axis="y", alpha=0.3)
+        out = FIGURES_DIR / out_name
+        fig.savefig(out)
+        plt.close(fig)
+        print(f"  saved: {out}")
+
+    grouped_bar(
+        [paper_to_std[m] for m in models], [our_std[m] for m in models],
+        "van de Ven et al. (2022) $\\to$ std ($\\times\\sqrt{20}$)", "This work std ($n=5$)",
+        "Std. Dev. of AA (%)",
+        "Variance Comparison: std scale",
+        "figure_sem_std_compare_std.png",
+    )
+    grouped_bar(
+        [paper_sem[m] for m in models], [our_to_sem[m] for m in models],
+        "van de Ven et al. (2022) s.e.m. ($n=20$)", "This work $\\to$ s.e.m. ($\\div\\sqrt{5}$)",
+        "S.E.M. of AA (%)",
+        "Variance Comparison: s.e.m. scale",
+        "figure_sem_std_compare_sem.png",
+    )
+
+
 def main() -> None:
     print(f"생성 경로: {FIGURES_DIR}")
     plot_category_bar()
@@ -429,6 +488,7 @@ def main() -> None:
     plot_epoch_sweep()
     plot_buffer_sweep()
     plot_bwt_aa_scatter()
+    plot_sem_std_compare()
     print("완료")
 
 

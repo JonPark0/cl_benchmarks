@@ -37,16 +37,30 @@ Source: `raw_data/wsl/r3_vandeven/{model}/.../logs.pyd`, aggregated in
 --fitting_mode iters --n_iters 2000 --batch_size 128 --permute_classes 1`, buffer=1000
 where applicable. 7 models × 5 seeds = 35 runs, plus 5 more for `agem_fixed`.
 
-| Model | Literature | Original (ep=1, mlp=100) | Protocol-matched |
-|---|---|---|---|
-| SGD | 19.89±0.02 | 19.50±0.07 | 19.91±0.06 |
-| Joint | 98.17±0.04 | 93.91±0.14 | 93.07±0.50 |
-| EWC Online | 20.64±0.52 | 19.51±0.06 | 19.91±0.06 |
-| SI | 21.20±0.57 | 22.15±4.19 | 19.96±0.36 |
-| LwF | 21.89±0.32 | 19.34±0.47 | 20.31±0.78 |
-| ER | 88.79±0.20 | 81.38±0.70 | 91.06±1.27 |
-| A-GEM | 65.10±3.64 | 23.77±1.17 | 45.33±3.26 |
-| A-GEM (patched) | — | — | 45.57±7.23 |
+| Model | Literature | Original (ep=1, mlp=100) | Protocol-matched (ep=1) | Protocol-matched (ep=21) |
+|---|---|---|---|---|
+| SGD | 19.89±0.02 | 19.50±0.07 | 19.91±0.06 | — |
+| Joint | 98.17±0.04 | 93.91±0.14 | 93.07±0.50 | **98.02±0.10** |
+| EWC Online | 20.64±0.52 | 19.51±0.06 | 19.91±0.06 | — |
+| SI | 21.20±0.57 | 22.15±4.19 | 19.96±0.36 | — |
+| LwF | 21.89±0.32 | 19.34±0.47 | 20.31±0.78 | — |
+| ER | 88.79±0.20 | 81.38±0.70 | 91.06±1.27 | — |
+| A-GEM | 65.10±3.64 | 23.77±1.17 | 45.33±3.26 | — |
+| A-GEM (patched) | — | — | 45.57±7.23 | — |
+
+**Joint correction (2026-08-17):** the original "protocol-matched" Joint run above used
+`n_epochs=1` (the flags matched to van de Ven — `--fitting_mode iters --n_iters 2000
+--batch_size 128` — only affect Mammoth's per-task training loop; `models/joint.py:50-51`
+trains via `for e in range(self.args.n_epochs)` directly and does not consult
+`fitting_mode`/`n_iters` at all, since Joint's `observe()` is a no-op and the per-task loop
+in `utils/training.py` is never entered for it). Van de Ven's Joint used the same total
+iteration budget as the sequential protocol, i.e. `5 × 2,000 iterations` at batch 128 ≈ 21
+epochs over the full 60k-image training set. Re-running Joint with `--n_epochs 21` (all
+other flags unchanged, WSL2, same 5 seeds, `raw_data/wsl/r3_vandeven_n21/joint/`) gives
+**98.02 ± 0.10%**, matching the literature value (98.17±0.04%) to within 0.15pp — confirming
+that the 93.07% figure was an artifact of the unmatched epoch count, not a genuine residual
+gap. `results/wsl/r3_vandeven_protocol.csv` records this as a separate `joint_n21` row
+(BWT not computed for this rerun: `--enable_other_metrics` was left at its default of 0).
 
 **Finding:** the original 41%p A-GEM gap decomposes as ≈21%p from protocol mismatch
 (backbone width, training budget, buffer size, class-order randomization) and a residual
