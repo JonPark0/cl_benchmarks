@@ -22,6 +22,9 @@ ROOT = Path(__file__).resolve().parent
 RESULTS_DIR = ROOT / "results"
 FIGURES_DIR = RESULTS_DIR / "figures"
 FIGURES_DIR.mkdir(parents=True, exist_ok=True)
+# review4: 기본 실험은 WSL2에서 20시드로 다시 실행한 결과를 사용한다 (make_review4_data.py가 생성)
+BASE_CSV = RESULTS_DIR / "wsl" / "e2_seeds20_summary.csv"
+BASE_SEEDS = 20
 
 # ----- 공통 스타일 -----
 plt.rcParams.update({
@@ -66,8 +69,8 @@ def read_csv(path: Path) -> list[dict]:
 
 # ----- 1. 카테고리별 바 차트 (1차 실험) -----
 def plot_category_bar() -> None:
-    rows = read_csv(RESULTS_DIR / "split_mnist_latest.csv")
-    order = ["joint", "derpp", "er", "agem", "si", "ewc-on", "sgd", "lwf"]
+    rows = read_csv(BASE_CSV)
+    order = ["joint", "derpp", "er", "agem", "si", "lwf", "ewc-on", "sgd"]
     rows_sorted = sorted(rows, key=lambda r: order.index(r["model"]))
 
     names = [MODEL_STYLE[r["model"]]["label"] for r in rows_sorted]
@@ -84,7 +87,7 @@ def plot_category_bar() -> None:
                 f"{val:.2f}", ha="center", fontsize=9)
     ax.set_ylabel("Average Accuracy (%)")
     ax.set_ylim(0, 110)
-    ax.set_title("Split-MNIST Class-IL Results (n_epochs=1, buffer=200, 5 seeds)")
+    ax.set_title(f"Split-MNIST Class-IL Results (n_epochs=1, buffer=200, {BASE_SEEDS} seeds)")
     plt.xticks(rotation=25, ha="right")
 
     # 카테고리 범례
@@ -92,7 +95,7 @@ def plot_category_bar() -> None:
                       for cat, c in CATEGORY_COLOR.items()]
     ax.legend(handles=legend_handles, loc="upper right", fontsize=9, framealpha=0.9)
 
-    out = FIGURES_DIR / "figure_category_bar.png"
+    out = FIGURES_DIR / "figure_category_bar_n20.png"
     fig.savefig(out)
     plt.close(fig)
     print(f"  saved: {out}")
@@ -309,7 +312,7 @@ def plot_buffer_sweep() -> None:
 
 # ----- 5. BWT-AA 산점도 (trade-off) -----
 def plot_bwt_aa_scatter() -> None:
-    rows = read_csv(RESULTS_DIR / "split_mnist_latest.csv")
+    rows = read_csv(BASE_CSV)
 
     data = {}
     for r in rows:
@@ -373,7 +376,7 @@ def plot_bwt_aa_scatter() -> None:
 
     # 두 확대 영역을 원본 산점도 위에 점선 사각형으로 표시 — 아래 패널과의 대응 관계를
     # 시각적으로 연결한다 (레이블 A/B로 패널 제목과 일치시킴).
-    low_box = (-101, -85, 17, 27)     # x0, x1, y0, y1
+    low_box = (-101, -85, 17, 30)     # x0, x1, y0, y1
     mid_box = (-26, -13, 77, 89)
     for (x0, x1, y0, y1), label in [(low_box, "A"), (mid_box, "B")]:
         ax.add_patch(Rectangle((x0, y0), x1 - x0, y1 - y0, fill=False,
@@ -416,7 +419,7 @@ def plot_bwt_aa_scatter() -> None:
     ax_mid.set_title("B. DER++ · ER (zoom)", fontsize=10)
     ax_mid.tick_params(labelsize=8)
 
-    out = FIGURES_DIR / "figure_bwt_aa_scatter.png"
+    out = FIGURES_DIR / "figure_bwt_aa_scatter_n20.png"
     fig.savefig(out)
     plt.close(fig)
     print(f"  saved: {out}")
@@ -424,71 +427,59 @@ def plot_bwt_aa_scatter() -> None:
 
 # ----- 6. s.e.m./std 상호 환산 비교 (std 척도 / s.e.m. 척도, 두 그래프로 분리) -----
 def plot_sem_std_compare() -> None:
-    # van de Ven et al. (2022)의 s.e.m.(n=20)과 본 연구의 std(n=5) -
-    # plot_paper_comparison()의 paper_data/our_data와 동일한 표준오차/표준편차 값
+    # van de Ven et al. (2022)의 s.e.m.(n=20)과 본 연구 기본 실험의 std(n=20)를 std 척도로 비교한다.
+    # 두 척도는 상수배 관계이므로 std 척도 그림 하나만 만든다.
     paper_sem = {
         "SGD": 0.02, "Joint": 0.04, "Online EWC": 0.52, "SI": 0.57,
         "LwF": 0.32, "A-GEM": 3.64, "ER": 0.20,
     }
-    our_std = {
-        "SGD": 0.07, "Joint": 0.14, "Online EWC": 0.06, "SI": 4.19,
-        "LwF": 0.47, "A-GEM": 1.17, "ER": 0.70,
-    }
+    key = {"SGD": "sgd", "Joint": "joint", "Online EWC": "ewc-on", "SI": "si",
+           "LwF": "lwf", "A-GEM": "agem", "ER": "er"}
+    by_model = {r["model"]: float(r["aa_std"]) for r in read_csv(BASE_CSV)}
+    our_std = {m: by_model[key[m]] for m in paper_sem}
     models = list(paper_sem.keys())
     paper_to_std = {m: paper_sem[m] * np.sqrt(20) for m in models}
-    our_to_sem = {m: our_std[m] / np.sqrt(5) for m in models}
 
-    def grouped_bar(vals_a, vals_b, label_a, label_b, ylabel, title, out_name):
-        x = np.arange(len(models))
-        width = 0.36
-        fig, ax = plt.subplots(figsize=(8.5, 5))
-        b1 = ax.bar(x - width / 2, vals_a, width, label=label_a,
-                     color="#4c72b0", edgecolor="black", linewidth=0.5)
-        b2 = ax.bar(x + width / 2, vals_b, width, label=label_b,
-                     color="#dd8452", edgecolor="black", linewidth=0.5)
-        # 값 범위가 넓어(0.02~16.28) 로그 스케일 사용 - 막대 위 레이블은 곱셈 오프셋으로 배치
-        ax.set_yscale("log")
-        for bars in (b1, b2):
-            for bar in bars:
-                h = bar.get_height()
-                ax.text(bar.get_x() + bar.get_width() / 2, h * 1.15,
-                        f"{h:.2f}", ha="center", fontsize=8)
-        ax.set_xticks(x)
-        ax.set_xticklabels(models, rotation=20, ha="right")
-        ax.set_ylabel(ylabel + " (log scale)")
-        ax.set_ylim(0.01, 40)
-        ax.set_title(title)
-        ax.legend(fontsize=9)
-        ax.grid(True, which="both", axis="y", alpha=0.3)
-        out = FIGURES_DIR / out_name
-        fig.savefig(out)
-        plt.close(fig)
-        print(f"  saved: {out}")
-
-    grouped_bar(
-        [paper_to_std[m] for m in models], [our_std[m] for m in models],
-        "van de Ven et al. (2022) $\\to$ std ($\\times\\sqrt{20}$)", "This work std ($n=5$)",
-        "Std. Dev. of AA (%)",
-        "Variance Comparison: std scale",
-        "figure_sem_std_compare_std.png",
-    )
-    grouped_bar(
-        [paper_sem[m] for m in models], [our_to_sem[m] for m in models],
-        "van de Ven et al. (2022) s.e.m. ($n=20$)", "This work $\\to$ s.e.m. ($\\div\\sqrt{5}$)",
-        "S.E.M. of AA (%)",
-        "Variance Comparison: s.e.m. scale",
-        "figure_sem_std_compare_sem.png",
-    )
+    x = np.arange(len(models))
+    width = 0.36
+    fig, ax = plt.subplots(figsize=(8.5, 5))
+    b1 = ax.bar(x - width / 2, [paper_to_std[m] for m in models], width,
+                label="van de Ven et al. (2022) $\\to$ std ($\\times\\sqrt{20}$)",
+                color="#4c72b0", edgecolor="black", linewidth=0.5)
+    b2 = ax.bar(x + width / 2, [our_std[m] for m in models], width,
+                label=f"This work std ($n={BASE_SEEDS}$)",
+                color="#dd8452", edgecolor="black", linewidth=0.5)
+    # 값 범위가 넓어 로그 스케일 사용 - 막대 위 레이블은 곱셈 오프셋으로 배치
+    ax.set_yscale("log")
+    for bars in (b1, b2):
+        for bar in bars:
+            h = bar.get_height()
+            ax.text(bar.get_x() + bar.get_width() / 2, h * 1.15,
+                    f"{h:.2f}", ha="center", fontsize=8)
+    ax.set_xticks(x)
+    ax.set_xticklabels(models, rotation=20, ha="right")
+    ax.set_ylabel("Std. Dev. of AA (%) (log scale)")
+    ax.set_ylim(0.01, 40)
+    ax.set_title("Variance Comparison: std scale")
+    ax.legend(fontsize=9)
+    ax.grid(True, which="both", axis="y", alpha=0.3)
+    out = FIGURES_DIR / "figure_sem_std_compare_std_n20.png"
+    fig.savefig(out)
+    plt.close(fig)
+    print(f"  saved: {out}")
 
 
 def main() -> None:
+    import sys
     print(f"생성 경로: {FIGURES_DIR}")
+    # review4: 기본 실험(20시드)에 의존하는 그림만 다시 만든다. 나머지는 --all
     plot_category_bar()
-    plot_paper_comparison()
-    plot_epoch_sweep()
-    plot_buffer_sweep()
     plot_bwt_aa_scatter()
     plot_sem_std_compare()
+    if "--all" in sys.argv:
+        plot_paper_comparison()
+        plot_epoch_sweep()
+        plot_buffer_sweep()
     print("완료")
 
 
