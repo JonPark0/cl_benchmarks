@@ -3,3 +3,5 @@
 
 # WSL2 MNIST 원본 데이터 (raw_data/MNIST와 md5 동일한 중복 사본)
 raw_data/wsl/MNIST/
+# Python bytecode
+__pycache__/

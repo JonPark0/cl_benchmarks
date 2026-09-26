@@ -1,0 +1,118 @@
+lwf s42
+accuracy values: Class-IL [99.95337995337995] | Task-IL [99.95337995337995]
+
+
+Accuracy for 2 task(s): 	 [Class-IL]: 49.76 % 	 [Task-IL]: 99.71 %
+	Raw accuracy values: Class-IL [0.0, 99.51768488745981] | Task-IL [99.90675990675992, 99.51768488745981]
+
+
+Accuracy for 3 task(s): 	 [Class-IL]: 33.12 % 	 [Task-IL]: 99.58 %
+	Raw accuracy values: Class-IL [0.0, 0.0, 99.36893203883496] | Task-IL [99.90675990675992, 99.46409431939979, 99.36893203883496]
+
+
+Accuracy for 4 task(s): 	 [Class-IL]: 24.84 % 	 [Task-IL]: 99.06 %
+	Raw accuracy values: Class-IL [0.0, 0.0, 0.0, 99.347061778001] | Task-IL [99.39393939393939, 98.12433011789925, 99.36893203883496, 99.347061778001]
+
+
+Traceback (most recent call last):
+  File "/home/yeochoon/Documents/grad_thesis/cl_benchmarks/mammoth/main.py", line 566, in <module>
+    main()
+  File "/home/yeochoon/Documents/grad_thesis/cl_benchmarks/mammoth/main.py", line 562, in main
+    train(model, dataset, args)
+  File "/home/yeochoon/Documents/grad_thesis/cl_benchmarks/mammoth/utils/checkpoints.py", line 323, in wrapped_fn
+    return fn(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^
+  File "/home/yeochoon/Documents/grad_thesis/cl_benchmarks/mammoth/utils/training.py", line 262, in train
+    train_single_epoch(model, train_loader, args, pbar=train_pbar, epoch=epoch,
+  File "/home/yeochoon/Documents/grad_thesis/cl_benchmarks/mammoth/utils/training.py", line 110, in train_single_epoch
+    assert not math.isnan(loss)
+           ^^^^^^^^^^^^^^^^^^^^
+AssertionError
+
+lwf s123
+curacy values: Class-IL [99.8088867654085] | Task-IL [99.8088867654085]
+
+
+Accuracy for 2 task(s): 	 [Class-IL]: 49.76 % 	 [Task-IL]: 99.62 %
+	Raw accuracy values: Class-IL [0.0, 99.52656496580747] | Task-IL [99.71333014811276, 99.52656496580747]
+
+
+Accuracy for 3 task(s): 	 [Class-IL]: 33.28 % 	 [Task-IL]: 99.71 %
+	Raw accuracy values: Class-IL [0.0, 0.0, 99.84924623115577] | Task-IL [99.71333014811276, 99.57916885849552, 99.84924623115577]
+
+
+Accuracy for 4 task(s): 	 [Class-IL]: 24.81 % 	 [Task-IL]: 99.52 %
+	Raw accuracy values: Class-IL [0.0, 0.0, 0.0, 99.22330097087378] | Task-IL [99.52221691352126, 99.42135718043134, 99.89949748743719, 99.22330097087378]
+
+
+Traceback (most recent call last):
+  File "/home/yeochoon/Documents/grad_thesis/cl_benchmarks/mammoth/main.py", line 566, in <module>
+    main()
+  File "/home/yeochoon/Documents/grad_thesis/cl_benchmarks/mammoth/main.py", line 562, in main
+    train(model, dataset, args)
+  File "/home/yeochoon/Documents/grad_thesis/cl_benchmarks/mammoth/utils/checkpoints.py", line 323, in wrapped_fn
+    return fn(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^
+  File "/home/yeochoon/Documents/grad_thesis/cl_benchmarks/mammoth/utils/training.py", line 262, in train
+    train_single_epoch(model, train_loader, args, pbar=train_pbar, epoch=epoch,
+  File "/home/yeochoon/Documents/grad_thesis/cl_benchmarks/mammoth/utils/training.py", line 110, in train_single_epoch
+    assert not math.isnan(loss)
+           ^^^^^^^^^^^^^^^^^^^^
+AssertionError
+
+lwf s1024
+Accuracy for 1 task(s): 	 [Class-IL]: 99.46 % 	 [Task-IL]: 99.46 %
+	Raw accuracy values: Class-IL [99.45517582961863] | Task-IL [99.45517582961863]
+
+
+Accuracy for 2 task(s): 	 [Class-IL]: 50.03 % 	 [Task-IL]: 99.65 %
+	Raw accuracy values: Class-IL [0.09905894006934125, 99.95271867612293] | Task-IL [99.35611688954928, 99.95271867612293]
+
+
+Accuracy for 3 task(s): 	 [Class-IL]: 33.3 % 	 [Task-IL]: 99.7 %
+	Raw accuracy values: Class-IL [0.0, 0.0, 99.8992950654582] | Task-IL [99.25705794947994, 99.95271867612293, 99.8992950654582]
+
+
+Traceback (most recent call last):
+  File "/home/yeochoon/Documents/grad_thesis/cl_benchmarks/mammoth/main.py", line 566, in <module>
+    main()
+  File "/home/yeochoon/Documents/grad_thesis/cl_benchmarks/mammoth/main.py", line 562, in main
+    train(model, dataset, args)
+  File "/home/yeochoon/Documents/grad_thesis/cl_benchmarks/mammoth/utils/checkpoints.py", line 323, in wrapped_fn
+    return fn(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^
+  File "/home/yeochoon/Documents/grad_thesis/cl_benchmarks/mammoth/utils/training.py", line 262, in train
+    train_single_epoch(model, train_loader, args, pbar=train_pbar, epoch=epoch,
+  File "/home/yeochoon/Documents/grad_thesis/cl_benchmarks/mammoth/utils/training.py", line 110, in train_single_epoch
+    assert not math.isnan(loss)
+           ^^^^^^^^^^^^^^^^^^^^
+AssertionError
+
+lwf s789
+Accuracy for 1 task(s): 	 [Class-IL]: 99.41 % 	 [Task-IL]: 99.41 %
+	Raw accuracy values: Class-IL [99.41118743866537] | Task-IL [99.41118743866537]
+
+
+Accuracy for 2 task(s): 	 [Class-IL]: 49.72 % 	 [Task-IL]: 99.45 %
+	Raw accuracy values: Class-IL [0.0, 99.4452849218356] | Task-IL [99.46025515210991, 99.4452849218356]
+
+
+Accuracy for 3 task(s): 	 [Class-IL]: 33.18 % 	 [Task-IL]: 99.42 %
+	Raw accuracy values: Class-IL [0.0, 0.0, 99.53560371517027] | Task-IL [99.21491658488715, 99.4957135653051, 99.53560371517027]
+
+
+Traceback (most recent call last):
+  File "/home/yeochoon/Documents/grad_thesis/cl_benchmarks/mammoth/main.py", line 566, in <module>
+    main()
+  File "/home/yeochoon/Documents/grad_thesis/cl_benchmarks/mammoth/main.py", line 562, in main
+    train(model, dataset, args)
+  File "/home/yeochoon/Documents/grad_thesis/cl_benchmarks/mammoth/utils/checkpoints.py", line 323, in wrapped_fn
+    return fn(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^
+  File "/home/yeochoon/Documents/grad_thesis/cl_benchmarks/mammoth/utils/training.py", line 262, in train
+    train_single_epoch(model, train_loader, args, pbar=train_pbar, epoch=epoch,
+  File "/home/yeochoon/Documents/grad_thesis/cl_benchmarks/mammoth/utils/training.py", line 110, in train_single_epoch
+    assert not math.isnan(loss)
+           ^^^^^^^^^^^^^^^^^^^^
+AssertionError
+
