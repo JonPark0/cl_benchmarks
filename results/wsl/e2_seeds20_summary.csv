@@ -1,0 +1,9 @@
+model,category,n_runs,aa_mean,aa_std,bwt_mean,bwt_std
+joint,Upper Bound,20,93.8489,0.7435,68.1486,7.2189
+derpp,Replay,20,84.1628,2.8262,-17.4038,3.5763
+er,Replay,20,81.4153,1.664,-20.4648,2.0314
+agem,Optimization,20,25.384,2.5415,-91.7505,2.9174
+si,Regularization,20,20.7099,3.1106,-95.2934,3.9932
+ewc-on,Regularization,20,19.4655,0.2451,-99.0494,0.3211
+lwf,Knowledge Distillation,20,19.5223,0.273,-99.1427,0.2129
+sgd,Lower Bound,20,19.47,0.2106,-99.0518,0.316

@@ -76,5 +76,5 @@ A-GEM and the original paper's) was not identified further — left as an open q
 - `results/*.csv|json` (Windows-era) and `raw_data/split_mnist`, `raw_data/sweep_epochs`,
   `raw_data/sweep_buffer` (Windows-era) are untouched — verified via `git status --porcelain`.
 - All new data under `raw_data/wsl/` and `results/wsl/`.
-- `mammoth/` submodule diff is exactly one new untracked file (`models/agem_fixed.py`);
+- `mammoth/` submodule diff is exactly two new untracked files (`models/agem_fixed.py`, and, added 2026-09-21 for review4 E3, `models/ewc_on_fisher.py` copied from `models_patch/`);
   the pinned commit's tracked files are unmodified.
