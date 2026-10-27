@@ -1,0 +1,172 @@
+/home/yeochoon/Documents/grad_thesis/cl_benchmarks/.venv/bin/python /home/yeochoon/Documents/grad_thesis/cl_benchmarks/mammoth/main.py --model gem --seed 2011 --n_epochs 1 --base_path /home/yeochoon/Documents/grad_thesis/cl_benchmarks/raw_data/linux/ --results_path base/gem/s2011 --dataset seq-mnist --optimizer adam --lr 0.001 --enable_other_metrics 1 --non_verbose 1 --device 0 --buffer_size 200 --minibatch_size 64
+
+[INFO] 03-Oct-26 23:03:28 - Running Mammoth! on YCLaptop2. 
+[WARNING] 03-Oct-26 23:03:32 - Error in model derpp-casper
+[WARNING] 03-Oct-26 23:03:32 - No module named 'xitorch'
+[WARNING] 03-Oct-26 23:03:32 - Error in model xder-rpc-casper
+[WARNING] 03-Oct-26 23:03:34 - Error in model llava
+[WARNING] 03-Oct-26 23:03:34 - Please install the HuggingFace Transformers package by running: pip install transformers
+[WARNING] 03-Oct-26 23:03:34 - Error in model lws
+[WARNING] 03-Oct-26 23:03:34 - kmeans_pytorch not installed. Please run `pip install kmeans-pytorch`.
+[WARNING] 03-Oct-26 23:03:34 - Error in model er-ace-casper
+[WARNING] 03-Oct-26 23:03:35 - Error in model cgil
+[WARNING] 03-Oct-26 23:03:35 - Please install the CLIP package by running: pip install git+https://github.com/openai/CLIP.git
+[WARNING] 03-Oct-26 23:03:35 - Error in model clip
+[WARNING] 03-Oct-26 23:03:35 - Error in model icarl-casper
+[WARNING] 03-Oct-26 23:03:35 - Error in model first-stage-starprompt
+[WARNING] 03-Oct-26 23:03:35 - Please install the CLIP package by running: pip install git+https://github.com/openai/CLIP.git (requires also `huggingface-hub`)
+[WARNING] 03-Oct-26 23:03:35 - Error in model second-stage-starprompt
+[WARNING] 03-Oct-26 23:03:35 - Error in model starprompt
+[WARNING] 03-Oct-26 23:03:35 - No backbone specified. Using default backbone (set by the dataset).
+[WARNING] 03-Oct-26 23:03:35 - No default configuration found in models/config/gem.yaml.
+[WARNING] 03-Oct-26 23:03:35 - Default configuration file not found for dataset seq-mnist. Using the defaults specified in the dataset class (if available).
+[ERROR] 03-Oct-26 23:03:35 - Could not retrieve git hash.
+[INFO] 03-Oct-26 23:03:35 - 
+╔═══════════════════════ CONFIGURATION ═══════════════════════╗
+║ Basic arguments:
+║   • backbone: mnistmlp
+║   • dataset: seq-mnist
+║   • load_best_args: False
+║   • model: gem
+║
+║ Configuration arguments:
+║   • model_config: default
+║
+║ Model-specific arguments:
+║   • gamma: 0.500000
+║
+║ Backbone arguments:
+║   • mlp_hidden_size: 100
+║
+║ Management arguments:
+║   • base_path: /home/yeochoon/Documents/grad_thesis/cl_benchmarks/raw_data/linux/
+║   • checkpoint_path: ./checkpoints/
+║   • code_optimization: 0
+║   • debug_mode: False
+║   • device: 0
+║   • disable_log: False
+║   • distributed: no
+║   • enable_other_metrics: True
+║   • inference_only: False
+║   • non_verbose: True
+║   • permute_classes: False
+║   • results_path: base/gem/s2011
+║   • save_after_interrupt: True
+║   • save_checkpoint_mode: safe
+║   • seed: 2011
+║
+║ Wandb arguments:
+║
+║ Experiment arguments:
+║   • batch_size: 64
+║   • eval_future: False
+║   • joint: 0
+║   • label_perc: 1.000000
+║   • label_perc_by_class: 1.000000
+║   • lr: 0.001000
+║
+║ Validation and fitting arguments:
+║   • early_stopping_epsilon: 0.000001
+║   • early_stopping_freq: 1
+║   • early_stopping_metric: loss
+║   • early_stopping_patience: 5
+║   • fitting_mode: epochs
+║   • n_epochs: 1
+║   • validation_mode: current
+║
+║ Optimizer and learning rate scheduler arguments:
+║   • drop_last: False
+║   • lr_milestones: []
+║   • optim_mom: 0.000000
+║   • optim_nesterov: False
+║   • optim_wd: 0.000000
+║   • optimizer: adam
+║   • sched_multistep_lr_gamma: 0.100000
+║   • scheduler_mode: epoch
+║
+║ Noise arguments:
+║   • cache_path_noisy_labels: noisy_labels
+║   • disable_noisy_labels_cache: False
+║   • noise_rate: 0.000000
+║   • noise_type: symmetric
+║
+╚════════════════════════════════════════════════════════════╝
+[WARNING] 03-Oct-26 23:03:35 - Could not get memory from pynvml. Maybe try `pip install --force-reinstall gpustat`. module 'torch.cuda' has no attribute 'pynvml'
+[INFO] 03-Oct-26 23:03:35 - Using device cuda:0
+[INFO] 03-Oct-26 23:03:35 - `wandb_entity` and `wandb_project` not set. Disabling wandb.
+[INFO] 03-Oct-26 23:03:35 - Using backbone: mnistmlp
+[INFO] 03-Oct-26 23:03:35 - Using BaseMNISTMLP as backbone
+[INFO] 03-Oct-26 23:03:35 - No transform provided.
+[INFO] 03-Oct-26 23:03:35 - Current working directory: /home/yeochoon/Documents/grad_thesis/cl_benchmarks/mammoth.
+[INFO] 03-Oct-26 23:03:35 - Main process PID: 988070
+[INFO] 03-Oct-26 23:03:36 - Using 8 workers for the dataloader.
+[INFO] 03-Oct-26 23:03:36 - Using 8 workers for the dataloader.
+[INFO] 03-Oct-26 23:03:36 - Evaluating model before task (for Forward Transfer metric)...
+[INFO] 03-Oct-26 23:03:36 - Task 1
+STOP ITERATION
+[INFO] 03-Oct-26 23:03:41 - Accuracy for 1 task(s): 	 [Class-IL]: 99.95 % 	 [Task-IL]: 99.95 %
+[INFO] 03-Oct-26 23:03:41 - 	Raw accuracy values: Class-IL [99.95271867612293] | Task-IL [99.95271867612293]
+[INFO] 03-Oct-26 23:03:41 - Using 8 workers for the dataloader.
+[INFO] 03-Oct-26 23:03:41 - Using 8 workers for the dataloader.
+[INFO] 03-Oct-26 23:03:41 - Evaluating model before task (for Forward Transfer metric)...
+[INFO] 03-Oct-26 23:03:44 - Task 2
+STOP ITERATION
+[INFO] 03-Oct-26 23:04:06 - Accuracy for 2 task(s): 	 [Class-IL]: 97.81 % 	 [Task-IL]: 98.88 %
+[INFO] 03-Oct-26 23:04:06 - 	Raw accuracy values: Class-IL [98.01418439716312, 97.60039177277179] | Task-IL [99.8581560283688, 97.89422135161607]
+[INFO] 03-Oct-26 23:04:06 - Using 8 workers for the dataloader.
+[INFO] 03-Oct-26 23:04:06 - Using 8 workers for the dataloader.
+[INFO] 03-Oct-26 23:04:06 - Evaluating model before task (for Forward Transfer metric)...
+[INFO] 03-Oct-26 23:04:07 - Task 3
+STOP ITERATION
+[INFO] 03-Oct-26 23:04:15 - Accuracy for 3 task(s): 	 [Class-IL]: 92.86 % 	 [Task-IL]: 98.85 %
+[INFO] 03-Oct-26 23:04:15 - 	Raw accuracy values: Class-IL [95.0354609929078, 84.23114593535749, 99.30629669156885] | Task-IL [99.90543735224587, 97.0617042115573, 99.57310565635005]
+[INFO] 03-Oct-26 23:04:15 - Using 8 workers for the dataloader.
+[INFO] 03-Oct-26 23:04:15 - Using 8 workers for the dataloader.
+[INFO] 03-Oct-26 23:04:15 - Evaluating model before task (for Forward Transfer metric)...
+[INFO] 03-Oct-26 23:04:16 - Task 4
+STOP ITERATION
+[INFO] 03-Oct-26 23:04:24 - Accuracy for 4 task(s): 	 [Class-IL]: 90.16 % 	 [Task-IL]: 98.43 %
+[INFO] 03-Oct-26 23:04:24 - 	Raw accuracy values: Class-IL [93.28605200945627, 82.61508325171401, 85.91248665955176, 98.84189325276938] | Task-IL [99.8581560283688, 95.4456415279138, 98.55923159018143, 99.8489425981873]
+[INFO] 03-Oct-26 23:04:25 - Using 8 workers for the dataloader.
+[INFO] 03-Oct-26 23:04:25 - Using 8 workers for the dataloader.
+[INFO] 03-Oct-26 23:04:25 - Evaluating model before task (for Forward Transfer metric)...
+[INFO] 03-Oct-26 23:04:26 - Task 5
+STOP ITERATION
+[INFO] 03-Oct-26 23:04:37 - Accuracy for 5 task(s): 	 [Class-IL]: 82.32 % 	 [Task-IL]: 97.54 %
+[INFO] 03-Oct-26 23:04:37 - 	Raw accuracy values: Class-IL [92.90780141843972, 69.09892262487757, 67.82283884738527, 85.04531722054381, 96.7221381744831] | Task-IL [99.52718676122932, 92.16454456415279, 98.23906083244397, 99.49647532729104, 98.28542612203732]
+[INFO] 03-Oct-26 23:04:37 - System stats:
+[INFO] 03-Oct-26 23:04:37 - 	Initial CPU memory usage: 892.14 MB
+[INFO] 03-Oct-26 23:04:37 - 	Average CPU memory usage: 2327.09 MB
+[INFO] 03-Oct-26 23:04:37 - 	Final CPU memory usage: 2533.50 MB
+[INFO] 03-Oct-26 23:04:37 - 	Max CPU memory usage: 2533.50 MB
+[INFO] 03-Oct-26 23:04:37 - 	Initial GPU 0 memory usage: 0.69 MB
+[INFO] 03-Oct-26 23:04:37 - 	Average GPU 0 memory usage: 21.85 MB
+[INFO] 03-Oct-26 23:04:37 - 	Final GPU 0 memory usage: 21.85 MB
+[INFO] 03-Oct-26 23:04:37 - 	Max GPU 0 memory usage: 21.85 MB
+[INFO] 03-Oct-26 23:04:37 - Logging results and arguments in /home/yeochoon/Documents/grad_thesis/cl_benchmarks/raw_data/linux/base/gem/s2011/class-il/seq-mnist/gem/logs.pyd
+Accuracy for 1 task(s): 	 [Class-IL]: 99.95 % 	 [Task-IL]: 99.95 %
+	Raw accuracy values: Class-IL [99.95271867612293] | Task-IL [99.95271867612293]
+
+
+Accuracy for 2 task(s): 	 [Class-IL]: 97.81 % 	 [Task-IL]: 98.88 %
+	Raw accuracy values: Class-IL [98.01418439716312, 97.60039177277179] | Task-IL [99.8581560283688, 97.89422135161607]
+
+
+Accuracy for 3 task(s): 	 [Class-IL]: 92.86 % 	 [Task-IL]: 98.85 %
+	Raw accuracy values: Class-IL [95.0354609929078, 84.23114593535749, 99.30629669156885] | Task-IL [99.90543735224587, 97.0617042115573, 99.57310565635005]
+
+
+Accuracy for 4 task(s): 	 [Class-IL]: 90.16 % 	 [Task-IL]: 98.43 %
+	Raw accuracy values: Class-IL [93.28605200945627, 82.61508325171401, 85.91248665955176, 98.84189325276938] | Task-IL [99.8581560283688, 95.4456415279138, 98.55923159018143, 99.8489425981873]
+
+
+Accuracy for 5 task(s): 	 [Class-IL]: 82.32 % 	 [Task-IL]: 97.54 %
+	Raw accuracy values: Class-IL [92.90780141843972, 69.09892262487757, 67.82283884738527, 85.04531722054381, 96.7221381744831] | Task-IL [99.52718676122932, 92.16454456415279, 98.23906083244397, 99.49647532729104, 98.28542612203732]
+
+
+Backward Transfer: [Class-IL]: -20.21 	 [Task-IL]: -1.96
+	Raw Backward Transfer values: Class-IL -20.206605070496643 | Task-IL -1.96043019928981
+Forgetting: [Class-IL]: 20.21 	 [Task-IL]: 1.96
+	Raw Forgetting values: Class-IL 20.206605070496643 | Task-IL 1.96043019928981
+Forward Transfer: [Class-IL]: 0.00 	 [Task-IL]: 0.00
+	Raw Forward Transfer values: Class-IL 0.0 | Task-IL 0.0

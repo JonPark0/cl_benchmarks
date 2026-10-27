@@ -5,3 +5,6 @@
 raw_data/wsl/MNIST/
 # Python bytecode
 __pycache__/
+
+# Linux 재실험 중 Mammoth가 내려받은 MNIST 원본(재실행 시 자동으로 받는다)
+raw_data/linux/MNIST/

@@ -1,0 +1,16 @@
+fisher: 15 jobs, 4 workers
+fisher ep1 42 0 144
+fisher ep1 123 0 144
+fisher ep1 456 0 144
+fisher ep1 789 0 144
+fisher ep1 1024 0 193
+fisher ep20 42 0 388
+fisher ep20 123 0 388
+fisher ep20 456 0 387
+fisher ep20 789 0 406
+fisher ep20 1024 0 369
+fisher ep1_gamma0.5 42 0 171
+fisher ep1_gamma0.5 123 0 172
+fisher ep1_gamma0.5 456 0 163
+fisher ep1_gamma0.5 789 0 162
+fisher ep1_gamma0.5 1024 0 155

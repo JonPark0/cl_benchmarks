@@ -1,0 +1,240 @@
+/home/yeochoon/Documents/grad_thesis/cl_benchmarks/.venv/bin/python /home/yeochoon/Documents/grad_thesis/cl_benchmarks/mammoth/main.py --model joint --seed 1024 --n_epochs 1 --base_path /home/yeochoon/Documents/grad_thesis/cl_benchmarks/raw_data/linux/ --results_path base/joint/s1024 --dataset seq-mnist --optimizer adam --lr 0.001 --enable_other_metrics 1 --non_verbose 1 --device 0
+
+[INFO] 03-Oct-26 22:31:42 - Running Mammoth! on YCLaptop2. 
+[WARNING] 03-Oct-26 22:31:45 - Error in model derpp-casper
+[WARNING] 03-Oct-26 22:31:45 - No module named 'xitorch'
+[WARNING] 03-Oct-26 22:31:45 - Error in model xder-rpc-casper
+[WARNING] 03-Oct-26 22:31:47 - Error in model llava
+[WARNING] 03-Oct-26 22:31:47 - Please install the HuggingFace Transformers package by running: pip install transformers
+[WARNING] 03-Oct-26 22:31:47 - Error in model lws
+[WARNING] 03-Oct-26 22:31:47 - kmeans_pytorch not installed. Please run `pip install kmeans-pytorch`.
+[WARNING] 03-Oct-26 22:31:47 - Error in model er-ace-casper
+[WARNING] 03-Oct-26 22:31:47 - Error in model cgil
+[WARNING] 03-Oct-26 22:31:47 - Please install the CLIP package by running: pip install git+https://github.com/openai/CLIP.git
+[WARNING] 03-Oct-26 22:31:47 - Error in model clip
+[WARNING] 03-Oct-26 22:31:47 - Error in model icarl-casper
+[WARNING] 03-Oct-26 22:31:47 - Error in model first-stage-starprompt
+[WARNING] 03-Oct-26 22:31:47 - Please install the CLIP package by running: pip install git+https://github.com/openai/CLIP.git (requires also `huggingface-hub`)
+[WARNING] 03-Oct-26 22:31:47 - Error in model second-stage-starprompt
+[WARNING] 03-Oct-26 22:31:47 - Error in model starprompt
+[WARNING] 03-Oct-26 22:31:47 - No backbone specified. Using default backbone (set by the dataset).
+[INFO] 03-Oct-26 22:31:47 - Trying to load default configuration for model joint but no configuration file found in None.
+[WARNING] 03-Oct-26 22:31:47 - Default configuration file not found for dataset seq-mnist. Using the defaults specified in the dataset class (if available).
+[ERROR] 03-Oct-26 22:31:47 - Could not retrieve git hash.
+[INFO] 03-Oct-26 22:31:47 - 
+╔═══════════════════════ CONFIGURATION ═══════════════════════╗
+║ Basic arguments:
+║   • backbone: mnistmlp
+║   • dataset: seq-mnist
+║   • load_best_args: False
+║   • model: joint
+║
+║ Configuration arguments:
+║   • model_config: default
+║
+║ Backbone arguments:
+║   • mlp_hidden_size: 100
+║
+║ Management arguments:
+║   • base_path: /home/yeochoon/Documents/grad_thesis/cl_benchmarks/raw_data/linux/
+║   • checkpoint_path: ./checkpoints/
+║   • code_optimization: 0
+║   • debug_mode: False
+║   • device: 0
+║   • disable_log: False
+║   • distributed: no
+║   • enable_other_metrics: True
+║   • inference_only: False
+║   • non_verbose: True
+║   • permute_classes: False
+║   • results_path: base/joint/s1024
+║   • save_after_interrupt: True
+║   • save_checkpoint_mode: safe
+║   • seed: 1024
+║
+║ Wandb arguments:
+║
+║ Experiment arguments:
+║   • batch_size: 64
+║   • eval_future: False
+║   • joint: 0
+║   • label_perc: 1.000000
+║   • label_perc_by_class: 1.000000
+║   • lr: 0.001000
+║
+║ Validation and fitting arguments:
+║   • early_stopping_epsilon: 0.000001
+║   • early_stopping_freq: 1
+║   • early_stopping_metric: loss
+║   • early_stopping_patience: 5
+║   • fitting_mode: epochs
+║   • n_epochs: 1
+║   • validation_mode: current
+║
+║ Optimizer and learning rate scheduler arguments:
+║   • drop_last: False
+║   • lr_milestones: []
+║   • optim_mom: 0.000000
+║   • optim_nesterov: False
+║   • optim_wd: 0.000000
+║   • optimizer: adam
+║   • sched_multistep_lr_gamma: 0.100000
+║   • scheduler_mode: epoch
+║
+║ Noise arguments:
+║   • cache_path_noisy_labels: noisy_labels
+║   • disable_noisy_labels_cache: False
+║   • noise_rate: 0.000000
+║   • noise_type: symmetric
+║
+╚════════════════════════════════════════════════════════════╝
+[WARNING] 03-Oct-26 22:31:47 - Could not get memory from pynvml. Maybe try `pip install --force-reinstall gpustat`. module 'torch.cuda' has no attribute 'pynvml'
+[INFO] 03-Oct-26 22:31:47 - Using device cuda:0
+[INFO] 03-Oct-26 22:31:47 - `wandb_entity` and `wandb_project` not set. Disabling wandb.
+[INFO] 03-Oct-26 22:31:47 - Using backbone: mnistmlp
+[INFO] 03-Oct-26 22:31:47 - Using BaseMNISTMLP as backbone
+[INFO] 03-Oct-26 22:31:47 - No transform provided.
+[INFO] 03-Oct-26 22:31:47 - Current working directory: /home/yeochoon/Documents/grad_thesis/cl_benchmarks/mammoth.
+[INFO] 03-Oct-26 22:31:47 - Main process PID: 782882
+[INFO] 03-Oct-26 22:31:48 - Using 8 workers for the dataloader.
+[INFO] 03-Oct-26 22:31:48 - Using 8 workers for the dataloader.
+[INFO] 03-Oct-26 22:31:48 - Evaluating model before task (for Forward Transfer metric)...
+[INFO] 03-Oct-26 22:31:48 - Task 1
+STOP ITERATION
+[INFO] 03-Oct-26 22:31:51 - Accuracy for 1 task(s): 	 [Class-IL]: 30.31 % 	 [Task-IL]: 30.31 %
+[INFO] 03-Oct-26 22:31:51 - 	Raw accuracy values: Class-IL [30.307328605200944] | Task-IL [30.307328605200944]
+[INFO] 03-Oct-26 22:31:51 - Using 8 workers for the dataloader.
+[INFO] 03-Oct-26 22:31:51 - Using 8 workers for the dataloader.
+[INFO] 03-Oct-26 22:31:51 - Evaluating model before task (for Forward Transfer metric)...
+[INFO] 03-Oct-26 22:31:52 - Task 2
+STOP ITERATION
+[INFO] 03-Oct-26 22:31:55 - Accuracy for 2 task(s): 	 [Class-IL]: 19.04 % 	 [Task-IL]: 40.1 %
+[INFO] 03-Oct-26 22:31:55 - 	Raw accuracy values: Class-IL [11.725768321513003, 26.346718903036237] | Task-IL [30.307328605200944, 49.902056807051906]
+[INFO] 03-Oct-26 22:31:55 - Using 8 workers for the dataloader.
+[INFO] 03-Oct-26 22:31:55 - Using 8 workers for the dataloader.
+[INFO] 03-Oct-26 22:31:55 - Evaluating model before task (for Forward Transfer metric)...
+[INFO] 03-Oct-26 22:31:58 - Task 3
+STOP ITERATION
+[INFO] 03-Oct-26 22:32:02 - Accuracy for 3 task(s): 	 [Class-IL]: 13.36 % 	 [Task-IL]: 46.78 %
+[INFO] 03-Oct-26 22:32:02 - 	Raw accuracy values: Class-IL [10.78014184397163, 22.037218413320275, 7.257203842049092] | Task-IL [30.307328605200944, 49.902056807051906, 60.13874066168623]
+[INFO] 03-Oct-26 22:32:02 - Using 8 workers for the dataloader.
+[INFO] 03-Oct-26 22:32:02 - Using 8 workers for the dataloader.
+[INFO] 03-Oct-26 22:32:02 - Evaluating model before task (for Forward Transfer metric)...
+[INFO] 03-Oct-26 22:32:03 - Task 4
+STOP ITERATION
+[INFO] 03-Oct-26 22:32:08 - Accuracy for 4 task(s): 	 [Class-IL]: 9.3 % 	 [Task-IL]: 49.46 %
+[INFO] 03-Oct-26 22:32:08 - 	Raw accuracy values: Class-IL [3.167848699763593, 10.626836434867776, 2.5080042689434365, 20.896273917421954] | Task-IL [30.307328605200944, 49.902056807051906, 60.13874066168623, 57.502517623363545]
+[INFO] 03-Oct-26 22:32:08 - Using 8 workers for the dataloader.
+[INFO] 03-Oct-26 22:32:08 - Using 8 workers for the dataloader.
+[INFO] 03-Oct-26 22:32:08 - Evaluating model before task (for Forward Transfer metric)...
+[INFO] 03-Oct-26 22:32:09 - Task 5
+STOP ITERATION
+[INFO] 03-Oct-26 22:32:19 - Using 8 workers for the dataloader.
+[INFO] 03-Oct-26 22:32:30 - Accuracy for 5 task(s): 	 [Class-IL]: 95.83 % 	 [Task-IL]: 99.36 %
+[INFO] 03-Oct-26 22:32:30 - 	Raw accuracy values: Class-IL [98.43971631205673, 95.59255631733595, 97.06510138740661, 96.0221550855992, 92.03227433182047] | Task-IL [99.8581560283688, 98.62879529872673, 99.78655282817502, 99.74823766364553, 98.78971255673223]
+[INFO] 03-Oct-26 22:32:30 - System stats:
+[INFO] 03-Oct-26 22:32:30 - 	Initial CPU memory usage: 885.90 MB
+[INFO] 03-Oct-26 22:32:30 - 	Average CPU memory usage: 2018.67 MB
+[INFO] 03-Oct-26 22:32:30 - 	Final CPU memory usage: 2407.31 MB
+[INFO] 03-Oct-26 22:32:30 - 	Max CPU memory usage: 2107.79 MB
+[INFO] 03-Oct-26 22:32:30 - 	Initial GPU 0 memory usage: 0.34 MB
+[INFO] 03-Oct-26 22:32:30 - 	Average GPU 0 memory usage: 9.71 MB
+[INFO] 03-Oct-26 22:32:30 - 	Final GPU 0 memory usage: 18.87 MB
+[INFO] 03-Oct-26 22:32:30 - 	Max GPU 0 memory usage: 9.71 MB
+[INFO] 03-Oct-26 22:32:30 - Logging results and arguments in /home/yeochoon/Documents/grad_thesis/cl_benchmarks/raw_data/linux/base/joint/s1024/class-il/seq-mnist/joint/logs.pyd
+Accuracy for 1 task(s): 	 [Class-IL]: 30.31 % 	 [Task-IL]: 30.31 %
+	Raw accuracy values: Class-IL [30.307328605200944] | Task-IL [30.307328605200944]
+
+
+Accuracy for 2 task(s): 	 [Class-IL]: 19.04 % 	 [Task-IL]: 40.1 %
+	Raw accuracy values: Class-IL [11.725768321513003, 26.346718903036237] | Task-IL [30.307328605200944, 49.902056807051906]
+
+
+Accuracy for 3 task(s): 	 [Class-IL]: 13.36 % 	 [Task-IL]: 46.78 %
+	Raw accuracy values: Class-IL [10.78014184397163, 22.037218413320275, 7.257203842049092] | Task-IL [30.307328605200944, 49.902056807051906, 60.13874066168623]
+
+
+Accuracy for 4 task(s): 	 [Class-IL]: 9.3 % 	 [Task-IL]: 49.46 %
+	Raw accuracy values: Class-IL [3.167848699763593, 10.626836434867776, 2.5080042689434365, 20.896273917421954] | Task-IL [30.307328605200944, 49.902056807051906, 60.13874066168623, 57.502517623363545]
+
+
+
+  0%|          | 0/938 [00:00<?, ?it/s]
+Joint - Epoch 0:   7%|▋         | 64/938 [00:01<00:18, 47.89it/s]
+Joint - Epoch 0:  48%|████▊     | 448/938 [00:01<00:01, 409.23it/s, loss=2.07]
+Joint - Epoch 0: : 1024it [00:01, 1046.96it/s, loss=1.67]                     
+Joint - Epoch 0: : 1728it [00:01, 1917.50it/s, loss=1.01]
+Joint - Epoch 0: : 2432it [00:01, 2788.74it/s, loss=0.74]
+Joint - Epoch 0: : 3008it [00:01, 3367.65it/s, loss=0.711]
+Joint - Epoch 0: : 4032it [00:01, 4796.83it/s, loss=0.457]
+Joint - Epoch 0: : 4864it [00:02, 5617.48it/s, loss=0.309]
+Joint - Epoch 0: : 5632it [00:02, 5950.09it/s, loss=0.571]
+Joint - Epoch 0: : 6656it [00:02, 7037.58it/s, loss=0.361]
+Joint - Epoch 0: : 7552it [00:02, 7374.03it/s, loss=0.506]
+Joint - Epoch 0: : 8448it [00:02, 7731.27it/s, loss=0.455]
+Joint - Epoch 0: : 9408it [00:02, 8176.74it/s, loss=0.267]
+Joint - Epoch 0: : 10432it [00:02, 8647.10it/s, loss=0.248]
+Joint - Epoch 0: : 11328it [00:02, 8572.73it/s, loss=0.209]
+Joint - Epoch 0: : 12224it [00:03, 6822.50it/s, loss=0.228]
+Joint - Epoch 0: : 12992it [00:03, 6692.11it/s, loss=0.186]
+Joint - Epoch 0: : 13760it [00:03, 6475.12it/s, loss=0.231]
+Joint - Epoch 0: : 14464it [00:03, 5928.07it/s, loss=0.259]
+Joint - Epoch 0: : 15360it [00:03, 6601.18it/s, loss=0.235]
+Joint - Epoch 0: : 16320it [00:03, 7291.18it/s, loss=0.229]
+Joint - Epoch 0: : 17408it [00:03, 8160.12it/s, loss=0.268]
+Joint - Epoch 0: : 18304it [00:03, 7877.82it/s, loss=0.399]
+Joint - Epoch 0: : 19264it [00:03, 8307.07it/s, loss=0.119]
+Joint - Epoch 0: : 20224it [00:04, 8501.04it/s, loss=0.18] 
+Joint - Epoch 0: : 21120it [00:04, 8468.19it/s, loss=0.231]
+Joint - Epoch 0: : 22016it [00:04, 8573.69it/s, loss=0.358]
+Joint - Epoch 0: : 22912it [00:04, 8306.89it/s, loss=0.166]
+Joint - Epoch 0: : 23808it [00:04, 8324.58it/s, loss=0.288]
+Joint - Epoch 0: : 24704it [00:04, 8313.23it/s, loss=0.196]
+Joint - Epoch 0: : 25664it [00:04, 8651.65it/s, loss=0.151]
+Joint - Epoch 0: : 26752it [00:04, 9139.49it/s, loss=0.126]
+Joint - Epoch 0: : 27712it [00:04, 8378.98it/s, loss=0.229]
+Joint - Epoch 0: : 28672it [00:05, 8589.95it/s, loss=0.249]
+Joint - Epoch 0: : 29568it [00:05, 8631.29it/s, loss=0.0714]
+Joint - Epoch 0: : 30592it [00:05, 8965.17it/s, loss=0.118] 
+Joint - Epoch 0: : 31552it [00:05, 8534.48it/s, loss=0.252]
+Joint - Epoch 0: : 32448it [00:05, 8473.83it/s, loss=0.093]
+Joint - Epoch 0: : 33344it [00:05, 8223.94it/s, loss=0.135]
+Joint - Epoch 0: : 34304it [00:05, 8406.35it/s, loss=0.454]
+Joint - Epoch 0: : 35328it [00:05, 8837.86it/s, loss=0.269]
+Joint - Epoch 0: : 36352it [00:05, 9093.13it/s, loss=0.198]
+Joint - Epoch 0: : 37312it [00:06, 8707.66it/s, loss=0.192]
+Joint - Epoch 0: : 38336it [00:06, 8957.95it/s, loss=0.154]
+Joint - Epoch 0: : 39296it [00:06, 8763.70it/s, loss=0.286]
+Joint - Epoch 0: : 40192it [00:06, 8667.15it/s, loss=0.134]
+Joint - Epoch 0: : 41088it [00:06, 8503.71it/s, loss=0.128]
+Joint - Epoch 0: : 41984it [00:06, 8105.61it/s, loss=0.162]
+Joint - Epoch 0: : 42816it [00:06, 8051.01it/s, loss=0.163]
+Joint - Epoch 0: : 43776it [00:06, 8321.58it/s, loss=0.274]
+Joint - Epoch 0: : 44672it [00:06, 8115.79it/s, loss=0.0936]
+Joint - Epoch 0: : 45632it [00:07, 8476.15it/s, loss=0.123] 
+Joint - Epoch 0: : 46528it [00:07, 8287.36it/s, loss=0.123]
+Joint - Epoch 0: : 47424it [00:07, 8415.83it/s, loss=0.208]
+Joint - Epoch 0: : 48320it [00:07, 8236.33it/s, loss=0.178]
+Joint - Epoch 0: : 49152it [00:07, 7819.54it/s, loss=0.154]
+Joint - Epoch 0: : 49984it [00:07, 7738.72it/s, loss=0.169]
+Joint - Epoch 0: : 50880it [00:07, 7857.74it/s, loss=0.0638]
+Joint - Epoch 0: : 51712it [00:07, 7346.29it/s, loss=0.191] 
+Joint - Epoch 0: : 52608it [00:07, 7725.50it/s, loss=0.156]
+Joint - Epoch 0: : 53504it [00:08, 8032.36it/s, loss=0.0795]
+Joint - Epoch 0: : 54336it [00:08, 7702.64it/s, loss=0.09]  
+Joint - Epoch 0: : 55232it [00:08, 8024.31it/s, loss=0.194]
+Joint - Epoch 0: : 56320it [00:08, 8742.40it/s, loss=0.217]
+Joint - Epoch 0: : 57216it [00:08, 8648.29it/s, loss=0.148]
+Joint - Epoch 0: : 58368it [00:08, 9404.95it/s, loss=0.151]
+Joint - Epoch 0: : 59520it [00:08, 9885.95it/s, loss=0.142]
+Joint - Epoch 0: : 60032it [00:08, 6853.69it/s, loss=0.194]
+Accuracy for 5 task(s): 	 [Class-IL]: 95.83 % 	 [Task-IL]: 99.36 %
+	Raw accuracy values: Class-IL [98.43971631205673, 95.59255631733595, 97.06510138740661, 96.0221550855992, 92.03227433182047] | Task-IL [99.8581560283688, 98.62879529872673, 99.78655282817502, 99.74823766364553, 98.78971255673223]
+
+
+Backward Transfer: [Class-IL]: 75.58 	 [Task-IL]: 50.04
+	Raw Backward Transfer values: Class-IL 75.57800095867256 | Task-IL 50.04277453040336
+Forgetting: [Class-IL]: 0.00 	 [Task-IL]: 0.00
+	Raw Forgetting values: Class-IL 0.0 | Task-IL 0.0
+Forward Transfer: [Class-IL]: 0.00 	 [Task-IL]: 0.00
+	Raw Forward Transfer values: Class-IL 0.0 | Task-IL 0.0

@@ -1,0 +1,823 @@
+/home/yeochoon/Documents/grad_thesis/cl_benchmarks/.venv/bin/python /home/yeochoon/Documents/grad_thesis/cl_benchmarks/mammoth/main.py --model joint --seed 456 --n_epochs 10 --base_path /home/yeochoon/Documents/grad_thesis/cl_benchmarks/raw_data/linux/ --results_path epoch/joint_ep10/s456 --dataset seq-mnist --optimizer adam --lr 0.001 --enable_other_metrics 1 --non_verbose 1 --device 0
+
+[INFO] 04-Oct-26 03:13:37 - Running Mammoth! on YCLaptop2. 
+[WARNING] 04-Oct-26 03:13:40 - Error in model derpp-casper
+[WARNING] 04-Oct-26 03:13:40 - No module named 'xitorch'
+[WARNING] 04-Oct-26 03:13:40 - Error in model xder-rpc-casper
+[WARNING] 04-Oct-26 03:13:41 - Error in model llava
+[WARNING] 04-Oct-26 03:13:41 - Please install the HuggingFace Transformers package by running: pip install transformers
+[WARNING] 04-Oct-26 03:13:41 - Error in model lws
+[WARNING] 04-Oct-26 03:13:41 - kmeans_pytorch not installed. Please run `pip install kmeans-pytorch`.
+[WARNING] 04-Oct-26 03:13:41 - Error in model er-ace-casper
+[WARNING] 04-Oct-26 03:13:41 - Error in model cgil
+[WARNING] 04-Oct-26 03:13:41 - Please install the CLIP package by running: pip install git+https://github.com/openai/CLIP.git
+[WARNING] 04-Oct-26 03:13:41 - Error in model clip
+[WARNING] 04-Oct-26 03:13:41 - Error in model icarl-casper
+[WARNING] 04-Oct-26 03:13:41 - Error in model first-stage-starprompt
+[WARNING] 04-Oct-26 03:13:41 - Please install the CLIP package by running: pip install git+https://github.com/openai/CLIP.git (requires also `huggingface-hub`)
+[WARNING] 04-Oct-26 03:13:41 - Error in model second-stage-starprompt
+[WARNING] 04-Oct-26 03:13:42 - Error in model starprompt
+[WARNING] 04-Oct-26 03:13:42 - No backbone specified. Using default backbone (set by the dataset).
+[INFO] 04-Oct-26 03:13:42 - Trying to load default configuration for model joint but no configuration file found in None.
+[WARNING] 04-Oct-26 03:13:42 - Default configuration file not found for dataset seq-mnist. Using the defaults specified in the dataset class (if available).
+[ERROR] 04-Oct-26 03:13:42 - Could not retrieve git hash.
+[INFO] 04-Oct-26 03:13:42 - 
+╔═══════════════════════ CONFIGURATION ═══════════════════════╗
+║ Basic arguments:
+║   • backbone: mnistmlp
+║   • dataset: seq-mnist
+║   • load_best_args: False
+║   • model: joint
+║
+║ Configuration arguments:
+║   • model_config: default
+║
+║ Backbone arguments:
+║   • mlp_hidden_size: 100
+║
+║ Management arguments:
+║   • base_path: /home/yeochoon/Documents/grad_thesis/cl_benchmarks/raw_data/linux/
+║   • checkpoint_path: ./checkpoints/
+║   • code_optimization: 0
+║   • debug_mode: False
+║   • device: 0
+║   • disable_log: False
+║   • distributed: no
+║   • enable_other_metrics: True
+║   • inference_only: False
+║   • non_verbose: True
+║   • permute_classes: False
+║   • results_path: epoch/joint_ep10/s456
+║   • save_after_interrupt: True
+║   • save_checkpoint_mode: safe
+║   • seed: 456
+║
+║ Wandb arguments:
+║
+║ Experiment arguments:
+║   • batch_size: 64
+║   • eval_future: False
+║   • joint: 0
+║   • label_perc: 1.000000
+║   • label_perc_by_class: 1.000000
+║   • lr: 0.001000
+║
+║ Validation and fitting arguments:
+║   • early_stopping_epsilon: 0.000001
+║   • early_stopping_freq: 1
+║   • early_stopping_metric: loss
+║   • early_stopping_patience: 5
+║   • fitting_mode: epochs
+║   • n_epochs: 10
+║   • validation_mode: current
+║
+║ Optimizer and learning rate scheduler arguments:
+║   • drop_last: False
+║   • lr_milestones: []
+║   • optim_mom: 0.000000
+║   • optim_nesterov: False
+║   • optim_wd: 0.000000
+║   • optimizer: adam
+║   • sched_multistep_lr_gamma: 0.100000
+║   • scheduler_mode: epoch
+║
+║ Noise arguments:
+║   • cache_path_noisy_labels: noisy_labels
+║   • disable_noisy_labels_cache: False
+║   • noise_rate: 0.000000
+║   • noise_type: symmetric
+║
+╚════════════════════════════════════════════════════════════╝
+[WARNING] 04-Oct-26 03:13:42 - Could not get memory from pynvml. Maybe try `pip install --force-reinstall gpustat`. module 'torch.cuda' has no attribute 'pynvml'
+[INFO] 04-Oct-26 03:13:42 - Using device cuda:0
+[INFO] 04-Oct-26 03:13:42 - `wandb_entity` and `wandb_project` not set. Disabling wandb.
+[INFO] 04-Oct-26 03:13:42 - Using backbone: mnistmlp
+[INFO] 04-Oct-26 03:13:42 - Using BaseMNISTMLP as backbone
+[INFO] 04-Oct-26 03:13:42 - No transform provided.
+[INFO] 04-Oct-26 03:13:42 - Current working directory: /home/yeochoon/Documents/grad_thesis/cl_benchmarks/mammoth.
+[INFO] 04-Oct-26 03:13:42 - Main process PID: 2402212
+[INFO] 04-Oct-26 03:13:42 - Using 8 workers for the dataloader.
+[INFO] 04-Oct-26 03:13:42 - Using 8 workers for the dataloader.
+[INFO] 04-Oct-26 03:13:42 - Evaluating model before task (for Forward Transfer metric)...
+[INFO] 04-Oct-26 03:13:43 - Task 1
+STOP ITERATION
+STOP ITERATION
+STOP ITERATION
+STOP ITERATION
+STOP ITERATION
+STOP ITERATION
+STOP ITERATION
+STOP ITERATION
+STOP ITERATION
+STOP ITERATION
+[INFO] 04-Oct-26 03:13:58 - Accuracy for 1 task(s): 	 [Class-IL]: 75.79 % 	 [Task-IL]: 75.79 %
+[INFO] 04-Oct-26 03:13:58 - 	Raw accuracy values: Class-IL [75.79196217494089] | Task-IL [75.79196217494089]
+[INFO] 04-Oct-26 03:13:58 - Using 8 workers for the dataloader.
+[INFO] 04-Oct-26 03:13:58 - Using 8 workers for the dataloader.
+[INFO] 04-Oct-26 03:13:58 - Evaluating model before task (for Forward Transfer metric)...
+[INFO] 04-Oct-26 03:13:59 - Task 2
+STOP ITERATION
+STOP ITERATION
+STOP ITERATION
+STOP ITERATION
+STOP ITERATION
+STOP ITERATION
+STOP ITERATION
+STOP ITERATION
+STOP ITERATION
+STOP ITERATION
+[INFO] 04-Oct-26 03:14:14 - Accuracy for 2 task(s): 	 [Class-IL]: 33.0 % 	 [Task-IL]: 65.56 %
+[INFO] 04-Oct-26 03:14:14 - 	Raw accuracy values: Class-IL [14.231678486997637, 51.76297747306562] | Task-IL [75.79196217494089, 55.337904015670915]
+[INFO] 04-Oct-26 03:14:14 - Using 8 workers for the dataloader.
+[INFO] 04-Oct-26 03:14:14 - Using 8 workers for the dataloader.
+[INFO] 04-Oct-26 03:14:14 - Evaluating model before task (for Forward Transfer metric)...
+[INFO] 04-Oct-26 03:14:15 - Task 3
+STOP ITERATION
+STOP ITERATION
+STOP ITERATION
+STOP ITERATION
+STOP ITERATION
+STOP ITERATION
+STOP ITERATION
+STOP ITERATION
+STOP ITERATION
+STOP ITERATION
+[INFO] 04-Oct-26 03:14:29 - Accuracy for 3 task(s): 	 [Class-IL]: 23.5 % 	 [Task-IL]: 60.11 %
+[INFO] 04-Oct-26 03:14:29 - 	Raw accuracy values: Class-IL [8.983451536643026, 39.86287952987267, 21.66488794023479] | Task-IL [75.79196217494089, 55.337904015670915, 49.199573105656356]
+[INFO] 04-Oct-26 03:14:29 - Using 8 workers for the dataloader.
+[INFO] 04-Oct-26 03:14:29 - Using 8 workers for the dataloader.
+[INFO] 04-Oct-26 03:14:29 - Evaluating model before task (for Forward Transfer metric)...
+[INFO] 04-Oct-26 03:14:30 - Task 4
+STOP ITERATION
+STOP ITERATION
+STOP ITERATION
+STOP ITERATION
+STOP ITERATION
+STOP ITERATION
+STOP ITERATION
+STOP ITERATION
+STOP ITERATION
+STOP ITERATION
+[INFO] 04-Oct-26 03:14:47 - Accuracy for 4 task(s): 	 [Class-IL]: 17.32 % 	 [Task-IL]: 58.15 %
+[INFO] 04-Oct-26 03:14:47 - 	Raw accuracy values: Class-IL [7.801418439716312, 37.70812928501469, 19.477054429028815, 4.279959718026183] | Task-IL [75.79196217494089, 55.337904015670915, 49.199573105656356, 52.26586102719033]
+[INFO] 04-Oct-26 03:14:47 - Using 8 workers for the dataloader.
+[INFO] 04-Oct-26 03:14:47 - Using 8 workers for the dataloader.
+[INFO] 04-Oct-26 03:14:47 - Evaluating model before task (for Forward Transfer metric)...
+[INFO] 04-Oct-26 03:14:49 - Task 5
+STOP ITERATION
+STOP ITERATION
+STOP ITERATION
+STOP ITERATION
+STOP ITERATION
+STOP ITERATION
+STOP ITERATION
+STOP ITERATION
+STOP ITERATION
+STOP ITERATION
+[INFO] 04-Oct-26 03:15:12 - Using 8 workers for the dataloader.
+[INFO] 04-Oct-26 03:16:23 - Accuracy for 5 task(s): 	 [Class-IL]: 97.77 % 	 [Task-IL]: 99.7 %
+[INFO] 04-Oct-26 03:16:23 - 	Raw accuracy values: Class-IL [98.81796690307328, 97.55142017629774, 97.81216648879403, 98.08660624370594, 96.57085224407463] | Task-IL [99.95271867612293, 99.60822722820764, 99.73319103521878, 99.79859013091642, 99.39485627836612]
+[INFO] 04-Oct-26 03:16:23 - System stats:
+[INFO] 04-Oct-26 03:16:23 - 	Initial CPU memory usage: 891.09 MB
+[INFO] 04-Oct-26 03:16:23 - 	Average CPU memory usage: 2090.64 MB
+[INFO] 04-Oct-26 03:16:23 - 	Final CPU memory usage: 2709.34 MB
+[INFO] 04-Oct-26 03:16:23 - 	Max CPU memory usage: 2161.37 MB
+[INFO] 04-Oct-26 03:16:23 - 	Initial GPU 0 memory usage: 0.34 MB
+[INFO] 04-Oct-26 03:16:23 - 	Average GPU 0 memory usage: 9.71 MB
+[INFO] 04-Oct-26 03:16:23 - 	Final GPU 0 memory usage: 18.87 MB
+[INFO] 04-Oct-26 03:16:23 - 	Max GPU 0 memory usage: 9.71 MB
+[INFO] 04-Oct-26 03:16:23 - Logging results and arguments in /home/yeochoon/Documents/grad_thesis/cl_benchmarks/raw_data/linux/epoch/joint_ep10/s456/class-il/seq-mnist/joint/logs.pyd
+Accuracy for 1 task(s): 	 [Class-IL]: 75.79 % 	 [Task-IL]: 75.79 %
+	Raw accuracy values: Class-IL [75.79196217494089] | Task-IL [75.79196217494089]
+
+
+Accuracy for 2 task(s): 	 [Class-IL]: 33.0 % 	 [Task-IL]: 65.56 %
+	Raw accuracy values: Class-IL [14.231678486997637, 51.76297747306562] | Task-IL [75.79196217494089, 55.337904015670915]
+
+
+Accuracy for 3 task(s): 	 [Class-IL]: 23.5 % 	 [Task-IL]: 60.11 %
+	Raw accuracy values: Class-IL [8.983451536643026, 39.86287952987267, 21.66488794023479] | Task-IL [75.79196217494089, 55.337904015670915, 49.199573105656356]
+
+
+Accuracy for 4 task(s): 	 [Class-IL]: 17.32 % 	 [Task-IL]: 58.15 %
+	Raw accuracy values: Class-IL [7.801418439716312, 37.70812928501469, 19.477054429028815, 4.279959718026183] | Task-IL [75.79196217494089, 55.337904015670915, 49.199573105656356, 52.26586102719033]
+
+
+
+  0%|          | 0/9380 [00:00<?, ?it/s]
+Joint - Epoch 0:   1%|          | 64/9380 [00:00<00:56, 165.35it/s]
+Joint - Epoch 0:  10%|█         | 960/9380 [00:00<00:03, 2528.99it/s, loss=1.68]
+Joint - Epoch 0:  20%|██        | 1920/9380 [00:00<00:01, 4444.95it/s, loss=0.777]
+Joint - Epoch 0:  30%|███       | 2816/9380 [00:00<00:01, 5709.32it/s, loss=0.684]
+Joint - Epoch 0:  41%|████      | 3840/9380 [00:00<00:00, 6980.87it/s, loss=0.512]
+Joint - Epoch 0:  51%|█████     | 4800/9380 [00:00<00:00, 7579.85it/s, loss=0.509]
+Joint - Epoch 0:  61%|██████▏   | 5760/9380 [00:01<00:00, 8011.81it/s, loss=0.538]
+Joint - Epoch 0:  71%|███████   | 6656/9380 [00:01<00:00, 8267.19it/s, loss=0.406]
+Joint - Epoch 0:  81%|████████  | 7552/9380 [00:01<00:00, 8093.66it/s, loss=0.318]
+Joint - Epoch 0:  90%|█████████ | 8448/9380 [00:01<00:00, 8201.42it/s, loss=0.289]
+Joint - Epoch 0: 100%|█████████▉| 9344/9380 [00:01<00:00, 8366.48it/s, loss=0.212]
+Joint - Epoch 0: : 10240it [00:01, 8076.25it/s, loss=0.376]                       
+Joint - Epoch 0: : 11072it [00:01, 7955.74it/s, loss=0.176]
+Joint - Epoch 0: : 11904it [00:01, 7934.60it/s, loss=0.263]
+Joint - Epoch 0: : 12736it [00:01, 7910.82it/s, loss=0.232]
+Joint - Epoch 0: : 13632it [00:01, 8122.23it/s, loss=0.353]
+Joint - Epoch 0: : 14720it [00:02, 8742.74it/s, loss=0.157]
+Joint - Epoch 0: : 15744it [00:02, 9054.90it/s, loss=0.296]
+Joint - Epoch 0: : 16832it [00:02, 9522.12it/s, loss=0.488]
+Joint - Epoch 0: : 17792it [00:02, 9051.52it/s, loss=0.278]
+Joint - Epoch 0: : 18752it [00:02, 9166.74it/s, loss=0.179]
+Joint - Epoch 0: : 19776it [00:02, 9372.88it/s, loss=0.111]
+Joint - Epoch 0: : 20736it [00:02, 9196.22it/s, loss=0.24] 
+Joint - Epoch 0: : 21760it [00:02, 9334.75it/s, loss=0.326]
+Joint - Epoch 0: : 22784it [00:02, 9450.33it/s, loss=0.282]
+Joint - Epoch 0: : 23808it [00:03, 9547.58it/s, loss=0.381]
+Joint - Epoch 0: : 24832it [00:03, 9571.12it/s, loss=0.269]
+Joint - Epoch 0: : 25792it [00:03, 9460.65it/s, loss=0.244]
+Joint - Epoch 0: : 26752it [00:03, 9216.06it/s, loss=0.132]
+Joint - Epoch 0: : 27776it [00:03, 9472.68it/s, loss=0.23] 
+Joint - Epoch 0: : 28800it [00:03, 9549.25it/s, loss=0.276]
+Joint - Epoch 0: : 29888it [00:03, 9863.35it/s, loss=0.26] 
+Joint - Epoch 0: : 30912it [00:03, 9485.03it/s, loss=0.224]
+Joint - Epoch 0: : 32000it [00:03, 9698.80it/s, loss=0.0855]
+Joint - Epoch 0: : 33024it [00:04, 8511.55it/s, loss=0.248] 
+Joint - Epoch 0: : 33920it [00:04, 8419.05it/s, loss=0.213]
+Joint - Epoch 0: : 34880it [00:04, 8697.41it/s, loss=0.235]
+Joint - Epoch 0: : 35840it [00:04, 8906.35it/s, loss=0.193]
+Joint - Epoch 0: : 36864it [00:04, 9144.01it/s, loss=0.213]
+Joint - Epoch 0: : 37888it [00:04, 9309.41it/s, loss=0.173]
+Joint - Epoch 0: : 38848it [00:04, 9181.96it/s, loss=0.284]
+Joint - Epoch 0: : 39808it [00:04, 9299.20it/s, loss=0.342]
+Joint - Epoch 0: : 40896it [00:04, 9651.56it/s, loss=0.313]
+Joint - Epoch 0: : 41984it [00:04, 9862.90it/s, loss=0.19] 
+Joint - Epoch 0: : 43136it [00:05, 10314.21it/s, loss=0.222]
+Joint - Epoch 0: : 44224it [00:05, 9351.63it/s, loss=0.0706]
+Joint - Epoch 0: : 45248it [00:05, 9511.58it/s, loss=0.109] 
+Joint - Epoch 0: : 46272it [00:05, 8554.71it/s, loss=0.137]
+Joint - Epoch 0: : 47168it [00:05, 8453.34it/s, loss=0.121]
+Joint - Epoch 0: : 48128it [00:05, 8674.32it/s, loss=0.0972]
+Joint - Epoch 0: : 49088it [00:05, 8785.70it/s, loss=0.142] 
+Joint - Epoch 0: : 50112it [00:05, 9120.59it/s, loss=0.0567]
+Joint - Epoch 0: : 51136it [00:06, 9356.11it/s, loss=0.349] 
+Joint - Epoch 0: : 52160it [00:06, 9540.68it/s, loss=0.146]
+Joint - Epoch 0: : 53248it [00:06, 9797.46it/s, loss=0.102]
+Joint - Epoch 0: : 54272it [00:06, 9358.48it/s, loss=0.264]
+Joint - Epoch 0: : 55296it [00:06, 9504.66it/s, loss=0.0681]
+Joint - Epoch 0: : 56256it [00:06, 8996.20it/s, loss=0.0669]
+Joint - Epoch 0: : 57280it [00:06, 9273.57it/s, loss=0.159] 
+Joint - Epoch 0: : 58240it [00:06, 9214.66it/s, loss=0.0488]
+Joint - Epoch 0: : 59200it [00:06, 8627.52it/s, loss=0.121] 
+Joint - Epoch 1: : 60096it [00:07, 4474.02it/s, loss=0.17] 
+Joint - Epoch 1: : 61184it [00:07, 5523.43it/s, loss=0.0486]
+Joint - Epoch 1: : 62208it [00:07, 6361.70it/s, loss=0.0507]
+Joint - Epoch 1: : 63296it [00:07, 7320.79it/s, loss=0.0757]
+Joint - Epoch 1: : 64256it [00:07, 7773.36it/s, loss=0.0443]
+Joint - Epoch 1: : 65216it [00:07, 8177.70it/s, loss=0.137] 
+Joint - Epoch 1: : 66176it [00:07, 8414.57it/s, loss=0.272]
+Joint - Epoch 1: : 67200it [00:08, 8785.20it/s, loss=0.104]
+Joint - Epoch 1: : 68288it [00:08, 9301.69it/s, loss=0.0757]
+Joint - Epoch 1: : 69312it [00:08, 8840.00it/s, loss=0.202] 
+Joint - Epoch 1: : 70272it [00:08, 8808.76it/s, loss=0.0921]
+Joint - Epoch 1: : 71232it [00:08, 9001.34it/s, loss=0.153] 
+Joint - Epoch 1: : 72256it [00:08, 9303.48it/s, loss=0.271]
+Joint - Epoch 1: : 73280it [00:08, 9515.46it/s, loss=0.0446]
+Joint - Epoch 1: : 74304it [00:08, 9443.13it/s, loss=0.182] 
+Joint - Epoch 1: : 75264it [00:08, 9197.20it/s, loss=0.165]
+Joint - Epoch 1: : 76416it [00:09, 9738.01it/s, loss=0.142]
+Joint - Epoch 1: : 77440it [00:09, 9557.28it/s, loss=0.165]
+Joint - Epoch 1: : 78528it [00:09, 9874.85it/s, loss=0.228]
+Joint - Epoch 1: : 79552it [00:09, 9456.40it/s, loss=0.136]
+Joint - Epoch 1: : 80640it [00:09, 9761.54it/s, loss=0.209]
+Joint - Epoch 1: : 81664it [00:09, 9304.36it/s, loss=0.0816]
+Joint - Epoch 1: : 82624it [00:09, 9160.39it/s, loss=0.105] 
+Joint - Epoch 1: : 83648it [00:09, 9363.03it/s, loss=0.0565]
+Joint - Epoch 1: : 84608it [00:09, 9222.88it/s, loss=0.0962]
+Joint - Epoch 1: : 85568it [00:10, 9161.91it/s, loss=0.159] 
+Joint - Epoch 1: : 86528it [00:10, 9282.20it/s, loss=0.129]
+Joint - Epoch 1: : 87488it [00:10, 9160.45it/s, loss=0.117]
+Joint - Epoch 1: : 88448it [00:10, 9216.59it/s, loss=0.154]
+Joint - Epoch 1: : 89600it [00:10, 9779.23it/s, loss=0.199]
+Joint - Epoch 1: : 90624it [00:10, 9473.41it/s, loss=0.0702]
+Joint - Epoch 1: : 91584it [00:10, 9490.87it/s, loss=0.0829]
+Joint - Epoch 1: : 92544it [00:10, 8880.12it/s, loss=0.133] 
+Joint - Epoch 1: : 93568it [00:10, 9159.57it/s, loss=0.142]
+Joint - Epoch 1: : 94528it [00:11, 8598.88it/s, loss=0.0634]
+Joint - Epoch 1: : 95424it [00:11, 8496.13it/s, loss=0.181] 
+Joint - Epoch 1: : 96384it [00:11, 8654.14it/s, loss=0.0822]
+Joint - Epoch 1: : 97408it [00:11, 8930.68it/s, loss=0.0991]
+Joint - Epoch 1: : 98368it [00:11, 9066.50it/s, loss=0.0766]
+Joint - Epoch 1: : 99328it [00:11, 9158.47it/s, loss=0.158] 
+Joint - Epoch 1: : 100288it [00:11, 9264.59it/s, loss=0.0253]
+Joint - Epoch 1: : 101312it [00:11, 9509.21it/s, loss=0.031] 
+Joint - Epoch 1: : 102464it [00:11, 10007.89it/s, loss=0.105]
+Joint - Epoch 1: : 103488it [00:11, 9905.30it/s, loss=0.122] 
+Joint - Epoch 1: : 104576it [00:12, 10056.39it/s, loss=0.0364]
+Joint - Epoch 1: : 105600it [00:12, 9291.37it/s, loss=0.103]  
+Joint - Epoch 1: : 106560it [00:12, 9354.69it/s, loss=0.076]
+Joint - Epoch 1: : 107648it [00:12, 9780.03it/s, loss=0.106]
+Joint - Epoch 1: : 108672it [00:12, 9447.82it/s, loss=0.161]
+Joint - Epoch 1: : 109696it [00:12, 9583.95it/s, loss=0.056]
+Joint - Epoch 1: : 110720it [00:12, 9656.77it/s, loss=0.0523]
+Joint - Epoch 1: : 111744it [00:12, 9515.61it/s, loss=0.236] 
+Joint - Epoch 1: : 112832it [00:12, 9793.73it/s, loss=0.146]
+Joint - Epoch 1: : 113856it [00:13, 9486.02it/s, loss=0.0496]
+Joint - Epoch 1: : 114816it [00:13, 9289.90it/s, loss=0.0552]
+Joint - Epoch 1: : 115904it [00:13, 9671.27it/s, loss=0.239] 
+Joint - Epoch 1: : 116928it [00:13, 9169.85it/s, loss=0.155]
+Joint - Epoch 1: : 117888it [00:13, 8571.14it/s, loss=0.073]
+Joint - Epoch 1: : 119040it [00:13, 9177.39it/s, loss=0.0486]
+Joint - Epoch 2: : 120128it [00:14, 4709.04it/s, loss=0.0692]
+Joint - Epoch 2: : 120896it [00:14, 4730.16it/s, loss=0.0635]
+Joint - Epoch 2: : 121856it [00:14, 5566.81it/s, loss=0.0591]
+Joint - Epoch 2: : 122880it [00:14, 6441.46it/s, loss=0.0675]
+Joint - Epoch 2: : 123712it [00:14, 6775.07it/s, loss=0.0435]
+Joint - Epoch 2: : 124672it [00:14, 7363.72it/s, loss=0.0451]
+Joint - Epoch 2: : 125568it [00:14, 7716.03it/s, loss=0.0935]
+Joint - Epoch 2: : 126528it [00:14, 8161.38it/s, loss=0.0715]
+Joint - Epoch 2: : 127488it [00:14, 8447.33it/s, loss=0.0569]
+Joint - Epoch 2: : 128512it [00:15, 8846.10it/s, loss=0.228] 
+Joint - Epoch 2: : 129600it [00:15, 9339.87it/s, loss=0.219]
+Joint - Epoch 2: : 130560it [00:15, 9211.91it/s, loss=0.0488]
+Joint - Epoch 2: : 131648it [00:15, 9528.68it/s, loss=0.0936]
+Joint - Epoch 2: : 132672it [00:15, 9422.46it/s, loss=0.0538]
+Joint - Epoch 2: : 133632it [00:15, 9457.74it/s, loss=0.0272]
+Joint - Epoch 2: : 134720it [00:15, 9744.62it/s, loss=0.0579]
+Joint - Epoch 2: : 135744it [00:15, 9295.42it/s, loss=0.0199]
+Joint - Epoch 2: : 136704it [00:15, 9248.22it/s, loss=0.0578]
+Joint - Epoch 2: : 137728it [00:16, 9370.85it/s, loss=0.112] 
+Joint - Epoch 2: : 138752it [00:16, 9515.33it/s, loss=0.0218]
+Joint - Epoch 2: : 139712it [00:16, 9495.11it/s, loss=0.137] 
+Joint - Epoch 2: : 140736it [00:16, 9560.97it/s, loss=0.186]
+Joint - Epoch 2: : 141824it [00:16, 9910.29it/s, loss=0.0466]
+Joint - Epoch 2: : 142848it [00:16, 9641.31it/s, loss=0.163] 
+Joint - Epoch 2: : 143872it [00:16, 9630.56it/s, loss=0.23] 
+Joint - Epoch 2: : 144896it [00:16, 9395.54it/s, loss=0.123]
+Joint - Epoch 2: : 145856it [00:16, 9219.18it/s, loss=0.0203]
+Joint - Epoch 2: : 146880it [00:17, 9359.76it/s, loss=0.0235]
+Joint - Epoch 2: : 147840it [00:17, 8920.00it/s, loss=0.119] 
+Joint - Epoch 2: : 148800it [00:17, 8958.97it/s, loss=0.119]
+Joint - Epoch 2: : 149760it [00:17, 9052.50it/s, loss=0.0913]
+Joint - Epoch 2: : 150720it [00:17, 9136.97it/s, loss=0.0635]
+Joint - Epoch 2: : 151744it [00:17, 9379.24it/s, loss=0.0239]
+Joint - Epoch 2: : 152768it [00:17, 9457.08it/s, loss=0.028] 
+Joint - Epoch 2: : 153792it [00:17, 9636.59it/s, loss=0.0129]
+Joint - Epoch 2: : 154816it [00:17, 9741.76it/s, loss=0.0241]
+Joint - Epoch 2: : 155904it [00:17, 10034.89it/s, loss=0.0294]
+Joint - Epoch 2: : 156928it [00:18, 9498.80it/s, loss=0.0863] 
+Joint - Epoch 2: : 157888it [00:18, 9482.34it/s, loss=0.131] 
+Joint - Epoch 2: : 158976it [00:18, 9754.81it/s, loss=0.164]
+Joint - Epoch 2: : 160000it [00:18, 9033.70it/s, loss=0.109]
+Joint - Epoch 2: : 161024it [00:18, 9221.36it/s, loss=0.0696]
+Joint - Epoch 2: : 162048it [00:18, 9492.76it/s, loss=0.0264]
+Joint - Epoch 2: : 163008it [00:18, 9515.49it/s, loss=0.157] 
+Joint - Epoch 2: : 163968it [00:18, 9420.38it/s, loss=0.0676]
+Joint - Epoch 2: : 164928it [00:18, 9435.98it/s, loss=0.0783]
+Joint - Epoch 2: : 165888it [00:19, 9364.06it/s, loss=0.0173]
+Joint - Epoch 2: : 166976it [00:19, 9673.10it/s, loss=0.174] 
+Joint - Epoch 2: : 168000it [00:19, 9729.71it/s, loss=0.0186]
+Joint - Epoch 2: : 169088it [00:19, 9622.40it/s, loss=0.0636]
+Joint - Epoch 2: : 170112it [00:19, 9163.04it/s, loss=0.0543]
+Joint - Epoch 2: : 171072it [00:19, 9209.60it/s, loss=0.042] 
+Joint - Epoch 2: : 172032it [00:19, 9234.97it/s, loss=0.0425]
+Joint - Epoch 2: : 172992it [00:19, 8969.03it/s, loss=0.0619]
+Joint - Epoch 2: : 173952it [00:19, 8903.29it/s, loss=0.0662]
+Joint - Epoch 2: : 174848it [00:20, 8618.77it/s, loss=0.22]  
+Joint - Epoch 2: : 175808it [00:20, 8874.75it/s, loss=0.107]
+Joint - Epoch 2: : 176704it [00:20, 8887.75it/s, loss=0.208]
+Joint - Epoch 2: : 177600it [00:20, 8665.47it/s, loss=0.118]
+Joint - Epoch 2: : 178688it [00:20, 9087.13it/s, loss=0.0403]
+Joint - Epoch 2: : 179776it [00:20, 9572.74it/s, loss=0.155] 
+Joint - Epoch 3: : 180800it [00:21, 4777.55it/s, loss=0.00843]
+Joint - Epoch 3: : 181696it [00:21, 5480.53it/s, loss=0.109]  
+Joint - Epoch 3: : 182528it [00:21, 5992.40it/s, loss=0.00898]
+Joint - Epoch 3: : 183488it [00:21, 6739.04it/s, loss=0.0301] 
+Joint - Epoch 3: : 184448it [00:21, 7334.24it/s, loss=0.0268]
+Joint - Epoch 3: : 185472it [00:21, 7954.95it/s, loss=0.0103]
+Joint - Epoch 3: : 186432it [00:21, 8292.00it/s, loss=0.0131]
+Joint - Epoch 3: : 187456it [00:21, 8682.58it/s, loss=0.0233]
+Joint - Epoch 3: : 188480it [00:21, 9078.72it/s, loss=0.0352]
+Joint - Epoch 3: : 189504it [00:21, 9243.97it/s, loss=0.0767]
+Joint - Epoch 3: : 190464it [00:22, 8975.44it/s, loss=0.0577]
+Joint - Epoch 3: : 191488it [00:22, 9251.71it/s, loss=0.0689]
+Joint - Epoch 3: : 192576it [00:22, 9603.06it/s, loss=0.0102]
+Joint - Epoch 3: : 193600it [00:22, 8758.35it/s, loss=0.0898]
+Joint - Epoch 3: : 194624it [00:22, 9040.07it/s, loss=0.0783]
+Joint - Epoch 3: : 195648it [00:22, 9278.71it/s, loss=0.038] 
+Joint - Epoch 3: : 196608it [00:22, 9290.47it/s, loss=0.038]
+Joint - Epoch 3: : 197632it [00:22, 9475.49it/s, loss=0.102]
+Joint - Epoch 3: : 198592it [00:22, 9467.50it/s, loss=0.21] 
+Joint - Epoch 3: : 199616it [00:23, 9675.87it/s, loss=0.0249]
+Joint - Epoch 3: : 200640it [00:23, 9764.43it/s, loss=0.0849]
+Joint - Epoch 3: : 201664it [00:23, 9668.98it/s, loss=0.00925]
+Joint - Epoch 3: : 202688it [00:23, 9350.17it/s, loss=0.0551] 
+Joint - Epoch 3: : 203648it [00:23, 9296.16it/s, loss=0.0747]
+Joint - Epoch 3: : 204736it [00:23, 9598.64it/s, loss=0.0529]
+Joint - Epoch 3: : 205760it [00:23, 9174.29it/s, loss=0.0273]
+Joint - Epoch 3: : 206720it [00:23, 9056.25it/s, loss=0.0113]
+Joint - Epoch 3: : 207680it [00:23, 9091.39it/s, loss=0.11]  
+Joint - Epoch 3: : 208640it [00:24, 9189.37it/s, loss=0.0414]
+Joint - Epoch 3: : 209600it [00:24, 9186.16it/s, loss=0.0964]
+Joint - Epoch 3: : 210624it [00:24, 9383.75it/s, loss=0.0505]
+Joint - Epoch 3: : 211584it [00:24, 9245.12it/s, loss=0.0224]
+Joint - Epoch 3: : 212544it [00:24, 8949.07it/s, loss=0.0677]
+Joint - Epoch 3: : 213632it [00:24, 9331.56it/s, loss=0.0384]
+Joint - Epoch 3: : 214656it [00:24, 9456.00it/s, loss=0.0198]
+Joint - Epoch 3: : 215616it [00:24, 9290.01it/s, loss=0.0238]
+Joint - Epoch 3: : 216704it [00:24, 9741.34it/s, loss=0.0509]
+Joint - Epoch 3: : 217728it [00:24, 8887.14it/s, loss=0.0607]
+Joint - Epoch 3: : 218752it [00:25, 9101.61it/s, loss=0.0269]
+Joint - Epoch 3: : 219776it [00:25, 9255.08it/s, loss=0.139] 
+Joint - Epoch 3: : 220736it [00:25, 9198.94it/s, loss=0.021]
+Joint - Epoch 3: : 221696it [00:25, 8811.45it/s, loss=0.233]
+Joint - Epoch 3: : 222592it [00:25, 8672.90it/s, loss=0.0627]
+Joint - Epoch 3: : 223616it [00:25, 9009.17it/s, loss=0.0104]
+Joint - Epoch 3: : 224704it [00:25, 9319.82it/s, loss=0.0238]
+Joint - Epoch 3: : 225792it [00:25, 9618.05it/s, loss=0.0219]
+Joint - Epoch 3: : 226816it [00:25, 9243.37it/s, loss=0.0241]
+Joint - Epoch 3: : 227776it [00:26, 8916.64it/s, loss=0.0612]
+Joint - Epoch 3: : 228800it [00:26, 9262.47it/s, loss=0.124] 
+Joint - Epoch 3: : 229760it [00:26, 8539.19it/s, loss=0.164]
+Joint - Epoch 3: : 230720it [00:26, 8693.68it/s, loss=0.0619]
+Joint - Epoch 3: : 231744it [00:26, 9110.94it/s, loss=0.0496]
+Joint - Epoch 3: : 232768it [00:26, 9373.88it/s, loss=0.0181]
+Joint - Epoch 3: : 233728it [00:26, 9430.99it/s, loss=0.0914]
+Joint - Epoch 3: : 234688it [00:26, 9166.31it/s, loss=0.013] 
+Joint - Epoch 3: : 235648it [00:26, 9135.55it/s, loss=0.125]
+Joint - Epoch 3: : 236672it [00:27, 9259.25it/s, loss=0.0107]
+Joint - Epoch 3: : 237696it [00:27, 9332.57it/s, loss=0.108] 
+Joint - Epoch 3: : 238656it [00:27, 9009.03it/s, loss=0.18] 
+Joint - Epoch 3: : 239616it [00:27, 8978.13it/s, loss=0.0242]
+Joint - Epoch 4: : 240576it [00:27, 4628.60it/s, loss=0.052] 
+Joint - Epoch 4: : 241792it [00:27, 5871.99it/s, loss=0.0266]
+Joint - Epoch 4: : 242816it [00:28, 6664.79it/s, loss=0.0191]
+Joint - Epoch 4: : 243712it [00:28, 7011.65it/s, loss=0.0162]
+Joint - Epoch 4: : 244672it [00:28, 7469.68it/s, loss=0.063] 
+Joint - Epoch 4: : 245696it [00:28, 8082.29it/s, loss=0.0546]
+Joint - Epoch 4: : 246848it [00:28, 8803.25it/s, loss=0.00995]
+Joint - Epoch 4: : 247872it [00:28, 9154.65it/s, loss=0.0797] 
+Joint - Epoch 4: : 248896it [00:28, 9036.48it/s, loss=0.0106]
+Joint - Epoch 4: : 250048it [00:28, 9653.86it/s, loss=0.0207]
+Joint - Epoch 4: : 251136it [00:28, 9871.23it/s, loss=0.0883]
+Joint - Epoch 4: : 252160it [00:29, 9649.11it/s, loss=0.0625]
+Joint - Epoch 4: : 253184it [00:29, 8986.33it/s, loss=0.0752]
+Joint - Epoch 4: : 254144it [00:29, 9126.97it/s, loss=0.067] 
+Joint - Epoch 4: : 255232it [00:29, 9561.25it/s, loss=0.011]
+Joint - Epoch 4: : 256256it [00:29, 8731.94it/s, loss=0.0633]
+Joint - Epoch 4: : 257216it [00:29, 8746.37it/s, loss=0.0644]
+Joint - Epoch 4: : 258304it [00:29, 9212.66it/s, loss=0.0175]
+Joint - Epoch 4: : 259264it [00:29, 8811.53it/s, loss=0.0503]
+Joint - Epoch 4: : 260160it [00:29, 7958.50it/s, loss=0.0519]
+Joint - Epoch 4: : 261248it [00:30, 8710.98it/s, loss=0.0172]
+Joint - Epoch 4: : 262208it [00:30, 8147.23it/s, loss=0.0224]
+Joint - Epoch 4: : 263104it [00:30, 8068.33it/s, loss=0.0237]
+Joint - Epoch 4: : 264000it [00:30, 8244.45it/s, loss=0.0178]
+Joint - Epoch 4: : 265024it [00:30, 8685.48it/s, loss=0.021] 
+Joint - Epoch 4: : 265984it [00:30, 8830.41it/s, loss=0.00687]
+Joint - Epoch 4: : 267008it [00:30, 9154.09it/s, loss=0.0397] 
+Joint - Epoch 4: : 268032it [00:30, 9410.40it/s, loss=0.0551]
+Joint - Epoch 4: : 269056it [00:30, 9636.90it/s, loss=0.0428]
+Joint - Epoch 4: : 270080it [00:31, 9781.48it/s, loss=0.0727]
+Joint - Epoch 4: : 271104it [00:31, 9427.32it/s, loss=0.0233]
+Joint - Epoch 4: : 272192it [00:31, 9732.04it/s, loss=0.0598]
+Joint - Epoch 4: : 273216it [00:31, 9611.81it/s, loss=0.0382]
+Joint - Epoch 4: : 274304it [00:31, 9855.85it/s, loss=0.0039]
+Joint - Epoch 4: : 275328it [00:31, 9090.46it/s, loss=0.0228]
+Joint - Epoch 4: : 276352it [00:31, 9303.34it/s, loss=0.0496]
+Joint - Epoch 4: : 277312it [00:31, 9131.04it/s, loss=0.0341]
+Joint - Epoch 4: : 278272it [00:31, 9026.06it/s, loss=0.0689]
+Joint - Epoch 4: : 279232it [00:32, 8911.47it/s, loss=0.059] 
+Joint - Epoch 4: : 280128it [00:32, 8894.79it/s, loss=0.028]
+Joint - Epoch 4: : 281024it [00:32, 8863.30it/s, loss=0.0905]
+Joint - Epoch 4: : 281920it [00:32, 8449.39it/s, loss=0.0184]
+Joint - Epoch 4: : 282944it [00:32, 8925.94it/s, loss=0.0549]
+Joint - Epoch 4: : 283968it [00:32, 9117.88it/s, loss=0.0495]
+Joint - Epoch 4: : 284928it [00:32, 8711.45it/s, loss=0.0199]
+Joint - Epoch 4: : 285888it [00:32, 8938.18it/s, loss=0.00874]
+Joint - Epoch 4: : 286976it [00:32, 9356.93it/s, loss=0.0462] 
+Joint - Epoch 4: : 287936it [00:33, 8749.32it/s, loss=0.041] 
+Joint - Epoch 4: : 288960it [00:33, 9060.62it/s, loss=0.151]
+Joint - Epoch 4: : 289984it [00:33, 9284.53it/s, loss=0.0303]
+Joint - Epoch 4: : 290944it [00:33, 9231.46it/s, loss=0.0192]
+Joint - Epoch 4: : 291904it [00:33, 9268.20it/s, loss=0.0613]
+Joint - Epoch 4: : 292864it [00:33, 9333.64it/s, loss=0.0758]
+Joint - Epoch 4: : 293824it [00:33, 9395.31it/s, loss=0.071] 
+Joint - Epoch 4: : 294784it [00:33, 9317.14it/s, loss=0.0869]
+Joint - Epoch 4: : 295808it [00:33, 9545.72it/s, loss=0.0766]
+Joint - Epoch 4: : 296768it [00:33, 9406.72it/s, loss=0.0902]
+Joint - Epoch 4: : 297728it [00:34, 8678.06it/s, loss=0.0159]
+Joint - Epoch 4: : 298688it [00:34, 8857.47it/s, loss=0.0112]
+Joint - Epoch 4: : 299712it [00:34, 9141.88it/s, loss=0.0455]
+Joint - Epoch 5: : 300672it [00:34, 4272.38it/s, loss=0.0486]
+Joint - Epoch 5: : 301888it [00:34, 5447.75it/s, loss=0.0135]
+Joint - Epoch 5: : 302848it [00:35, 6156.99it/s, loss=0.024] 
+Joint - Epoch 5: : 303936it [00:35, 7041.91it/s, loss=0.0857]
+Joint - Epoch 5: : 304960it [00:35, 7680.82it/s, loss=0.0286]
+Joint - Epoch 5: : 305984it [00:35, 8205.27it/s, loss=0.0517]
+Joint - Epoch 5: : 306944it [00:35, 8264.99it/s, loss=0.0275]
+Joint - Epoch 5: : 307904it [00:35, 8363.17it/s, loss=0.00829]
+Joint - Epoch 5: : 308928it [00:35, 8850.32it/s, loss=0.00618]
+Joint - Epoch 5: : 310080it [00:35, 9447.20it/s, loss=0.0067] 
+Joint - Epoch 5: : 311104it [00:35, 9396.81it/s, loss=0.064] 
+Joint - Epoch 5: : 312128it [00:35, 9337.69it/s, loss=0.0104]
+Joint - Epoch 5: : 313088it [00:36, 8986.48it/s, loss=0.0576]
+Joint - Epoch 5: : 314048it [00:36, 8995.85it/s, loss=0.00579]
+Joint - Epoch 5: : 315072it [00:36, 9177.99it/s, loss=0.138]  
+Joint - Epoch 5: : 316032it [00:36, 8989.63it/s, loss=0.128]
+Joint - Epoch 5: : 316992it [00:36, 8972.68it/s, loss=0.0269]
+Joint - Epoch 5: : 317952it [00:36, 8412.20it/s, loss=0.00857]
+Joint - Epoch 5: : 318976it [00:36, 8793.87it/s, loss=0.0035] 
+Joint - Epoch 5: : 319936it [00:36, 8984.67it/s, loss=0.0226]
+Joint - Epoch 5: : 320896it [00:36, 8584.44it/s, loss=0.0347]
+Joint - Epoch 5: : 321792it [00:37, 8655.29it/s, loss=0.0148]
+Joint - Epoch 5: : 322816it [00:37, 8977.20it/s, loss=0.0567]
+Joint - Epoch 5: : 323776it [00:37, 8432.62it/s, loss=0.0618]
+Joint - Epoch 5: : 324672it [00:37, 8063.22it/s, loss=0.0357]
+Joint - Epoch 5: : 325632it [00:37, 8436.41it/s, loss=0.0401]
+Joint - Epoch 5: : 326848it [00:37, 9366.89it/s, loss=0.024] 
+Joint - Epoch 5: : 327808it [00:37, 9428.06it/s, loss=0.089]
+Joint - Epoch 5: : 328768it [00:37, 9016.36it/s, loss=0.00726]
+Joint - Epoch 5: : 329728it [00:37, 9002.27it/s, loss=0.0232] 
+Joint - Epoch 5: : 330752it [00:38, 9251.49it/s, loss=0.0945]
+Joint - Epoch 5: : 331712it [00:38, 9272.71it/s, loss=0.0246]
+Joint - Epoch 5: : 332672it [00:38, 8976.26it/s, loss=0.0377]
+Joint - Epoch 5: : 333632it [00:38, 8870.51it/s, loss=0.0698]
+Joint - Epoch 5: : 334720it [00:38, 9313.87it/s, loss=0.0965]
+Joint - Epoch 5: : 335808it [00:38, 9467.22it/s, loss=0.0567]
+Joint - Epoch 5: : 336768it [00:38, 8852.11it/s, loss=0.0193]
+Joint - Epoch 5: : 337664it [00:38, 8489.73it/s, loss=0.0179]
+Joint - Epoch 5: : 338624it [00:38, 8702.16it/s, loss=0.0337]
+Joint - Epoch 5: : 339712it [00:39, 9275.42it/s, loss=0.0228]
+Joint - Epoch 5: : 340672it [00:39, 9199.25it/s, loss=0.0554]
+Joint - Epoch 5: : 341632it [00:39, 8481.75it/s, loss=0.00684]
+Joint - Epoch 5: : 342656it [00:39, 8864.45it/s, loss=0.00538]
+Joint - Epoch 5: : 343616it [00:39, 8923.60it/s, loss=0.0211] 
+Joint - Epoch 5: : 344576it [00:39, 9060.18it/s, loss=0.024] 
+Joint - Epoch 5: : 345600it [00:39, 9380.95it/s, loss=0.0409]
+Joint - Epoch 5: : 346560it [00:39, 9437.18it/s, loss=0.108] 
+Joint - Epoch 5: : 347584it [00:39, 9507.88it/s, loss=0.00552]
+Joint - Epoch 5: : 348608it [00:40, 9715.95it/s, loss=0.118]  
+Joint - Epoch 5: : 349632it [00:40, 9694.13it/s, loss=0.0322]
+Joint - Epoch 5: : 350656it [00:40, 9268.88it/s, loss=0.0375]
+Joint - Epoch 5: : 351616it [00:40, 9141.13it/s, loss=0.00832]
+Joint - Epoch 5: : 352640it [00:40, 9423.14it/s, loss=0.102]  
+Joint - Epoch 5: : 353728it [00:40, 9312.32it/s, loss=0.0166]
+Joint - Epoch 5: : 354688it [00:40, 8611.25it/s, loss=0.0191]
+Joint - Epoch 5: : 355584it [00:40, 8163.47it/s, loss=0.0104]
+Joint - Epoch 5: : 356480it [00:40, 8199.42it/s, loss=0.0254]
+Joint - Epoch 5: : 357376it [00:41, 8175.66it/s, loss=0.0021]
+Joint - Epoch 5: : 358272it [00:41, 8309.12it/s, loss=0.00149]
+Joint - Epoch 5: : 359232it [00:41, 8627.98it/s, loss=0.0135] 
+Joint - Epoch 6: : 360256it [00:41, 4615.09it/s, loss=0.00371]
+Joint - Epoch 6: : 361344it [00:41, 5644.18it/s, loss=0.0267] 
+Joint - Epoch 6: : 362432it [00:41, 6565.88it/s, loss=0.0315]
+Joint - Epoch 6: : 363456it [00:42, 7305.91it/s, loss=0.0282]
+Joint - Epoch 6: : 364352it [00:42, 7484.10it/s, loss=0.00758]
+Joint - Epoch 6: : 365376it [00:42, 8059.43it/s, loss=0.0167] 
+Joint - Epoch 6: : 366336it [00:42, 8432.65it/s, loss=0.0143]
+Joint - Epoch 6: : 367296it [00:42, 8644.90it/s, loss=0.0115]
+Joint - Epoch 6: : 368256it [00:42, 8597.56it/s, loss=0.00349]
+Joint - Epoch 6: : 369280it [00:42, 8909.73it/s, loss=0.0362] 
+Joint - Epoch 6: : 370432it [00:42, 9485.00it/s, loss=0.0229]
+Joint - Epoch 6: : 371456it [00:42, 9674.55it/s, loss=0.00781]
+Joint - Epoch 6: : 372480it [00:42, 9495.92it/s, loss=0.0774] 
+Joint - Epoch 6: : 373504it [00:43, 8867.41it/s, loss=0.0477]
+Joint - Epoch 6: : 374528it [00:43, 9140.11it/s, loss=0.000858]
+Joint - Epoch 6: : 375488it [00:43, 9021.23it/s, loss=0.0248]  
+Joint - Epoch 6: : 376512it [00:43, 9310.71it/s, loss=0.0138]
+Joint - Epoch 6: : 377472it [00:43, 9181.93it/s, loss=0.0237]
+Joint - Epoch 6: : 378496it [00:43, 9413.91it/s, loss=0.039] 
+Joint - Epoch 6: : 379520it [00:43, 9493.89it/s, loss=0.0295]
+Joint - Epoch 6: : 380544it [00:43, 9586.85it/s, loss=0.0407]
+Joint - Epoch 6: : 381568it [00:43, 9545.90it/s, loss=0.0284]
+Joint - Epoch 6: : 382592it [00:44, 9557.44it/s, loss=0.0105]
+Joint - Epoch 6: : 383680it [00:44, 9816.85it/s, loss=0.00478]
+Joint - Epoch 6: : 384768it [00:44, 10055.70it/s, loss=0.0394]
+Joint - Epoch 6: : 385856it [00:44, 10230.21it/s, loss=0.047] 
+Joint - Epoch 6: : 386944it [00:44, 9785.13it/s, loss=0.0579]
+Joint - Epoch 6: : 387968it [00:44, 9637.82it/s, loss=0.0305]
+Joint - Epoch 6: : 388992it [00:44, 9071.59it/s, loss=0.0361]
+Joint - Epoch 6: : 390208it [00:44, 9823.33it/s, loss=0.00693]
+Joint - Epoch 6: : 391232it [00:44, 9285.01it/s, loss=0.038]  
+Joint - Epoch 6: : 392192it [00:45, 9245.26it/s, loss=0.0175]
+Joint - Epoch 6: : 393216it [00:45, 9483.43it/s, loss=0.0251]
+Joint - Epoch 6: : 394432it [00:45, 10109.32it/s, loss=0.0156]
+Joint - Epoch 6: : 395456it [00:45, 8777.11it/s, loss=0.0099] 
+Joint - Epoch 6: : 396480it [00:45, 9093.34it/s, loss=0.0142]
+Joint - Epoch 6: : 397568it [00:45, 9550.35it/s, loss=0.00156]
+Joint - Epoch 6: : 398592it [00:45, 9296.41it/s, loss=0.0355] 
+Joint - Epoch 6: : 399552it [00:45, 8945.78it/s, loss=0.00554]
+Joint - Epoch 6: : 400640it [00:45, 9322.72it/s, loss=0.0194] 
+Joint - Epoch 6: : 401792it [00:46, 9838.41it/s, loss=0.00399]
+Joint - Epoch 6: : 402944it [00:46, 10113.15it/s, loss=0.0296]
+Joint - Epoch 6: : 403968it [00:46, 9016.15it/s, loss=0.0619] 
+Joint - Epoch 6: : 404992it [00:46, 9256.86it/s, loss=0.0337]
+Joint - Epoch 6: : 406144it [00:46, 9831.14it/s, loss=0.0191]
+Joint - Epoch 6: : 407168it [00:46, 9534.51it/s, loss=0.0119]
+Joint - Epoch 6: : 408192it [00:46, 8976.51it/s, loss=0.0263]
+Joint - Epoch 6: : 409280it [00:46, 9417.42it/s, loss=0.0274]
+Joint - Epoch 6: : 410240it [00:47, 9135.90it/s, loss=0.00784]
+Joint - Epoch 6: : 411200it [00:47, 7781.27it/s, loss=0.0055] 
+Joint - Epoch 6: : 412032it [00:47, 7351.43it/s, loss=0.047] 
+Joint - Epoch 6: : 412864it [00:47, 7349.03it/s, loss=0.0778]
+Joint - Epoch 6: : 413632it [00:47, 7058.20it/s, loss=0.0218]
+Joint - Epoch 6: : 414592it [00:47, 7616.88it/s, loss=0.00454]
+Joint - Epoch 6: : 415424it [00:47, 7456.06it/s, loss=0.0189] 
+Joint - Epoch 6: : 416192it [00:47, 7492.74it/s, loss=0.0344]
+Joint - Epoch 6: : 417152it [00:47, 7974.23it/s, loss=0.0112]
+Joint - Epoch 6: : 417984it [00:48, 7036.70it/s, loss=0.0102]
+Joint - Epoch 6: : 418880it [00:48, 7401.85it/s, loss=0.00744]
+Joint - Epoch 6: : 419840it [00:48, 7966.82it/s, loss=0.0151] 
+Joint - Epoch 7: : 420672it [00:48, 4173.02it/s, loss=0.00968]
+Joint - Epoch 7: : 421696it [00:48, 5143.19it/s, loss=0.0247] 
+Joint - Epoch 7: : 422464it [00:48, 5631.29it/s, loss=0.0334]
+Joint - Epoch 7: : 423424it [00:49, 6439.51it/s, loss=0.035] 
+Joint - Epoch 7: : 424448it [00:49, 7272.34it/s, loss=0.0101]
+Joint - Epoch 7: : 425408it [00:49, 7846.22it/s, loss=0.0128]
+Joint - Epoch 7: : 426432it [00:49, 8373.85it/s, loss=0.00587]
+Joint - Epoch 7: : 427392it [00:49, 8462.26it/s, loss=0.0219] 
+Joint - Epoch 7: : 428352it [00:49, 8186.22it/s, loss=0.0318]
+Joint - Epoch 7: : 429312it [00:49, 8533.69it/s, loss=0.00988]
+Joint - Epoch 7: : 430208it [00:49, 8451.89it/s, loss=0.00193]
+Joint - Epoch 7: : 431168it [00:49, 8637.55it/s, loss=0.0212] 
+Joint - Epoch 7: : 432256it [00:50, 9072.63it/s, loss=0.00304]
+Joint - Epoch 7: : 433280it [00:50, 9323.30it/s, loss=0.016]  
+Joint - Epoch 7: : 434368it [00:50, 9546.74it/s, loss=0.011]
+Joint - Epoch 7: : 435392it [00:50, 8913.65it/s, loss=0.00128]
+Joint - Epoch 7: : 436352it [00:50, 8981.82it/s, loss=0.011]  
+Joint - Epoch 7: : 437376it [00:50, 9283.84it/s, loss=0.00482]
+Joint - Epoch 7: : 438336it [00:50, 9340.25it/s, loss=0.0167] 
+Joint - Epoch 7: : 439424it [00:50, 9766.20it/s, loss=0.0233]
+Joint - Epoch 7: : 440448it [00:50, 9256.03it/s, loss=0.0148]
+Joint - Epoch 7: : 441408it [00:51, 9027.54it/s, loss=0.0659]
+Joint - Epoch 7: : 442368it [00:51, 8861.14it/s, loss=0.00412]
+Joint - Epoch 7: : 443392it [00:51, 9125.49it/s, loss=0.0275] 
+Joint - Epoch 7: : 444352it [00:51, 9212.28it/s, loss=0.00981]
+Joint - Epoch 7: : 445312it [00:51, 9103.01it/s, loss=0.022]  
+Joint - Epoch 7: : 446336it [00:51, 9280.25it/s, loss=0.0672]
+Joint - Epoch 7: : 447360it [00:51, 9294.23it/s, loss=0.0695]
+Joint - Epoch 7: : 448384it [00:51, 9547.25it/s, loss=0.0184]
+Joint - Epoch 7: : 449344it [00:51, 9347.07it/s, loss=0.00935]
+Joint - Epoch 7: : 450304it [00:52, 9198.30it/s, loss=0.00639]
+Joint - Epoch 7: : 451328it [00:52, 9397.78it/s, loss=0.00639]
+Joint - Epoch 7: : 452352it [00:52, 9517.30it/s, loss=0.0132] 
+Joint - Epoch 7: : 453440it [00:52, 9734.39it/s, loss=0.00272]
+Joint - Epoch 7: : 454464it [00:52, 9285.83it/s, loss=0.0296] 
+Joint - Epoch 7: : 455424it [00:52, 9157.92it/s, loss=0.0863]
+Joint - Epoch 7: : 456448it [00:52, 9281.77it/s, loss=0.0448]
+Joint - Epoch 7: : 457536it [00:52, 9612.68it/s, loss=0.0118]
+Joint - Epoch 7: : 458560it [00:52, 9764.46it/s, loss=0.0177]
+Joint - Epoch 7: : 459584it [00:52, 9803.90it/s, loss=0.00763]
+Joint - Epoch 7: : 460608it [00:53, 8694.20it/s, loss=0.0609] 
+Joint - Epoch 7: : 461504it [00:53, 8663.31it/s, loss=0.00438]
+Joint - Epoch 7: : 462400it [00:53, 8677.50it/s, loss=0.0451] 
+Joint - Epoch 7: : 463424it [00:53, 9093.08it/s, loss=0.052] 
+Joint - Epoch 7: : 464384it [00:53, 9100.58it/s, loss=0.0159]
+Joint - Epoch 7: : 465408it [00:53, 9264.83it/s, loss=0.00653]
+Joint - Epoch 7: : 466368it [00:53, 8916.60it/s, loss=0.00598]
+Joint - Epoch 7: : 467328it [00:53, 9088.52it/s, loss=0.0212] 
+Joint - Epoch 7: : 468288it [00:53, 9191.42it/s, loss=0.0278]
+Joint - Epoch 7: : 469248it [00:54, 9222.63it/s, loss=0.0907]
+Joint - Epoch 7: : 470272it [00:54, 9442.26it/s, loss=0.00153]
+Joint - Epoch 7: : 471232it [00:54, 9226.03it/s, loss=0.0289] 
+Joint - Epoch 7: : 472256it [00:54, 9343.31it/s, loss=0.00293]
+Joint - Epoch 7: : 473216it [00:54, 8789.73it/s, loss=0.00154]
+Joint - Epoch 7: : 474240it [00:54, 9009.12it/s, loss=0.019]  
+Joint - Epoch 7: : 475200it [00:54, 9158.31it/s, loss=0.0642]
+Joint - Epoch 7: : 476160it [00:54, 8881.00it/s, loss=0.00624]
+Joint - Epoch 7: : 477056it [00:54, 8589.04it/s, loss=0.0259] 
+Joint - Epoch 7: : 477952it [00:55, 8630.18it/s, loss=0.0455]
+Joint - Epoch 7: : 478848it [00:55, 8316.55it/s, loss=0.00253]
+Joint - Epoch 7: : 479744it [00:55, 8384.12it/s, loss=0.0233] 
+Joint - Epoch 8: : 480640it [00:55, 4120.33it/s, loss=0.0195]
+Joint - Epoch 8: : 481728it [00:55, 5206.97it/s, loss=0.0105]
+Joint - Epoch 8: : 482560it [00:55, 5649.17it/s, loss=0.0189]
+Joint - Epoch 8: : 483520it [00:56, 6462.50it/s, loss=0.0257]
+Joint - Epoch 8: : 484480it [00:56, 7101.39it/s, loss=0.0165]
+Joint - Epoch 8: : 485504it [00:56, 7844.27it/s, loss=0.00737]
+Joint - Epoch 8: : 486592it [00:56, 8517.80it/s, loss=0.0116] 
+Joint - Epoch 8: : 487552it [00:56, 8707.70it/s, loss=0.00693]
+Joint - Epoch 8: : 488512it [00:56, 8815.33it/s, loss=0.00361]
+Joint - Epoch 8: : 489472it [00:56, 8622.65it/s, loss=0.0038] 
+Joint - Epoch 8: : 490496it [00:56, 8976.16it/s, loss=0.00148]
+Joint - Epoch 8: : 491520it [00:56, 9303.19it/s, loss=0.00139]
+Joint - Epoch 8: : 492480it [00:56, 9355.15it/s, loss=0.0223] 
+Joint - Epoch 8: : 493440it [00:57, 9189.80it/s, loss=0.0172]
+Joint - Epoch 8: : 494528it [00:57, 9619.27it/s, loss=0.0209]
+Joint - Epoch 8: : 495552it [00:57, 9321.49it/s, loss=0.019] 
+Joint - Epoch 8: : 496512it [00:57, 9219.62it/s, loss=0.0247]
+Joint - Epoch 8: : 497472it [00:57, 9002.85it/s, loss=0.0271]
+Joint - Epoch 8: : 498496it [00:57, 9229.98it/s, loss=0.00438]
+Joint - Epoch 8: : 499584it [00:57, 9598.59it/s, loss=0.0183] 
+Joint - Epoch 8: : 500608it [00:57, 9426.59it/s, loss=0.0206]
+Joint - Epoch 8: : 501632it [00:57, 9405.03it/s, loss=0.0385]
+Joint - Epoch 8: : 502592it [00:58, 8798.14it/s, loss=0.0168]
+Joint - Epoch 8: : 503488it [00:58, 8802.70it/s, loss=0.0409]
+Joint - Epoch 8: : 504448it [00:58, 8996.82it/s, loss=0.0391]
+Joint - Epoch 8: : 505536it [00:58, 9448.21it/s, loss=0.00273]
+Joint - Epoch 8: : 506560it [00:58, 9622.69it/s, loss=0.00931]
+Joint - Epoch 8: : 507584it [00:58, 9724.54it/s, loss=0.0329] 
+Joint - Epoch 8: : 508608it [00:58, 8816.29it/s, loss=0.0467]
+Joint - Epoch 8: : 509568it [00:58, 8918.27it/s, loss=0.0168]
+Joint - Epoch 8: : 510528it [00:58, 9087.33it/s, loss=0.00874]
+Joint - Epoch 8: : 511552it [00:59, 9375.51it/s, loss=0.0252] 
+Joint - Epoch 8: : 512576it [00:59, 9559.53it/s, loss=0.0203]
+Joint - Epoch 8: : 513600it [00:59, 9685.29it/s, loss=0.0732]
+Joint - Epoch 8: : 514624it [00:59, 9145.10it/s, loss=0.00563]
+Joint - Epoch 8: : 515584it [00:59, 9100.46it/s, loss=0.0142] 
+Joint - Epoch 8: : 516544it [00:59, 9180.25it/s, loss=0.00948]
+Joint - Epoch 8: : 517504it [00:59, 9202.09it/s, loss=0.0121] 
+Joint - Epoch 8: : 518528it [00:59, 9498.73it/s, loss=0.00582]
+Joint - Epoch 8: : 519488it [00:59, 9263.66it/s, loss=0.0615] 
+Joint - Epoch 8: : 520512it [01:00, 9427.23it/s, loss=0.00838]
+Joint - Epoch 8: : 521472it [01:00, 8561.82it/s, loss=0.0238] 
+Joint - Epoch 8: : 522368it [01:00, 8644.40it/s, loss=0.00162]
+Joint - Epoch 8: : 523328it [01:00, 8820.83it/s, loss=0.0104] 
+Joint - Epoch 8: : 524352it [01:00, 9090.07it/s, loss=0.0325]
+Joint - Epoch 8: : 525312it [01:00, 9213.00it/s, loss=0.00133]
+Joint - Epoch 8: : 526400it [01:00, 9677.71it/s, loss=0.00102]
+Joint - Epoch 8: : 527424it [01:00, 8783.77it/s, loss=0.0191] 
+Joint - Epoch 8: : 528384it [01:00, 8812.34it/s, loss=0.0191]
+Joint - Epoch 8: : 529280it [01:01, 8762.76it/s, loss=0.126] 
+Joint - Epoch 8: : 530240it [01:01, 8946.26it/s, loss=0.0153]
+Joint - Epoch 8: : 531264it [01:01, 9181.99it/s, loss=0.000821]
+Joint - Epoch 8: : 532352it [01:01, 9596.72it/s, loss=0.0434]  
+Joint - Epoch 8: : 533376it [01:01, 9656.24it/s, loss=0.0108]
+Joint - Epoch 8: : 534400it [01:01, 9299.23it/s, loss=0.00588]
+Joint - Epoch 8: : 535360it [01:01, 8492.46it/s, loss=0.00502]
+Joint - Epoch 8: : 536256it [01:01, 8352.83it/s, loss=0.00165]
+Joint - Epoch 8: : 537152it [01:01, 8466.97it/s, loss=0.00856]
+Joint - Epoch 8: : 538048it [01:02, 8547.06it/s, loss=0.00124]
+Joint - Epoch 8: : 538944it [01:02, 8339.87it/s, loss=0.00331]
+Joint - Epoch 8: : 539840it [01:02, 8219.46it/s, loss=0.00772]
+Joint - Epoch 9: : 540672it [01:02, 4092.09it/s, loss=0.00324]
+Joint - Epoch 9: : 541696it [01:02, 5086.05it/s, loss=0.0182] 
+Joint - Epoch 9: : 542656it [01:02, 5904.84it/s, loss=0.0219]
+Joint - Epoch 9: : 543488it [01:03, 6255.41it/s, loss=0.0135]
+Joint - Epoch 9: : 544320it [01:03, 6609.32it/s, loss=0.00203]
+Joint - Epoch 9: : 545152it [01:03, 6952.68it/s, loss=0.0745] 
+Joint - Epoch 9: : 546112it [01:03, 7543.59it/s, loss=0.0495]
+Joint - Epoch 9: : 546944it [01:03, 7415.37it/s, loss=0.0297]
+Joint - Epoch 9: : 547840it [01:03, 7652.26it/s, loss=0.0636]
+Joint - Epoch 9: : 548800it [01:03, 8117.15it/s, loss=0.0714]
+Joint - Epoch 9: : 549760it [01:03, 8445.63it/s, loss=0.0063]
+Joint - Epoch 9: : 550656it [01:03, 7637.53it/s, loss=0.02]  
+Joint - Epoch 9: : 551488it [01:04, 7581.84it/s, loss=0.0183]
+Joint - Epoch 9: : 552384it [01:04, 7837.13it/s, loss=0.0137]
+Joint - Epoch 9: : 553216it [01:04, 7801.11it/s, loss=0.0024]
+Joint - Epoch 9: : 554176it [01:04, 8176.32it/s, loss=0.0055]
+Joint - Epoch 9: : 555200it [01:04, 8532.80it/s, loss=0.00239]
+Joint - Epoch 9: : 556096it [01:04, 8177.32it/s, loss=0.0185] 
+Joint - Epoch 9: : 557056it [01:04, 8364.85it/s, loss=0.0028]
+Joint - Epoch 9: : 558016it [01:04, 8701.16it/s, loss=0.00614]
+Joint - Epoch 9: : 559104it [01:04, 9301.80it/s, loss=0.01]   
+Joint - Epoch 9: : 560064it [01:05, 7812.53it/s, loss=0.00524]
+Joint - Epoch 9: : 560896it [01:05, 7730.51it/s, loss=0.0202] 
+Joint - Epoch 9: : 561728it [01:05, 7710.03it/s, loss=0.0127]
+Joint - Epoch 9: : 562560it [01:05, 7671.54it/s, loss=0.0114]
+Joint - Epoch 9: : 563392it [01:05, 7599.76it/s, loss=0.0377]
+Joint - Epoch 9: : 564224it [01:05, 7747.17it/s, loss=0.00168]
+Joint - Epoch 9: : 565056it [01:05, 7821.06it/s, loss=0.00336]
+Joint - Epoch 9: : 565888it [01:05, 7167.69it/s, loss=0.0239] 
+Joint - Epoch 9: : 566720it [01:05, 7398.33it/s, loss=0.0184]
+Joint - Epoch 9: : 567616it [01:06, 7747.65it/s, loss=0.0105]
+Joint - Epoch 9: : 568448it [01:06, 7797.00it/s, loss=0.0104]
+Joint - Epoch 9: : 569280it [01:06, 7657.57it/s, loss=0.0719]
+Joint - Epoch 9: : 570112it [01:06, 7369.72it/s, loss=0.0177]
+Joint - Epoch 9: : 570944it [01:06, 7522.48it/s, loss=0.00872]
+Joint - Epoch 9: : 571712it [01:06, 7360.13it/s, loss=0.00588]
+Joint - Epoch 9: : 572608it [01:06, 7785.96it/s, loss=0.0239] 
+Joint - Epoch 9: : 573504it [01:06, 8054.27it/s, loss=0.00486]
+Joint - Epoch 9: : 574336it [01:06, 7876.44it/s, loss=0.00604]
+Joint - Epoch 9: : 575168it [01:07, 7847.25it/s, loss=0.0153] 
+Joint - Epoch 9: : 576000it [01:07, 7945.41it/s, loss=0.0447]
+Joint - Epoch 9: : 576960it [01:07, 8253.68it/s, loss=0.00269]
+Joint - Epoch 9: : 577984it [01:07, 8677.74it/s, loss=0.00339]
+Joint - Epoch 9: : 578880it [01:07, 8288.99it/s, loss=0.0505] 
+Joint - Epoch 9: : 579840it [01:07, 8501.16it/s, loss=0.0345]
+Joint - Epoch 9: : 580928it [01:07, 9138.14it/s, loss=0.00221]
+Joint - Epoch 9: : 581888it [01:07, 9180.34it/s, loss=0.0133] 
+Joint - Epoch 9: : 583040it [01:07, 9829.56it/s, loss=0.00374]
+Joint - Epoch 9: : 584128it [01:07, 10048.63it/s, loss=0.000775]
+Joint - Epoch 9: : 585152it [01:08, 10092.61it/s, loss=0.0132]  
+Joint - Epoch 9: : 586240it [01:08, 10278.64it/s, loss=0.00164]
+Joint - Epoch 9: : 587456it [01:08, 10791.08it/s, loss=0.0551] 
+Joint - Epoch 9: : 588736it [01:08, 11277.22it/s, loss=0.0247]
+Joint - Epoch 9: : 589888it [01:08, 11179.83it/s, loss=0.053] 
+Joint - Epoch 9: : 591168it [01:08, 11451.07it/s, loss=0.0448]
+Joint - Epoch 9: : 592448it [01:08, 11711.09it/s, loss=0.0221]
+Joint - Epoch 9: : 593728it [01:08, 11949.51it/s, loss=0.0161]
+Joint - Epoch 9: : 594944it [01:08, 11627.22it/s, loss=0.000769]
+Joint - Epoch 9: : 596160it [01:09, 11664.58it/s, loss=0.0944]  
+Joint - Epoch 9: : 597376it [01:09, 11578.93it/s, loss=0.105] 
+Joint - Epoch 9: : 598592it [01:09, 11098.55it/s, loss=0.00223]
+Joint - Epoch 9: : 599744it [01:09, 11125.18it/s, loss=0.0443] 
+Joint - Epoch 9: : 600320it [01:09, 8644.98it/s, loss=0.184]  
+Accuracy for 5 task(s): 	 [Class-IL]: 97.77 % 	 [Task-IL]: 99.7 %
+	Raw accuracy values: Class-IL [98.81796690307328, 97.55142017629774, 97.81216648879403, 98.08660624370594, 96.57085224407463] | Task-IL [99.95271867612293, 99.60822722820764, 99.73319103521878, 99.79859013091642, 99.39485627836612]
+
+
+Backward Transfer: [Class-IL]: 59.69 	 [Task-IL]: 41.62
+	Raw Backward Transfer values: Class-IL 59.69209312640088 | Task-IL 41.62435668675182
+Forgetting: [Class-IL]: 0.00 	 [Task-IL]: 0.00
+	Raw Forgetting values: Class-IL 0.0 | Task-IL 0.0
+Forward Transfer: [Class-IL]: 0.00 	 [Task-IL]: 0.00
+	Raw Forward Transfer values: Class-IL 0.0 | Task-IL 0.0

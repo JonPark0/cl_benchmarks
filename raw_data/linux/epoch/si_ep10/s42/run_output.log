@@ -1,0 +1,218 @@
+/home/yeochoon/Documents/grad_thesis/cl_benchmarks/.venv/bin/python /home/yeochoon/Documents/grad_thesis/cl_benchmarks/mammoth/main.py --model si --seed 42 --n_epochs 10 --base_path /home/yeochoon/Documents/grad_thesis/cl_benchmarks/raw_data/linux/ --results_path epoch/si_ep10/s42 --dataset seq-mnist --optimizer adam --lr 0.001 --enable_other_metrics 1 --non_verbose 1 --device 0 --c 1.0 --xi 0.9
+
+[INFO] 04-Oct-26 04:13:10 - Running Mammoth! on YCLaptop2. 
+[WARNING] 04-Oct-26 04:13:12 - Error in model derpp-casper
+[WARNING] 04-Oct-26 04:13:12 - No module named 'xitorch'
+[WARNING] 04-Oct-26 04:13:12 - Error in model xder-rpc-casper
+[WARNING] 04-Oct-26 04:13:14 - Error in model llava
+[WARNING] 04-Oct-26 04:13:14 - Please install the HuggingFace Transformers package by running: pip install transformers
+[WARNING] 04-Oct-26 04:13:14 - Error in model lws
+[WARNING] 04-Oct-26 04:13:14 - kmeans_pytorch not installed. Please run `pip install kmeans-pytorch`.
+[WARNING] 04-Oct-26 04:13:14 - Error in model er-ace-casper
+[WARNING] 04-Oct-26 04:13:14 - Error in model cgil
+[WARNING] 04-Oct-26 04:13:14 - Please install the CLIP package by running: pip install git+https://github.com/openai/CLIP.git
+[WARNING] 04-Oct-26 04:13:14 - Error in model clip
+[WARNING] 04-Oct-26 04:13:14 - Error in model icarl-casper
+[WARNING] 04-Oct-26 04:13:14 - Error in model first-stage-starprompt
+[WARNING] 04-Oct-26 04:13:14 - Please install the CLIP package by running: pip install git+https://github.com/openai/CLIP.git (requires also `huggingface-hub`)
+[WARNING] 04-Oct-26 04:13:14 - Error in model second-stage-starprompt
+[WARNING] 04-Oct-26 04:13:14 - Error in model starprompt
+[WARNING] 04-Oct-26 04:13:14 - No backbone specified. Using default backbone (set by the dataset).
+[WARNING] 04-Oct-26 04:13:14 - No default configuration found in models/config/si.yaml.
+[WARNING] 04-Oct-26 04:13:14 - Default configuration file not found for dataset seq-mnist. Using the defaults specified in the dataset class (if available).
+[ERROR] 04-Oct-26 04:13:14 - Could not retrieve git hash.
+[INFO] 04-Oct-26 04:13:14 - 
+╔═══════════════════════ CONFIGURATION ═══════════════════════╗
+║ Basic arguments:
+║   • backbone: mnistmlp
+║   • dataset: seq-mnist
+║   • load_best_args: False
+║   • model: si
+║
+║ Configuration arguments:
+║   • model_config: default
+║
+║ Model-specific arguments:
+║   • c: 1.000000
+║   • xi: 0.900000
+║
+║ Backbone arguments:
+║   • mlp_hidden_size: 100
+║
+║ Management arguments:
+║   • base_path: /home/yeochoon/Documents/grad_thesis/cl_benchmarks/raw_data/linux/
+║   • checkpoint_path: ./checkpoints/
+║   • code_optimization: 0
+║   • debug_mode: False
+║   • device: 0
+║   • disable_log: False
+║   • distributed: no
+║   • enable_other_metrics: True
+║   • inference_only: False
+║   • non_verbose: True
+║   • permute_classes: False
+║   • results_path: epoch/si_ep10/s42
+║   • save_after_interrupt: True
+║   • save_checkpoint_mode: safe
+║   • seed: 42
+║
+║ Wandb arguments:
+║
+║ Experiment arguments:
+║   • batch_size: 64
+║   • eval_future: False
+║   • joint: 0
+║   • label_perc: 1.000000
+║   • label_perc_by_class: 1.000000
+║   • lr: 0.001000
+║
+║ Validation and fitting arguments:
+║   • early_stopping_epsilon: 0.000001
+║   • early_stopping_freq: 1
+║   • early_stopping_metric: loss
+║   • early_stopping_patience: 5
+║   • fitting_mode: epochs
+║   • n_epochs: 10
+║   • validation_mode: current
+║
+║ Optimizer and learning rate scheduler arguments:
+║   • drop_last: False
+║   • lr_milestones: []
+║   • optim_mom: 0.000000
+║   • optim_nesterov: False
+║   • optim_wd: 0.000000
+║   • optimizer: adam
+║   • sched_multistep_lr_gamma: 0.100000
+║   • scheduler_mode: epoch
+║
+║ Noise arguments:
+║   • cache_path_noisy_labels: noisy_labels
+║   • disable_noisy_labels_cache: False
+║   • noise_rate: 0.000000
+║   • noise_type: symmetric
+║
+╚════════════════════════════════════════════════════════════╝
+[WARNING] 04-Oct-26 04:13:14 - Could not get memory from pynvml. Maybe try `pip install --force-reinstall gpustat`. module 'torch.cuda' has no attribute 'pynvml'
+[INFO] 04-Oct-26 04:13:14 - Using device cuda:0
+[INFO] 04-Oct-26 04:13:14 - `wandb_entity` and `wandb_project` not set. Disabling wandb.
+[INFO] 04-Oct-26 04:13:14 - Using backbone: mnistmlp
+[INFO] 04-Oct-26 04:13:14 - Using BaseMNISTMLP as backbone
+[INFO] 04-Oct-26 04:13:14 - No transform provided.
+[INFO] 04-Oct-26 04:13:14 - Current working directory: /home/yeochoon/Documents/grad_thesis/cl_benchmarks/mammoth.
+[INFO] 04-Oct-26 04:13:14 - Main process PID: 2643025
+[INFO] 04-Oct-26 04:13:15 - Using 8 workers for the dataloader.
+[INFO] 04-Oct-26 04:13:15 - Using 8 workers for the dataloader.
+[INFO] 04-Oct-26 04:13:15 - Evaluating model before task (for Forward Transfer metric)...
+[INFO] 04-Oct-26 04:13:15 - Task 1
+STOP ITERATION
+STOP ITERATION
+STOP ITERATION
+STOP ITERATION
+STOP ITERATION
+STOP ITERATION
+STOP ITERATION
+STOP ITERATION
+STOP ITERATION
+STOP ITERATION
+[INFO] 04-Oct-26 04:13:41 - Accuracy for 1 task(s): 	 [Class-IL]: 99.95 % 	 [Task-IL]: 99.95 %
+[INFO] 04-Oct-26 04:13:41 - 	Raw accuracy values: Class-IL [99.95271867612293] | Task-IL [99.95271867612293]
+[INFO] 04-Oct-26 04:13:41 - Using 8 workers for the dataloader.
+[INFO] 04-Oct-26 04:13:41 - Using 8 workers for the dataloader.
+[INFO] 04-Oct-26 04:13:41 - Evaluating model before task (for Forward Transfer metric)...
+[INFO] 04-Oct-26 04:13:42 - Task 2
+STOP ITERATION
+STOP ITERATION
+STOP ITERATION
+STOP ITERATION
+STOP ITERATION
+STOP ITERATION
+STOP ITERATION
+STOP ITERATION
+STOP ITERATION
+STOP ITERATION
+[INFO] 04-Oct-26 04:14:09 - Accuracy for 2 task(s): 	 [Class-IL]: 49.63 % 	 [Task-IL]: 98.05 %
+[INFO] 04-Oct-26 04:14:09 - 	Raw accuracy values: Class-IL [0.0, 99.26542605288932] | Task-IL [96.8321513002364, 99.26542605288932]
+[INFO] 04-Oct-26 04:14:09 - Using 8 workers for the dataloader.
+[INFO] 04-Oct-26 04:14:09 - Using 8 workers for the dataloader.
+[INFO] 04-Oct-26 04:14:09 - Evaluating model before task (for Forward Transfer metric)...
+[INFO] 04-Oct-26 04:14:11 - Task 3
+STOP ITERATION
+STOP ITERATION
+STOP ITERATION
+STOP ITERATION
+STOP ITERATION
+STOP ITERATION
+STOP ITERATION
+STOP ITERATION
+STOP ITERATION
+STOP ITERATION
+[INFO] 04-Oct-26 04:14:37 - Accuracy for 3 task(s): 	 [Class-IL]: 33.4 % 	 [Task-IL]: 95.44 %
+[INFO] 04-Oct-26 04:14:37 - 	Raw accuracy values: Class-IL [0.0, 0.2938295788442703, 99.89327641408752] | Task-IL [98.67612293144208, 87.75710088148874, 99.89327641408752]
+[INFO] 04-Oct-26 04:14:37 - Using 8 workers for the dataloader.
+[INFO] 04-Oct-26 04:14:37 - Using 8 workers for the dataloader.
+[INFO] 04-Oct-26 04:14:37 - Evaluating model before task (for Forward Transfer metric)...
+[INFO] 04-Oct-26 04:14:38 - Task 4
+STOP ITERATION
+STOP ITERATION
+STOP ITERATION
+STOP ITERATION
+STOP ITERATION
+STOP ITERATION
+STOP ITERATION
+STOP ITERATION
+STOP ITERATION
+STOP ITERATION
+[INFO] 04-Oct-26 04:15:08 - Accuracy for 4 task(s): 	 [Class-IL]: 25.59 % 	 [Task-IL]: 95.59 %
+[INFO] 04-Oct-26 04:15:08 - 	Raw accuracy values: Class-IL [0.0, 0.04897159647404505, 2.454642475987193, 99.8489425981873] | Task-IL [95.98108747044918, 86.97355533790402, 99.57310565635005, 99.8489425981873]
+[INFO] 04-Oct-26 04:15:08 - Using 8 workers for the dataloader.
+[INFO] 04-Oct-26 04:15:08 - Using 8 workers for the dataloader.
+[INFO] 04-Oct-26 04:15:08 - Evaluating model before task (for Forward Transfer metric)...
+[INFO] 04-Oct-26 04:15:10 - Task 5
+STOP ITERATION
+STOP ITERATION
+STOP ITERATION
+STOP ITERATION
+STOP ITERATION
+STOP ITERATION
+STOP ITERATION
+STOP ITERATION
+STOP ITERATION
+STOP ITERATION
+[INFO] 04-Oct-26 04:15:39 - Accuracy for 5 task(s): 	 [Class-IL]: 20.98 % 	 [Task-IL]: 93.86 %
+[INFO] 04-Oct-26 04:15:39 - 	Raw accuracy values: Class-IL [0.0, 0.0, 0.26680896478121663, 5.53877139979859, 99.09228441754917] | Task-IL [88.65248226950354, 83.05582761998042, 98.66595517609392, 99.8489425981873, 99.09228441754917]
+[INFO] 04-Oct-26 04:15:39 - System stats:
+[INFO] 04-Oct-26 04:15:39 - 	Initial CPU memory usage: 893.86 MB
+[INFO] 04-Oct-26 04:15:39 - 	Average CPU memory usage: 2403.34 MB
+[INFO] 04-Oct-26 04:15:39 - 	Final CPU memory usage: 2481.60 MB
+[INFO] 04-Oct-26 04:15:39 - 	Max CPU memory usage: 2481.45 MB
+[INFO] 04-Oct-26 04:15:39 - 	Initial GPU 0 memory usage: 0.69 MB
+[INFO] 04-Oct-26 04:15:39 - 	Average GPU 0 memory usage: 21.09 MB
+[INFO] 04-Oct-26 04:15:39 - 	Final GPU 0 memory usage: 21.09 MB
+[INFO] 04-Oct-26 04:15:39 - 	Max GPU 0 memory usage: 21.09 MB
+[INFO] 04-Oct-26 04:15:39 - Logging results and arguments in /home/yeochoon/Documents/grad_thesis/cl_benchmarks/raw_data/linux/epoch/si_ep10/s42/class-il/seq-mnist/si/logs.pyd
+Accuracy for 1 task(s): 	 [Class-IL]: 99.95 % 	 [Task-IL]: 99.95 %
+	Raw accuracy values: Class-IL [99.95271867612293] | Task-IL [99.95271867612293]
+
+
+Accuracy for 2 task(s): 	 [Class-IL]: 49.63 % 	 [Task-IL]: 98.05 %
+	Raw accuracy values: Class-IL [0.0, 99.26542605288932] | Task-IL [96.8321513002364, 99.26542605288932]
+
+
+Accuracy for 3 task(s): 	 [Class-IL]: 33.4 % 	 [Task-IL]: 95.44 %
+	Raw accuracy values: Class-IL [0.0, 0.2938295788442703, 99.89327641408752] | Task-IL [98.67612293144208, 87.75710088148874, 99.89327641408752]
+
+
+Accuracy for 4 task(s): 	 [Class-IL]: 25.59 % 	 [Task-IL]: 95.59 %
+	Raw accuracy values: Class-IL [0.0, 0.04897159647404505, 2.454642475987193, 99.8489425981873] | Task-IL [95.98108747044918, 86.97355533790402, 99.57310565635005, 99.8489425981873]
+
+
+Accuracy for 5 task(s): 	 [Class-IL]: 20.98 % 	 [Task-IL]: 93.86 %
+	Raw accuracy values: Class-IL [0.0, 0.0, 0.26680896478121663, 5.53877139979859, 99.09228441754917] | Task-IL [88.65248226950354, 83.05582761998042, 98.66595517609392, 99.8489425981873, 99.09228441754917]
+
+
+Backward Transfer: [Class-IL]: -98.29 	 [Task-IL]: -7.18
+	Raw Backward Transfer values: Class-IL -98.28869584417681 | Task-IL -7.184289019380476
+Forgetting: [Class-IL]: 98.29 	 [Task-IL]: 7.18
+	Raw Forgetting values: Class-IL 98.28869584417681 | Task-IL 7.184289019380476
+Forward Transfer: [Class-IL]: 0.00 	 [Task-IL]: 0.00
+	Raw Forward Transfer values: Class-IL 0.0 | Task-IL 0.0

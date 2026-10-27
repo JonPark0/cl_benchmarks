@@ -1,0 +1,8 @@
+{
+ "platform": "Linux-6.18.33.2-microsoft-standard-WSL2-x86_64-with-glibc2.39",
+ "python": "3.12.3",
+ "torch": "2.6.0+cu124",
+ "cuda": "12.4",
+ "gpu": "NVIDIA GeForce RTX 3060 Laptop GPU",
+ "mammoth": "0.2.2 (commit ea967c3, 2025-11-22)"
+}
